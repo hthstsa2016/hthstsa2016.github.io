@@ -68,16 +68,82 @@
   background-color: #0088cc;
   }*/
 
-  .nav a:hover{
+
+  .circle1 {
+    background-image:url("microscopesyo.svg");
+    background-repeat:no-repeat;
     background-color:transparent;
-    content:url("microscopesyo_red.svg");
     width:100px;
     height:100px;
   }
 
-  .nav li.active a{
+  .circle1 li.active{
+    background-image:url("microscopesyo_red.svg");
+    background-repeat:no-repeat;
+    background-color:transparent;  
+    width:100px;
+    height:100px; 
+  }
+
+  l.circle2 {
+    background-image:url("drawing.svg");
+    background-repeat:no-repeat;
     background-color:transparent;
-    content:url("microscopesyo_red.svg");
+    width:100px;
+    height:100px;
+  }
+
+  .circle2 li.active{
+    background-image:url("drawing_red.svg");
+    background-repeat:no-repeat;
+    background-color:transparent;   
+    width:100px;
+    height:100px;
+  }
+
+  .circle3 {
+    background-image:url("bulbs.svg");
+    background-repeat:no-repeat;
+    background-color:transparent;
+    width:100px;
+    height:100px;
+  }
+
+  .circle3 li.active{
+    background-image:url("bulbs_red.svg");
+    background-repeat:no-repeat;
+    background-color:transparent;   
+    width:100px;
+    height:100px;
+  }
+
+  .circle4 {
+    background-image:url("gear.svg");
+    background-repeat:no-repeat;
+    background-color:transparent;
+    width:100px;
+    height:100px;
+  }
+
+  .circle4 li.active{
+    background-image:url("gear_red.svg");
+    background-repeat:no-repeat;
+    background-color:transparent;  
+    width:100px;
+    height:100px; 
+  }
+
+
+  .sidenav li:hover{
+    background-color:transparent;
+    background:url("microscopesyo.svg");
+    width:100px;
+    height:100px;
+  }
+
+  .sidenav li.active{
+    background-color:transparent;
+    background:url("microscopesyo.svg");
     width:100px;
     height:100px;
   }
@@ -89,23 +155,23 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-<!--         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
-      </button> -->
+      </button>
       <a class="navbar-brand" href="#">Webmaster 2016</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="scrollspy_teched.html">Tech Ed</a></li>
-          <li><a href="scrollspy_tsachapter.html">TSA Chapter</a></li>
-          <li><a href="scrollspy_uavtech.html">UAV Tech</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="scrollspy_aboutus.html">About Us <span class="caret"></span></a>
+          <li><a href="#section1">Tech Ed</a></li>
+          <li><a href="#section2">TSA Chapter</a></li>
+          <li><a href="#section3">UAV Tech</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="scrollspy_aboutus.html">Team Members</a></li>
-              <li><a href="scrollspy_aboutus.html">Coding Premise</a></li>
+              <li><a href="#section41">Team Members</a></li>
+              <li><a href="#section42">Coding Premise</a></li>
             </ul>
           </li>
         </ul>
@@ -120,11 +186,10 @@
 <div class="container-fluid">
   <div class="col-sm-1 sidenav" style="background-color:gray">
     <ul class="nav nav-pills nav-stacked" style="position:fixed">
-      <li id='circle1'><a href='#section1' id="Route Planner"><img src="microscopesyo.svg" style="width:100px;height:100px"><!-- 1 --></a></li>
-        <li id='circle2'><a href="#section2" id="Travel Stops"><img src="drawing.svg" style="width:100px;height:100px"><!-- 2 --></a></li>
-        <li id='circle3'><a href="#section3" id="Itineraryy"><img src="bulbs.svg" style="width:100px;height:100px"><!-- 3 --></a></li>
-        <li id='circle4'><a href="#section41" id="Itineraryy"><img src="gear.svg" style="width:100px;height:100px"><!-- 4 --></a></li>
-        <!-- <li id='circle4'><a href="#AboutUs" id="About Us"></a>4</li> -->
+      <li class='circle1'><a href='#section1' id="Route Planner"></a></li>
+        <li class='circle2'><a href="#section2" id="Travel Stops"></a></li>
+        <li class='circle3'><a href="#section3" id="Itineraryy"></a></li>
+        <li class='circle4'><a href="#section41" id="Itineraryy"></a></li>
       </ul>
   </div>
 
