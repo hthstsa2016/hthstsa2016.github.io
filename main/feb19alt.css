@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; } /* to prevent gaps between elements / content in browser window  */
+
+body{
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+	url("hightech_pano.jpg") no-repeat center center fixed;
+
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+/** btw I want to have some cool gif / video background instead of this image ^^ **/
+
+.title{
+	text-align:center;
+	color:rgba(255,255,255,.9);
+	font-weight:bold;
+	text-shadow: 0 0 20px #7AA5D2;
+	/** this text-shadow looks so ugly... make a new one pronto 
+	THIS IS NOW AN UGLY BLUE TEXT GLOW UGH KMS**/
+}
+
+span.larger{
+	font-size:100px;
+}
+
+/** MUST CENTER THESE DANG BUTTONS!!! 
+ALSO USE THE ICONS THAT JOSH MADE IF THEY ARE ACCEPTABLE
+AND I WANT A COOL HOVER THING. MUST. **/
+.buttonTSA{
+	display:inline-block;
+	/**width:100px;**/
+	float:left;
+	margin-left:30%;
+}
+
+.buttonUAS{
+	display:inline-block;
+	width:100px;
+	float:right;
+	margin-right:30%;
+}
+
+.buttonTSA, .buttonUAS{
+	position: relative;
+	/**font-family: 'Muli', sans-serif;**/
+	/**font-weight: 400;**/
+	font-size: 25px;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+
+
+	background: #7AA5D2;
+	width: 80px;
+	height: 80px;
+	
+	/* CSS transitions */
+	-webkit-transition: .5s ease-in-out; /* Safari */
+	-moz-transition: .5s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .5s ease-in-out; /* Microsoft specific */
+	-o-transition: .5s ease-in-out; /* Opera */
+	transition: .5s ease-in-out; /* general & Google Chrome */
+
+	line-height:90%;
+
+	/**unsure about this one
+	z-index:-1;
+	**/
+}
+
+.buttonTSA:hover, .buttonUAS:hover{
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
+}
+
+/**
+.buttonTSA:hover, .buttonUAS:hover{
+	background-color:rgba(122, 165, 210, .7);
+}
+**/
+
+a:hover i.material-icons.md-48{
+  opacity:0;
+
+  -webkit-transition: .5s opacity; /* Safari */
+  -moz-transition: .5s opacity; /* Mozilla Firefox */
+  -ms-transition: .5s opacity; /* Microsoft specific */
+  -o-transition: .5s opacity; /* Opera */
+  transition: .5s opacity; /* general & Google Chrome */
+}
+
+
+.buttonHoverTitle{
+  opacity:0;
+  margin-top:-75px;
+}
+
+a:hover .buttonHoverTitle{
+  opacity:1;
+  -webkit-transition: .5s opacity; /* Safari */
+  -moz-transition: .5s opacity; /* Mozilla Firefox */
+  -ms-transition: .5s opacity; /* Microsoft specific */
+  -o-transition: .5s opacity; /* Opera */
+  transition: .5s opacity; /* general & Google Chrome */
+}
+
+.material-icons.md-48 { 
+	font-size: 48px;
+	margin-top:13px;
+	margin-bottom:13px;
+	
+}
+
+.material-icons{
+	text-align:center;
+	margin-left:13px;
+	margin-right:13px;
+}
+
+
+p{
+	margin-top:15px;
+}
+
+/**THIS WORKS SOMETHING 7:46PM
+a:hover .buttonHoverTitle{
+	visibility:visible;
+	background: rgba(0, 0, 0, 0.5);
+
+    width: 80px;
+	height: 80px;
+
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+
+	z-index:1;
+}
+**/
+
+
+/**.subcontainer:hover > i {
+    transition: 0.2s;
+    opacity: 0;
+}
+**/
+
+/**
+a:hover i{
+
+	opacity:0;
+  	transition: opacity .5s linear;
+}
+**/
+
+a{
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  
+  	transition:.5s;
+}
+
+/**
+a:hover{
+	color:rgba(122, 165, 210, 1);
+
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    );
+
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  
+  	transition:.5s;
+**/
+
+/**
+	background-color: rgba(0,0,0,0.8);
+    z-index: 100;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    **/
+}
+
+
+/** unsure what this is
+a:hover .titleAppear{
+	opacity:1;
+
+
+	background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+
+    width: 80px;
+	height: 80px;
+	border-radius:100px;
+}
+**/
