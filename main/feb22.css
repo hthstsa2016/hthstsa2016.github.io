@@ -1,0 +1,216 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; } /* to prevent gaps between elements / content in browser window  */
+
+/** body{
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+	url("hightech_pano.jpg") no-repeat center center fixed;
+
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+**/
+
+ body {
+      position: relative; 
+}
+ 
+#section1 {
+  	padding-top:50px;
+  	height:1000px;
+  	width:100%;
+  	color: #fff;
+
+  	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+	url("hightech_pano.jpg") no-repeat center center fixed;
+
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#section2 {
+	padding-top:50px;
+	height:1000px;
+	width:100%;
+	color: #fff;
+	background-color: #673ab7;
+}
+
+#section3 {
+	padding-top:50px;
+	height:1000px;
+	width:100%;
+	color: #fff; 
+	background-color: #ff9800;
+}
+  
+#section41 {
+	padding-top:50px;
+	height:1000px;
+	width:100%;
+	color: #fff;
+	background-color: #00bcd4;
+}
+
+#section42 {
+	padding-top:50px;
+	height:1000px;
+	width:100%;
+	color: #fff;
+	background-color: #009688;
+}
+
+ul.nav-pills li.active a, ul.nav-pills li.active a:hover {
+    background: transparent;
+}
+
+
+#section1 .container-fluid{
+	visibility:hidden;
+}
+
+.container-fluid {
+	background-color:rgba(0,0,0,0);
+}
+
+/**
+.sidenav {
+	background:transparent;
+}
+**/
+
+/** btw I want to have some cool gif / video background instead of this image ^^ **/
+
+.title{
+	text-align:center;
+	color:rgba(255,255,255,.9);
+	font-weight:bold;
+	text-shadow: 0 0 20px #7AA5D2;
+	/** this text-shadow looks so ugly... make a new one pronto 
+	THIS IS NOW AN UGLY BLUE TEXT GLOW UGH KMS**/
+}
+
+span.larger{
+	font-size:100px;
+}
+
+/** MUST CENTER THESE DANG BUTTONS!!! 
+ALSO USE THE ICONS THAT JOSH MADE IF THEY ARE ACCEPTABLE
+AND I WANT A COOL HOVER THING. MUST. **/
+.buttonCTE{
+	display:inline-block;
+	/**width:100px;**/
+	float:left;
+	margin-left:30%;
+}
+
+.buttonUAS{
+	display:inline-block;
+	width:100px;
+	float:right;
+	margin-right:30%;
+}
+
+.buttonTSA{
+	display:inline-block;
+	width:100px;
+	float:right;
+	margin-right:30%;
+}
+
+.buttonCTE, .buttonUAS, .buttonTSA{
+	position: relative;
+	/**font-family: 'Muli', sans-serif;**/
+	/**font-weight: 400;**/
+	font-size: 25px;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+
+
+	background: #7AA5D2;
+	width: 80px;
+	height: 80px;
+	
+	/* CSS transitions */
+	-webkit-transition: .5s ease-in-out; /* Safari */
+	-moz-transition: .5s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .5s ease-in-out; /* Microsoft specific */
+	-o-transition: .5s ease-in-out; /* Opera */
+	transition: .5s ease-in-out; /* general & Google Chrome */
+
+	line-height:90%;
+
+	/**unsure about this one
+	z-index:-1;
+	**/
+}
+
+.buttonCTE:hover, .buttonUAS:hover, .buttonTSA:hover{
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
+}
+
+/**
+.buttonTSA:hover, .buttonUAS:hover{
+	background-color:rgba(122, 165, 210, .7);
+}
+**/
+
+a:hover i.material-icons.md-48{
+  opacity:0;
+
+  -webkit-transition: .5s opacity; /* Safari */
+  -moz-transition: .5s opacity; /* Mozilla Firefox */
+  -ms-transition: .5s opacity; /* Microsoft specific */
+  -o-transition: .5s opacity; /* Opera */
+  transition: .5s opacity; /* general & Google Chrome */
+}
+
+
+.buttonHoverTitle{
+  opacity:0;
+  margin-top:-75px;
+}
+
+a:hover .buttonHoverTitle{
+  opacity:1;
+  -webkit-transition: .5s opacity; /* Safari */
+  -moz-transition: .5s opacity; /* Mozilla Firefox */
+  -ms-transition: .5s opacity; /* Microsoft specific */
+  -o-transition: .5s opacity; /* Opera */
+  transition: .5s opacity; /* general & Google Chrome */
+}
+
+.material-icons.md-48 { 
+	font-size: 48px;
+	margin-top:13px;
+	margin-bottom:13px;
+	
+}
+
+.material-icons{
+	text-align:center;
+	margin-left:13px;
+	margin-right:13px;
+}
+
+
+p.buttonCaption{
+	margin-top:15px;
+}

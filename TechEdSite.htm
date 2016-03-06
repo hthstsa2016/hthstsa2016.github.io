@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <style>
+
+	#circle1 {
+	    content:url("ied.svg");
+	    width:100px;
+    	height:100px;
+	}
+
+	#circle1:hover {
+	    content:url("ied.svg");
+	    width:100px;
+    	height:100px;
+	}
+
+	#circle2 {
+	    content:url("poe.svg");
+	    width:100px;
+    	height:100px;
+	}
+
+	#circle2:hover {
+	    content:url("poe.svg");
+	    width:100px;
+    	height:100px;
+	}
+
+/*	#circle3 {
+	    content:url(graycirc.png);
+	    width:60px;
+    	height:60px;
+	}
+
+	#circle3:hover {
+	    content:url(whitecirc.png);
+	}
+
+	#circle4 {
+	    content:url(graycirc.png);
+	    width:60px;
+    	height:60px;
+	}
+
+	#circle4:hover {
+	    content:url(whitecirc.png);
+	    width:60px;
+    	height:60px;
+	}*/
+
+	</style>
+
+	<script>
+		$(document).ready(function(){
+		    $("a").click(function(){
+		    // alert("it works!");
+			$("html, body").animate({
+		             scrollTop: $( $(this).attr('href') ).offset().top
+		         }, 800);
+			return false;
+		    });
+		});
+
+		$(function() {
+		$('#circle1').hover(function() { 
+		    $('#label1').fadeIn(); 
+		}, function() { 
+		    $('#label1').fadeOut(); 
+		});
+		});
+
+		$(function() {
+		$('#circle2').hover(function() { 
+		    $('#label2').fadeIn(); 
+		}, function() { 
+		    $('#label2').fadeOut(); 
+		});
+		});
+
+		$(function() {
+		$('#circle3').hover(function() { 
+		    $('#label3').fadeIn(); 
+		}, function() { 
+		    $('#label3').fadeOut(); 
+		});
+		});
+
+		$(function() {
+		$('#circle4').hover(function() { 
+		    $('#label4').fadeIn(); 
+		}, function() { 
+		    $('#label4').fadeOut(); 
+		});
+		});
+
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">TSA Webmaster 2016</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">HOME</a></li>
+      <li><a href="#">HTHS STEM</a></li>
+      <li><a href="#">HTHS TSA</a></li>
+      <li><a href="#">UAV TECH</a></li>
+      <li><a href="#">ABOUT US</a></li>
+    </ul>
+  </div>
+</nav>
+
+<br>
+<br>
+<br>
+  
+<div class="container-fluid">
+	<div class="col-sm-1 sidenav">
+		<ul class="nav nav-pills nav-stacked" style="position:fixed">
+			<li id='circle1'><a href='#RoutePlanner' id="Route Planner">1</a></li>
+    		<li id='circle2'><a href="#TravelStops" id="Travel Stops">2</a></li>
+    		<li id='circle3'><a href="#Itinerary" id="Itineraryy">3</a></li>
+    		<li id='circle4'><a href="#AboutUs" id="Itineraryy">4</a></li>
+    		<!-- <li id='circle4'><a href="#AboutUs" id="About Us"></a>4</li> -->
+    	</ul>
+	</div>
+
+	<div class="col-sm-11">
+		<a name="RoutePlanner" id="RoutePlanner"></a>
+		<div style="height:1000px; width:100%">
+    		<iframe src="http://www.hths.mcvsd.org" style="height:1000px; width:100%"></iframe>
+		</div>
+
+		<a name="TravelStops" id="TravelStops"></a>
+		<div style="height:1000px; width:100%">
+    		<iframe src="http://www.tsaweb.org" style="height:1000px; width:100%"></iframe>
+		</div>
+
+		<a name="Itinerary" id="Itinerary"></a>
+		<div style="height:1000px; width:100%">
+    		<iframe src="http://www.uastec.com/" style="height:1000px; width:100%"></iframe>
+		</div>
+
+		<a name="AboutUs" id="AboutUs"></a>
+		<div style="height:1000px; width:100%">
+    		<iframe src="https://www.mcvsd.org/" style="height:1000px; width:100%"></iframe>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>
