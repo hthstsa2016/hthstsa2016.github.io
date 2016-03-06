@@ -174,7 +174,8 @@ AND I WANT A COOL HOVER THING. MUST. **/
 }
 **/
 
-a:hover i.material-icons.md-48{
+a:hover i.fa-graduation-cap, a:hover i.fa-flask, a:hover i.fa-angle-down, a:hover i.fa-angle-right,
+a:hover i.fa-space-shuttle, a:hover i.fa-angle-double-right{
   opacity:0;
 
   -webkit-transition: .5s opacity; /* Safari */
