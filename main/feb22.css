@@ -1,6 +1,6 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; } /* to prevent gaps between elements / content in browser window  */
 
-body{
+/** body{
 	background:
 	linear-gradient(
       rgba(0, 0, 0, 0.5), 
@@ -13,32 +13,81 @@ body{
   	-o-background-size: cover;
   	background-size: cover;
 }
+**/
 
-
-  body {
+ body {
       position: relative; 
-  }
-  #section1 {
+}
+ 
+#section1 {
   	padding-top:50px;
   	height:1000px;
   	width:100%;
   	color: #fff;
-  }
 
-  #section2 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #673ab7;}
-  #section3 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #ff9800;}
-  #section41 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #00bcd4;}
-  #section42 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #009688;}
+  	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+	url("hightech_pano.jpg") no-repeat center center fixed;
 
-  ul.nav-pills li.active a, ul.nav-pills li.active a:hover {
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#section2 {
+	padding-top:50px;
+	height:1000px;
+	width:100%;
+	color: #fff;
+	background-color: #673ab7;
+}
+
+#section3 {
+	padding-top:50px;
+	height:1000px;
+	width:100%;
+	color: #fff; 
+	background-color: #ff9800;
+}
+  
+#section41 {
+	padding-top:50px;
+	height:1000px;
+	width:100%;
+	color: #fff;
+	background-color: #00bcd4;
+}
+
+#section42 {
+	padding-top:50px;
+	height:1000px;
+	width:100%;
+	color: #fff;
+	background-color: #009688;
+}
+
+ul.nav-pills li.active a, ul.nav-pills li.active a:hover {
     background: transparent;
-  }
+}
 
 
 #section1 .container-fluid{
 	visibility:hidden;
 }
 
+.container-fluid {
+	background-color:rgba(0,0,0,0);
+}
+
+/**
+.sidenav {
+	background:transparent;
+}
+**/
 
 /** btw I want to have some cool gif / video background instead of this image ^^ **/
 
@@ -58,7 +107,7 @@ span.larger{
 /** MUST CENTER THESE DANG BUTTONS!!! 
 ALSO USE THE ICONS THAT JOSH MADE IF THEY ARE ACCEPTABLE
 AND I WANT A COOL HOVER THING. MUST. **/
-.buttonTSA{
+.buttonCTE{
 	display:inline-block;
 	/**width:100px;**/
 	float:left;
@@ -72,7 +121,14 @@ AND I WANT A COOL HOVER THING. MUST. **/
 	margin-right:30%;
 }
 
-.buttonTSA, .buttonUAS{
+.buttonTSA{
+	display:inline-block;
+	width:100px;
+	float:right;
+	margin-right:30%;
+}
+
+.buttonCTE, .buttonUAS, .buttonTSA{
 	position: relative;
 	/**font-family: 'Muli', sans-serif;**/
 	/**font-weight: 400;**/
@@ -104,7 +160,7 @@ AND I WANT A COOL HOVER THING. MUST. **/
 	**/
 }
 
-.buttonTSA:hover, .buttonUAS:hover{
+.buttonCTE:hover, .buttonUAS:hover, .buttonTSA:hover{
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
