@@ -178,10 +178,9 @@ section{
 
 .item, img{
 	height: auto;
-    width:  50% !important;
-    max-height:330px;
-    margin-left:auto;
-    margin-right: auto;
+    width:  60% !important;
+    max-height:450px;
+    margin-left:50%;
 }
 
 .carousel-inner > .item > img {
@@ -190,10 +189,22 @@ section{
 
 #leftt, #rightt {
 	width:5%;
-	height:20%;
-	margin-top:10%;
+	height:100%;
+	z-index:3000;
 }
 
+#leftt {
+	left:62%;
+}
+
+#rightt {
+	right:2%;
+}
+
+#presentation {
+	height:100%;
+	width:100%;
+}
 
 @media (min-width: 768px) {
 
