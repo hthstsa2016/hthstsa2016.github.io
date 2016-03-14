@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,500italic,400italic,300italic,300,700,700italic);
+
+body{
+	font-family:'Roboto',sans-serif;
+}
+
+#tsasection1{
+	font-family:'Roboto',sans-serif;
+	padding-top:1px;
+	padding-left: 120px;
+	height:1000px;
+	width:100%;
+	color: #fff; 
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.5), 
+	      rgba(0, 0, 0, 0.5)
+	    ),
+		url("../tsa_pictures/tsa2015.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	text-align:center;
+}
+
+#tsasection1 h1{
+	font-size:80px;
+	font-weight:500;
+}
+
+#tsasection1 h3{
+	font-style:italic;
+	font-weight:400;
+}
+
+#tsasection2 {
+	font-family:'Roboto',sans-serif;
+	padding-top:1px;
+	padding-left: 120px;
+	height:1000px;
+	width:100%;
+	color: #fff; 
+	background-color: #FF4C65;
+}
+
+#tsasection2 h1{
+	font-size:50px;
+	text-align:center;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+#tsasection3 {
+	padding-top:1px;
+	padding-left: 120px;
+	height:1000px;
+	width:100%;
+	color: #fff; 
+	background-color: #ff9800;
+}
+
+#tsasection41 {
+	padding-top:1px;
+	padding-left: 120px;
+	height:1000px;
+	width:100%;
+	color: #fff; 
+	background-color: #00bcd4;
+}
+
+#tsasection42 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #009688;}
