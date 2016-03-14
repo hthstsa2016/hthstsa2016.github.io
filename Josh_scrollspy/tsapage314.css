@@ -50,19 +50,25 @@ body{
 	text-align:center;
 }
 
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-
 #tsasection3 {
+	font-family:'Roboto',sans-serif;
 	padding-top:1px;
 	padding-left: 120px;
 	height:1000px;
 	width:100%;
 	color: #fff; 
 	background-color: #ff9800;
+	text-align:center;
+}
+
+.tablecenter{
+	text-align:center;
+}
+
+td{
+	width:100px;
+	height:100px;
+	text-align:center;
 }
 
 #tsasection41 {
