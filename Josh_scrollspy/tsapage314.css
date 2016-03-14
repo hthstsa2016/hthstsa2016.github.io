@@ -81,3 +81,11 @@ td{
 }
 
 #tsasection42 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #009688;}
+
+.info_footer{
+	height:100px;
+	background-color:#FF4C65;
+	color: #EEEEEE;
+	text-align:center;
+	padding-top:20px;
+}
