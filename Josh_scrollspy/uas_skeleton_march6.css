@@ -171,3 +171,35 @@ section{
 #section3 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #ff9800;}
 #section41 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #00bcd4;}
 #section42 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #009688;}
+
+/*#caroslide {
+	width:100px;
+}*/
+
+.item, img{
+	height: auto;
+    width:  50% !important;
+    max-height:330px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.carousel-inner > .item > img {
+	margin: 0 auto;
+}
+
+#leftt, #rightt {
+	width:5%;
+	height:20%;
+	margin-top:10%;
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 1330px) {
+
+}
