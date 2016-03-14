@@ -7,14 +7,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="uas_skeleton_march6.css">
+  <link rel="stylesheet" href="lean-slider.css" type="text/css" />
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
-  <link rel="stylesheet" href="materialize.css">
-  <link rel="stylesheet" href="materialze.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="uas_skeleton_march6.js"></script>
+  <script src="lean-slider.js"></script>
 </head>
 
 
@@ -54,7 +55,7 @@
         <li id='circle3'><a href="#section3" id="Itineraryy">
           <span class="fa-stack fa-3x" data-toggle="tooltip" title="UAV technology all began with a little research. With the current technology and engineering, its time for UAV tech to give back to the research field. Just think about the views and tiny crevices on our planet that these small vehicles can explore.">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-cog faa-spin animated-hover animated-hover fa-stack-1x"></i>
+            <i class="fa fa-cog faa-spin animated-hover fa-stack-1x"></i>
           </span>
         </a></li>
 
@@ -73,9 +74,28 @@
 <div class="container-fluid" id="mainSection">
 <div class="main" data-offset="15"> 
   <div id="section1">
-    <h1>Section 1</h1>
+    <!-- <h1>Section 1</h1>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p> -->
+      <div class="slider-wrapper">
+        <div id="slider">
+            <div class="slide1">
+                <img src="room185_1.jpg" alt="" />
+            </div>
+            <div class="slide2">
+                <img src="room185_2.jpg" alt="" />
+            </div>
+            <div class="slide3">
+                <img src="room185_3.jpg" alt="" />
+            </div>
+            <div class="slide4">
+                <img src="room185_4.jpg" alt="" />
+            </div>
+        </div>
+        <div id="slider-direction-nav"></div>
+        <div id="slider-control-nav"></div>
+      </div>
+
   </div>
 
   <div id="section2">

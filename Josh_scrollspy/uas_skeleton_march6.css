@@ -171,3 +171,46 @@ section{
 #section3 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #ff9800;}
 #section41 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #00bcd4;}
 #section42 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #009688;}
+
+/*#caroslide {
+	width:100px;
+}*/
+
+.item, img{
+	height: auto;
+    width:  60% !important;
+    max-height:450px;
+    margin-left:50%;
+}
+
+.carousel-inner > .item > img {
+	margin: 0 auto;
+}
+
+#leftt, #rightt {
+	width:5%;
+	height:100%;
+	z-index:3000;
+}
+
+#leftt {
+	left:62%;
+}
+
+#rightt {
+	right:2%;
+}
+
+#presentation {
+	height:100%;
+	width:100%;
+}
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 1330px) {
+
+}
