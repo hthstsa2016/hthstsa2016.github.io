@@ -152,3 +152,7 @@
  	width:650px;
  	float:right;
  }
+
+ #leftt, #rightt {
+    background-image: none
+}
