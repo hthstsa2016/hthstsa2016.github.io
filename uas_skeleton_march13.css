@@ -196,14 +196,5 @@
 
 .gtrans {
 	display:block;
-	float:left;
-	height:400px;
-	width:600px;
-	box-shadow:none !important;
-	-moz-box-shadow:none !important;
-	-webkit-box-shadow:none !important;
-	padding:3px !important;
-	border-radius:3px;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
+	float:right;
 }
