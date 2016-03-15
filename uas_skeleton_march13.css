@@ -194,3 +194,9 @@
 	color:black;
 }
 
+.gtrans {
+	display:none;
+	float:left;
+	height:400px;
+	width:600px;
+}
