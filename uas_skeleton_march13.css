@@ -195,7 +195,7 @@
 }
 
 .gtrans {
-	display:none;
+	display:block;
 	float:left;
 	height:400px;
 	width:600px;
