@@ -142,7 +142,13 @@
 
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
+      max-width: 70%;
       height:100%;
       margin: auto;
   }
+
+ #slidey {
+ 	height:650px;
+ 	width:650px;
+ 	float:right;
+ }
