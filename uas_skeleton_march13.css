@@ -195,6 +195,7 @@
 }
 
 .gtrans {
-	display:block;
+	display:inline-block;
 	float:right;
+	
 }
