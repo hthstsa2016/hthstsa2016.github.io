@@ -199,8 +199,14 @@
 	float:left;
 	height:400px;
 	width:600px;
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+	padding:3px !important;
+	height:auto !important;
+	border:1px solid lightgray !important;
+	border-radius:0px;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	background-color:green;
 }
-
-div#google_translate_element div.goog-te-gadget-simple{background-color:green;}
-div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color:yellow}
-div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover{color:#fff}
