@@ -37,11 +37,11 @@
     });
   });
 
-// $('.carousel').carousel({
-//   interval: 2000
-// })
+$('.carousel').carousel({
+  interval: 2000
+})
 
-$('.carousel').carousel();
+// $('.carousel').carousel();
 
 function googleTranslateElementInit() {
       new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
