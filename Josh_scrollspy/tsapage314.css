@@ -45,7 +45,7 @@ body{
 	background-color: #FF4C65;
 }
 
-#tsasection2 h1{
+#tsasection2 h1, #tsasection3 h1, #tsasection4 h1, #tsasection5 h1{
 	font-size:50px;
 	text-align:center;
 }
@@ -62,7 +62,7 @@ body{
 }
 
 .tablecenter{
-	text-align:center;
+	width:100%;
 }
 
 td img{
@@ -72,7 +72,7 @@ td img{
 }
 
 td{
-	width:250px;
+	min-width:250px;
 	height:320px;
 }
 
@@ -80,7 +80,71 @@ td p{
 	line-height:20%;
 }
 
+/* modal box code edited from http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ */
+
+.modalDialog {
+	position: fixed;
+	overflow:scroll; /* need to fix invisible scrollbar */
+	font-family: 'Roboto', sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 500px;
+	position: relative;
+	margin: 10% auto;
+	padding: 13px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	text-align: center;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	
+	-webkit-transition:background .2s ease-out;
+	-moz-transition: background-color .2s ease-out;
+  	-o-transition: background-color .2s ease-out;
+  	transition: background-color .2s ease-out;
+}
+
+.close:hover {
+	background: #EA5455; 
+	color: #EA5455;
+}
+/* end modal box code */
+
+
+
 #tsasection4 {
+	font-family:'Roboto',sans-serif;
 	padding-top:1px;
 	padding-left: 120px;
 	height:1000px;
@@ -90,6 +154,7 @@ td p{
 }
 
 #tsasection5 {
+	font-family:'Roboto',sans-serif;
 	padding-top:1px;
 	padding-left: 120px;
 	height:1000px;
