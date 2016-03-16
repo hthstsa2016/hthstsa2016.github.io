@@ -94,11 +94,8 @@
   #mainsection1 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #1E88E5;}
   #mainsection2 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #673ab7;}
   #mainsection3 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #ff9800;}
-  #mainsection4 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #00bcd4;}
-  #mainsection5 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #009688;}
-  #mainsection6 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #393E46;}
-  #mainsection7 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #00ADB5;}
-  #mainsection8 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #FF4C65;}
+  #mainsection41 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #00bcd4;}
+  #mainsection42 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #009688;}
 
 /*#caroslide {
 	width:100px;
@@ -198,12 +195,7 @@
 }
 
 .gtrans {
-	display:block;
-	float:left;
-	height:400px;
-	width:600px;
+	display:inline-block;
+	float:right;
+	
 }
-
-div#google_translate_element div.goog-te-gadget-simple{background-color:green;}
-div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color:yellow}
-div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover{color:#fff}
