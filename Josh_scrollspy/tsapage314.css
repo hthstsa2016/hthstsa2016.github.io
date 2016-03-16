@@ -54,7 +54,7 @@ body{
 	font-family:'Roboto',sans-serif;
 	padding-top:1px;
 	padding-left: 120px;
-	height:1000px;
+	height:1100px;
 	width:100%;
 	color: #fff; 
 	background-color: #ff9800;
@@ -65,13 +65,22 @@ body{
 	text-align:center;
 }
 
-td{
-	width:100px;
-	height:100px;
+td img{
+	width:175px;
+	height:250px;
 	text-align:center;
 }
 
-#tsasection41 {
+td{
+	width:250px;
+	height:320px;
+}
+
+td p{
+	line-height:20%;
+}
+
+#tsasection4 {
 	padding-top:1px;
 	padding-left: 120px;
 	height:1000px;
@@ -80,7 +89,13 @@ td{
 	background-color: #00bcd4;
 }
 
-#tsasection42 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #009688;}
+#tsasection5 {
+	padding-top:1px;
+	padding-left: 120px;
+	height:1000px;
+	width:100%;
+	color: #fff; 
+	background-color: #009688;}
 
 .info_footer{
 	height:100px;
