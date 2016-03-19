@@ -91,13 +91,22 @@
 		}
 	}
 
-  #mainsection1 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
+  #mainsection1 {
+  	padding-top:1px;
+  	height:1000px;
+  	width:100%;
+/*  	background-image:url(ctePics/juniorPic2.jpg);*/
+  	opacity: 0.8;
+  }
+
+
+
   #mainsection2 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
-  #mainsection3 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
+  #mainsection3 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #8DC6FF;}
   #mainsection4 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
-  #mainsection5 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
+  #mainsection5 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #8DC6FF;}
   #mainsection6 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
-  #mainsection7 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
+  #mainsection7 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #8DC6FF;}
   #mainsection8 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
 
 /*#caroslide {
@@ -208,25 +217,35 @@
 div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color:yellow}
 div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover{color:#fff}*/
 
-#engineerIED, #engineerPOE, #engineerCIM, #engineerCSE, #engineerDE, 
+#engineerHTHS, #engineerIED, #engineerPOE, #engineerCIM, #engineerCSE, #engineerDE, 
 #engineerBEES, #engineerCEA, #engineerEDD  {
 	text-align:center;
-	font-size: 45px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 80px;
 	font-weight: bold;
 	color:#22313F;
 	font-family: "Century Gothic";
 }
 
-#infoIED, #infoPOE {
-	position:relative;
+#infoHTHS, #infoIED, #infoPOE {
+	margin-left:auto;
+	margin-right:auto;
 	display:block;
 	z-index:1;
-	top:2%;
+	margin-top:18%;
+	margin-bottom:auto;
 	left:2%;
-	width:50%;
+	width:80%;
 	height:30%;
 	text-align: justify;
 	font-family: "Century Gothic";
 	color:#34495E;
-	font-size:18px;
+	font-size:21px;
+}
+
+hr {
+	width:40%;
+	border: 5px solid #34495E;
+	background-color:#34495E;
 }
