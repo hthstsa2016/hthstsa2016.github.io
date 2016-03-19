@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $('#scrollArea [data-toggle="tooltip"]').tooltip({placement: "right"});
+    $("#scrollArea a").click(
+  function(event){
+          event.preventDefault();
+          var hash = this.hash;
+    $('html, body').animate({
+             scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+          })
+    });
+});
+
+    // $(function() {
+    // $('#circle1').hover(function() { 
+    //     $('#label1').fadeIn(); 
+    // }, function() { 
+    //     $('#label1').fadeOut(); 
+    // });
+    // });
+
+    // $(function() {
+    // $('#circle2').hover(function() { 
+    //     $('#label2').fadeIn(); 
+    // }, function() { 
+    //     $('#label2').fadeOut(); 
+    // });
+    // });
+
+    // $(function() {
+    // $('#circle3').hover(function() { 
+    //     $('#label3').fadeIn(); 
+    // }, function() { 
+    //     $('#label3').fadeOut(); 
+    // });
+    // });
+
+    // $(function() {
+    // $('#circle4').hover(function() { 
+    //     $('#label4').fadeIn(); 
+    // }, function() { 
+    //     $('#label4').fadeOut(); 
+    // });
+    // });
+
+  </script>
+  <style>
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:1000px;width:100%;color: #fff; background-color: #009688;}
+
+  ul.nav-pills {
+      top: 20px;
+      position: fixed;
+      width: 6%;
+      z-index:1030;
+  }
+
+/*  div.col-sm-1 div {
+      width:10%;
+  }*/
+
+  div.col-sm-11 div {
+      height: 250px;
+      width: 90%;
+      font-size: 28px;
+  }
+
+  #scrollArea .tooltip,
+  #scrollArea .tooltip .tooltip-inner {
+      width:600px;
+      padding: 15px;
+      font-size: 20px;
+      word-wrap: break-word;
+  }
+
+  ul.nav-pills > li.active > a, ul.nav-pills > li.active > a:hover, ul.nav-pills > li.active > a:focus {
+    background-color: black;
+  }
+
+  ul.nav-pills > li > a:hover, ul.nav-pills > li > a:focus {
+    background-color: black;
+    color:red;
+  }
+/*  .nav-list > .active > a,
+  .nav-list > .active > a:hover {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #0088cc;
+  }*/
+
+/*  .nav-pills #circle2:hover{
+    background-image:url("microscopesyo.svg");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    width:100px;
+    height:100px;
+  }
+
+  .nav-pills #circle2.active{
+    background-image:url("microscopesyo.svg");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    width:100px;
+    height:100px;
+  }*/
+
+/*  .sidenav > li.active > a {
+      background-color:red;
+  }
+  // This changes the color of the active
+
+  .sidenav >li.active>a:hover {
+      background-color:red;
+  }
+  // This changes the color of the hovered pill*/
+
+/*  ul.nav-pills li.active a, ul.nav-pills li.active a:hover {
+    background: transparent;
+  }*/
+  
+  </style>
+</head>
+<body data-spy="scroll" data-target=".sidenav" data-offset="50">
+
+<!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Webmaster 2016</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Tech Ed</a></li>
+          <li><a href="#section2">TSA Chapter</a></li>
+          <li><a href="#section3">UAV Tech</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Team Members</a></li>
+              <li><a href="#section42">Coding Premise</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<br>
+<br> -->
+
+<div class="container-fluid">
+  <div class="row" style="background-color:black">
+    <div class="col-sm-1 sidenav" id="scrollArea">
+      <ul class="nav nav-pills nav-stacked">
+
+        <li id='circle1'><a href='#section1' id="Route Planner">
+          <span class="fa-stack fa-3x" data-toggle="tooltip" data-placement="center" title="The possibilities in commercial business are limitless with the advancements and technology of UAVs. Its benefits and uses facilitate several actions taken by various companies around the world.">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-group fa-stack-1x fa-pulse"></i>
+          </span></a></li>
+
+
+        <li id='circle2'><a href="#section2" id="Travel Stops">
+          <span class="fa-stack fa-3x" data-toggle="tooltip" data-placement="center" title="Education has never been more futuristic with UAV technology. Its capabilities allow students and teachers to explore remote areas and investigate surroudings.">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-line-chart fa-stack-1x fa-pulse"></i>
+          </span>
+          </a></li>
+
+
+        <li id='circle3'><a href="#section3" id="Itineraryy">
+            <span class="fa-stack fa-3x" data-toggle="tooltip" data-placement="center" title="UAV technology all began with a little research. With the current technology and engineering, its time for UAV tech to give back to the research field. Just think about the views and tiny crevices on our planet that these small vehicles can explore.">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-cog fa-stack-1x fa-spin"></i>
+            </span>
+          </a></li>
+
+
+          <li id='circle4'><a href="#section41" id="Itineraryy">
+            <span class="fa-stack fa-3x" data-toggle="tooltip" data-placement="center" title="The future of technology has arrived, but engineering and science never cease to improve. What is the future of UAV technology?">
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-fast-forward fa-stack-1x fa-pulse"></i>
+            </span>
+          </a></li>
+
+
+        </ul>
+    </div>
+
+    <div class="col-sm-11">
+
+      <div id="section1" class="container-fluid">
+        <h1>Section 1</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      </div>
+
+      <div id="section2" class="container-fluid">
+        <h1>Section 2</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      </div>
+
+      <div id="section3" class="container-fluid">
+        <h1>Section 3</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      </div>
+
+      <div id="section41" class="container-fluid">
+        <h1>Section 4 Submenu 1</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      </div>
+
+      <div id="section42" class="container-fluid">
+        <h1>Section 4 Submenu 2</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
