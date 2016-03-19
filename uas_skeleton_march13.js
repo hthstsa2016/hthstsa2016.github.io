@@ -41,45 +41,8 @@
 //   interval: 2000
 // })
 
-// $('.carousel').carousel();
+$('.carousel').carousel();
 
-// function googleTranslateElementInit() {
-//       new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-//       }
-
-// $(document).ready(function(){
-//     $("a").click(function(){
-//         $("#describeEngineer").fadeOut();
-//         $("#linee").fadeOut("slow");
-//         $("#div3").fadeOut(3000);
-//     });
-// });
-
-// $('a').click(function() {
-//   $("#").animate({ 
-//         opacity: 0.0
-//         }, 1500 );
-//     }); 
-
-
-/*Sets display to none*/
-$(document).ready(function() {
-        $("body").css("display", "none");
-    });
-
-
-$(document).ready(function() {
-  $("body").css("display", "none");
-
-  $("body").fadeIn(3000);
-
-  $("a.transition").click(function(event){
-      event.preventDefault();
-      linkLocation = this.href;
-      $("body").fadeOut(2000, redirectPage);      
-  });
-       
-  function redirectPage() {
-      window.location = linkLocation;
-  }
-});
+function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
