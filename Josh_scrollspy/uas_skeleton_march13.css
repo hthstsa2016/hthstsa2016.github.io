@@ -95,9 +95,18 @@
   	padding-top:1px;
   	height:1000px;
   	width:100%;
-/*  	background-image:url(ctePics/juniorPic2.jpg);*/
-  	opacity: 0.8;
-  }
+	background:
+		linear-gradient(
+		rgba(0, 0, 0, 0), 
+		rgba(0, 0, 0, 0)
+		),
+		url(imageedit_2_8350479979.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter:gray;
+	}
 
 
 
@@ -239,7 +248,7 @@ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span
 	height:30%;
 	text-align: justify;
 	font-family: "Century Gothic";
-	color:#34495E;
+	color:black;
 	font-size:21px;
 }
 
