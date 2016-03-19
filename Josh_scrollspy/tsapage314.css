@@ -4,12 +4,32 @@ body{
 	font-family:'Roboto',sans-serif;
 }
 
-#tsasection1{
+::-webkit-scrollbar{
+	width:12px;
+}
+
+
+::-webkit-scrollbar-thumb{
+	border-radius:10px;
+	background-color: #0000cd;
+}
+
+::-webkit-scrollbar-track{
+	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius:10px;
+}
+
+
+#tsasection1, #tsasection2, #tsasection3, #tsasection4, #tsasection5 {
 	font-family:'Roboto',sans-serif;
 	padding-top:1px;
 	padding-left: 120px;
-	height:1000px;
+	min-height:100%;
 	width:100%;
+}
+
+#tsasection1{
+	height:1000px;
 	color: #fff; 
 	background:
 		linear-gradient(
@@ -36,13 +56,27 @@ body{
 }
 
 #tsasection2 {
-	font-family:'Roboto',sans-serif;
-	padding-top:1px;
-	padding-left: 120px;
 	height:1000px;
-	width:100%;
 	color: #fff; 
 	background-color: #FF4C65;
+}
+
+.leftOfCarousel{
+	float:left;
+	margin-left:50px;
+	display:inline-block;
+	min-width:30%;
+}
+
+.centerCarousel {
+	float:right;
+	margin-right:50px;
+	display:inline-block;
+}
+
+#tsasection2 img{
+	height:500px;
+	width:1000px;
 }
 
 #tsasection2 h1, #tsasection3 h1, #tsasection4 h1, #tsasection5 h1{
@@ -51,46 +85,64 @@ body{
 }
 
 #tsasection3 {
-	font-family:'Roboto',sans-serif;
-	padding-top:1px;
-	padding-left: 120px;
-	height:1100px;
-	width:100%;
 	color: #fff; 
 	background-color: #ff9800;
 	text-align:center;
+	min-height:1000px;
 }
 
-.tablecenter{
-	width:100%;
-}
-
-td img{
+#tsasection3 div img{
 	width:175px;
-	height:250px;
+	height:175px;
 	text-align:center;
+	border-radius:50%;
+
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
 }
 
-td{
-	min-width:250px;
-	height:320px;
+#tsasection3 div img:hover{
+
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
 }
 
-td p{
+/** http://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image **/
+
+#tsasection3 div p{
 	line-height:20%;
+}
+
+.tableOfPictures{
+	width:100%;
+	max-width:1000px;
+	margin:auto;
+}
+
+#tsasection3 div div{
+	float:center;
+	display:inline-block;
+	min-width:250px;
+	height:260px;
 }
 
 /* modal box code edited from http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ */
 
 .modalDialog {
 	position: fixed;
-	overflow:scroll; /* need to fix invisible scrollbar */
 	font-family: 'Roboto', sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
+	bottom:0;
+	right:0;
+	left:0;
+	top:0;
+
+	color:black;
+
+	background-color: rgba(0,0,0,0.7);
 	z-index: 99999;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
@@ -111,61 +163,67 @@ td p{
 	padding: 13px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
-	text-align: center;
 }
 
 .close {
-	background: #606061;
-	color: #FFFFFF;
+	background: #FF0000;
+	color: #EEEEEE;
 	line-height: 25px;
 	position: absolute;
-	right: -12px;
 	text-align: center;
-	top: -10px;
 	width: 24px;
 	text-decoration: none;
 	font-weight: bold;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
+
+	right:5px;
 	
-	-webkit-transition:background .2s ease-out;
-	-moz-transition: background-color .2s ease-out;
-  	-o-transition: background-color .2s ease-out;
-  	transition: background-color .2s ease-out;
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
 }
 
 .close:hover {
-	background: #EA5455; 
-	color: #EA5455;
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
 }
 /* end modal box code */
 
 
 
 #tsasection4 {
-	font-family:'Roboto',sans-serif;
-	padding-top:1px;
-	padding-left: 120px;
-	height:1000px;
-	width:100%;
 	color: #fff; 
 	background-color: #00bcd4;
+	height:1000px;
 }
 
 #tsasection5 {
-	font-family:'Roboto',sans-serif;
-	padding-top:1px;
-	padding-left: 120px;
-	height:1000px;
-	width:100%;
 	color: #fff; 
-	background-color: #009688;}
+	background-color: #009688;
+	height:1000px;
+}
+
+.creed_bar{
+	#font-family:'Roboto',sans-serif;
+	#height:auto;
+	#background-color:black;
+	#color:#EEEEEE;
+	text-align:justify;
+	#padding:20px;
+	#padding-left:120px;
+	margin-bottom:20px;
+}
 
 .info_footer{
+	font-family:'Roboto',sans-serif;
 	height:100px;
 	background-color:#FF4C65;
 	color: #EEEEEE;
 	text-align:center;
-	padding-top:20px;
+	padding:20px;
 }
