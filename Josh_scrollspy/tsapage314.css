@@ -156,6 +156,11 @@ body{
 	pointer-events: auto;
 }
 
+/** this does nothing **/
+.modalDialog:active body{
+	background-color:black;
+}
+
 .modalDialog > div {
 	width: 500px;
 	position: relative;
