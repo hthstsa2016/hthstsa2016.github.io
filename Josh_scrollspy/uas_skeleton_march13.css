@@ -505,6 +505,41 @@ hr.style14 {
 	transition: width 2s;
 }
 
+#LeftSide4{
+	width:50%;
+	height:1000px;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/draw.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+#RightSide4{
+	width:50%;
+	height:1000px;
+	float:right;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/scope.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	transition: width 2s;
+}
+
 #techBig {
 	visibility: visible;
 	margin-bottom:auto;
@@ -548,3 +583,10 @@ hr.style14 {
 	visibility: visible;
 	color:white;
 }*/
+
+#alertt {
+	position:absolute;
+	float:left;
+	width:17%;
+	z-index:1000;
+}

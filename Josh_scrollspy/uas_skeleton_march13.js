@@ -84,6 +84,14 @@ $(document).ready(function() {
   }
 });
 
+
+$(document).ready(function(){ 
+ $("#closeTech").click(function() { 
+      $("#alertt").fadeOut("slow"); 
+    });
+ });
+
+
 $(document).ready(function(){
   TriggerClick = 0;
 
