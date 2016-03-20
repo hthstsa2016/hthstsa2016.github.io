@@ -97,10 +97,10 @@
   	width:100%;
 	background:
 		linear-gradient(
-		rgba(0, 0, 0, 0), 
-		rgba(0, 0, 0, 0)
+		rgba(0, 0, 0, 0.6), 
+		rgba(0, 0, 0, 0.6)
 		),
-		url(imageedit_2_8350479979.jpg) no-repeat center center fixed;
+		url(ctePics/office.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -109,11 +109,87 @@
 	}
 
 
+  #mainsection2 {
+  	padding-top:1px;
+  	height:1000px;
+  	width:100%; 
+  	background:
+  		linear-gradient(
+		rgba(0, 0, 0, 0.6), 
+		rgba(0, 0, 0, 0.6)
+		),
+		url(ctePics/juniorPic.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter:gray;
+  }
 
-  #mainsection2 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
-  #mainsection3 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #8DC6FF;}
-  #mainsection4 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
-  #mainsection5 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #8DC6FF;}
+   #mainsection3 {
+  	padding-top:1px;
+  	height:1000px;
+  	width:100%; 
+  	background:
+  		linear-gradient(
+		rgba(0, 0, 0, 0.6), 
+		rgba(0, 0, 0, 0.6)
+		),
+		url(ctePics/springs.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter:gray;
+  }
+
+   #mainsection4 {
+  	padding-top:1px;
+  	height:1000px;
+  	width:100%; 
+  	background:
+  		linear-gradient(
+		rgba(0, 0, 0, 0.6), 
+		rgba(0, 0, 0, 0.6)
+		),
+		url(ctePics/pencil2.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter:gray;
+  }
+
+  #mainsection5 {
+  	padding-top:1px;
+  	height:1000px;
+  	width:100%; 
+  	/**
+  	background:
+  		linear-gradient(
+		rgba(0, 0, 0, 0), 
+		rgba(0, 0, 0, 0)
+		),
+		url(ctePics/motherboard2.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter:gray;
+	**/
+	background:
+  		linear-gradient(
+		rgba(0, 0, 0, .6), 
+		rgba(0, 0, 0, .6)
+		),
+		url(ctePics/motherboard.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+  }
+
+
   #mainsection6 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
   #mainsection7 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #8DC6FF;}
   #mainsection8 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
@@ -232,6 +308,16 @@ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span
 	margin-right:auto;
 	font-size: 80px;
 	font-weight: bold;
+	/**color:#22313F;**/
+	color:white;
+	font-family: "Century Gothic";
+}
+#engineerTitle2  {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 45px;
+	font-weight: bold;
 	color:#22313F;
 	font-family: "Century Gothic";
 }
@@ -248,7 +334,8 @@ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span
 	height:30%;
 	text-align: justify;
 	font-family: "Century Gothic";
-	color:black;
+	/**color:black;**/
+	color:white;
 	font-size:21px;
 }
 
@@ -260,4 +347,246 @@ hr.style14 {
 	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+
+#LeftSide{
+	width:50%;
+	height:1000px;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/measure.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+#RightSide{
+	width:50%;
+	height:1000px;
+	float:right;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/bits.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	transition: width 2s;
+}
+
+/*#RightSide:hover{
+	width:50%;
+	height:1000px;
+	float:right;
+  	padding-top:1px;
+  	background:url(ctePics/parts.jpg) no-repeat center center fixed;
+  		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+  	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.5s;
+}*/
+
+#LeftSide2{
+	width:50%;
+	height:1000px;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.85), 
+		rgba(255, 255, 255, 0.85)
+		),
+		url(ctePics/wheel.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+#RightSide2{
+	width:50%;
+	height:1000px;
+	float:right;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.85), 
+		rgba(255, 255, 255, 0.85)
+		),
+		url(ctePics/keyboard.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	transition: width 2s;
+}
+
+#LeftTopSide{
+	width:50%;
+	height:25%;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/measure.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+#RightTopSide{
+	width:50%;
+	height:25%;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/bits.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	transition: width 2s;
+}
+
+#LeftBottomSide{
+	width:50%;
+	height:25%;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/measure.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+#RightBottomSide{
+	width:50%;
+	height:25%;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/bits.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	transition: width 2s;
+}
+
+#LeftSide4{
+	width:50%;
+	height:1000px;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/draw.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+#RightSide4{
+	width:50%;
+	height:1000px;
+	float:right;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/scope.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	transition: width 2s;
+}
+
+#techBig {
+	visibility: visible;
+	margin-bottom:auto;
+	margin-top:auto;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:900;
+	margin-top:30%;
+	margin-bottom:auto;
+	left:2%;
+	font-family: "Century Gothic";
+	font-size:45px;
+	color:black;
+}
+
+#techText {
+	visibility: visible;
+	margin-bottom:auto;
+	margin-top:auto;
+	width:70%;
+	height:50%;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:900;
+	margin-top:6%;
+	margin-bottom:auto;
+	left:2%;
+	text-align: justify;
+	font-family: "Century Gothic";
+	font-size: 21px;
+	color:black;
+}
+
+/*#iedBig:hover {
+	visibility: visible;
+	color:white;
+}
+
+#iedText:hover {
+	visibility: visible;
+	color:white;
+}*/
+
+#alertt {
+	position:absolute;
+	float:left;
+	width:17%;
+	z-index:1000;
 }

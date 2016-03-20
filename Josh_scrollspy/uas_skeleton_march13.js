@@ -83,3 +83,43 @@ $(document).ready(function() {
       window.location = linkLocation;
   }
 });
+
+
+$(document).ready(function(){ 
+ $("#closeTech").click(function() { 
+      $("#alertt").fadeOut("slow"); 
+    });
+ });
+
+
+$(document).ready(function(){
+  TriggerClick = 0;
+
+  $("#LeftSide").click(function(){
+    if(TriggerClick==0){
+         TriggerClick=1;
+         $("div#LeftSide").animate({width:'50%'}, 500);
+         $("div#RightSide").animate({display:'block'}, 500);
+    }else{
+         TriggerClick=0;
+         $("div#LeftSide").animate({width:'100%'}, 500);
+         $("div#RightSide").animate({display:'none'}, 500);
+    };
+  });
+});
+
+// $(document).ready(function(){
+//   TriggerClick = 0;
+
+//   $("#RightSide").click(function(){
+//     if(TriggerClick==0){
+//          TriggerClick=1;
+//          $("div#RightSide").animate({width:'50%'}, 500);
+//          $("div#LeftSide").animate({width:'50%'}, 500);
+//     }else{
+//          TriggerClick=0;
+//          $("div#RightSide").animate({width:'100%'}, 500);
+//          $("div#LeftSide").animate({width:'0%'}, 500);
+//     };
+//   });
+// });
