@@ -351,17 +351,200 @@ hr.style14 {
 
 
 #LeftSide{
-width:50%;
-height:100%;
-/*background-image: url(ctePics/keyboard_computer_hardware;jpg);*/
-display:inline;
-background-color: red;
-
+	width:50%;
+	height:1000px;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/measure.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 }
+
 #RightSide{
-float:right;
-width:50%;
-height:100%;
-background-color: green;
-
+	width:50%;
+	height:1000px;
+	float:right;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/bits.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	transition: width 2s;
 }
+
+/*#RightSide:hover{
+	width:50%;
+	height:1000px;
+	float:right;
+  	padding-top:1px;
+  	background:url(ctePics/parts.jpg) no-repeat center center fixed;
+  		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+  	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.5s;
+}*/
+
+#LeftSide2{
+	width:50%;
+	height:1000px;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.85), 
+		rgba(255, 255, 255, 0.85)
+		),
+		url(ctePics/wheel.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+#RightSide2{
+	width:50%;
+	height:1000px;
+	float:right;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.85), 
+		rgba(255, 255, 255, 0.85)
+		),
+		url(ctePics/keyboard.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	transition: width 2s;
+}
+
+#LeftTopSide{
+	width:50%;
+	height:25%;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/measure.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+#RightTopSide{
+	width:50%;
+	height:25%;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/bits.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	transition: width 2s;
+}
+
+#LeftBottomSide{
+	width:50%;
+	height:25%;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/measure.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+#RightBottomSide{
+	width:50%;
+	height:25%;
+	float:left;
+  	padding-top:1px;
+  	background:
+  		linear-gradient(
+		rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.8)
+		),
+		url(ctePics/bits.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	transition: width 2s;
+}
+
+#techBig {
+	visibility: visible;
+	margin-bottom:auto;
+	margin-top:auto;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:900;
+	margin-top:30%;
+	margin-bottom:auto;
+	left:2%;
+	font-family: "Century Gothic";
+	font-size:45px;
+	color:black;
+}
+
+#techText {
+	visibility: visible;
+	margin-bottom:auto;
+	margin-top:auto;
+	width:70%;
+	height:50%;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:900;
+	margin-top:6%;
+	margin-bottom:auto;
+	left:2%;
+	text-align: justify;
+	font-family: "Century Gothic";
+	font-size: 21px;
+	color:black;
+}
+
+/*#iedBig:hover {
+	visibility: visible;
+	color:white;
+}
+
+#iedText:hover {
+	visibility: visible;
+	color:white;
+}*/
