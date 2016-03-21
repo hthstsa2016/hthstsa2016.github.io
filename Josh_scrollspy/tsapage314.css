@@ -235,21 +235,48 @@ body{
 	color: #fff; 
 	background-color: #00bcd4;
 	min-height:1000px;
+	text-align: justify;
 }
 
-#tsasection4 a {
+#tsasection4 a, #tsasection5 a{
 	text-decoration:none;
 	color: #DAEEF5;
 }
 
-#tsasection4 a:hover{
+#tsasection4 a:hover, #tsasection5 a:hover{
 	color: #B7E0ED;
 }
 
-.vexImage{
-	height:70%;
-	width:70%;
-	padding:20px;
+#natConf{
+	display:inline-block;
+	float:left;
+	width:auto;
+}
+
+#offpic{
+	display:inline-block;
+	height:30%;
+	width:30%;
+	float:right;
+	padding:10px;
+	margin-right:10%;
+}
+
+#vexPar{
+	float:right;
+	display:inline-block;
+	width:auto;
+}
+
+#vexPar h3{
+	text-align:right;
+}
+
+#vexImage{
+	height:40%;
+	width:40%;
+	float:left;
+	display:inline-block;
 }
 
 #tsasection5 {
@@ -274,6 +301,15 @@ body{
 	margin-left:10%;
 }
 
+#tsasection5 p, #tsasection5 ul{
+	font-size:16px;
+}
+
+#acsimage{
+	width:30%;
+	height:30%;
+}
+
 .creed_bar{
 	font-family:'Roboto',sans-serif;
 	height:auto;
@@ -296,6 +332,7 @@ body{
 	width:auto;
 	position:relative;
 	margin-left:150px;
+	text-align:justify;
 }
 
 .creed_bar span{
