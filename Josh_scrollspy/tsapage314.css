@@ -2,6 +2,7 @@
 
 body{
 	font-family:'Roboto',sans-serif;
+	overflow-x:hidden;
 }
 
 ::-webkit-scrollbar{
@@ -59,6 +60,10 @@ body{
 	height:1000px;
 	color: #fff; 
 	background-color: #FF4C65;
+}
+
+#tsasection2 #cheesytext{
+	text-align:center;
 }
 
 #tsasection2 p{
@@ -168,32 +173,48 @@ body{
 	transition: opacity 400ms ease-in;
 	**/
 	pointer-events: none;
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
 }
 
 /** testing **/
 
-.tableOfPictures > div > a:active .modalDialog{
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
+.firstOpen{
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
+}
+
+.nextOpen{
+	-webkit-transition: none !important; /* Safari */
+	-moz-transition: none !important; /* Mozilla Firefox */
+	-ms-transition: none !important; /* Microsoft specific */
+	-o-transition: none !important; /* Opera */
+	transition: none !important; /* general & Google Chrome */
 }
 
 .modalPicture{
 	float:left !important;
 	display:inline-block;
 	position:fixed;
-	margin-left: -15%;
+	margin-left: -135px !important;
 }
 
-#specialBrian{
-	margin-left:-30%;
+#specialDennis{
+	overflow:hidden !important;
 }
 
 .modalText{
 	float:right !important;
 	display:inline-block;
 	text-align:left;
-	width:50%;
+	width:60%;
+	overflow-y:scroll;
 }
 
 .modalArrow{
@@ -209,22 +230,16 @@ body{
 	pointer-events: auto;
 }
 
-/** this does nothing **/
-.modalDialog:active body{
-	background-color:black;
-}
-
 .modalDialog > div {
-	width: 60% !important;
+	width: 600px !important;
 	/**height:auto !important;**/
 	position: relative;
 	margin: 5% auto;
 	padding: 13px 10px 13px 20px;
-	border-radius: 10px;
+	border-radius: 10px !important;
 	background: #fff;
 	max-height:80% !important;
 	height:auto !important;
-	overflow:scroll;
 }
 
 .close {
@@ -239,8 +254,8 @@ body{
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
-
-	right:5px;
+	z-index:999999 !important;
+	left:10px;
 	
 	-webkit-transition: .2s ease-in-out; /* Safari */
 	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
