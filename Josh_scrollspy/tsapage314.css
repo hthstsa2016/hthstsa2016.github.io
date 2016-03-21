@@ -234,7 +234,7 @@ body{
 #tsasection4 {
 	color: #fff; 
 	background-color: #00bcd4;
-	height:1000px;
+	min-height:1000px;
 }
 
 #tsasection4 a {
@@ -244,6 +244,12 @@ body{
 
 #tsasection4 a:hover{
 	color: #B7E0ED;
+}
+
+.vexImage{
+	height:70%;
+	width:70%;
+	padding:20px;
 }
 
 #tsasection5 {
