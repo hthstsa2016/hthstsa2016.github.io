@@ -61,23 +61,38 @@ body{
 	background-color: #FF4C65;
 }
 
-.leftOfCarousel{
-	float:left;
+#tsasection2 p{
+	font-size:16px;
+	text-align: justify;
+}
+
+#samslidey {
+ 	height:700px;
+ 	width:700px;
+ }
+
+.aboveCarousel{
 	margin-left:10%;
 	margin-right:10%;
-	display:inline-block;
 	min-width:30%;
 }
 
 .centerCarousel {
-	float:right;
-	margin-right:50px;
-	display:inline-block;
+	margin-top:20px;
+	padding-right:auto;
+	padding-left:auto;
+	min-width:700px;
+	overflow:hidden;
+}
+
+.carousel-caption p{
+	text-align:center;
+	background-color:black;
 }
 
 #tsasection2 img{
-	height:500px;
-	width:1000px;
+	height:80%;
+	width:80%;
 }
 
 #tsasection2 h1, #tsasection3 h1, #tsasection4 h1, #tsasection5 h1{
@@ -164,15 +179,21 @@ body{
 }
 
 .modalPicture{
-	float:left;
+	float:left !important;
 	display:inline-block;
+	position:fixed;
+	margin-left: -15%;
+}
+
+#specialBrian{
+	margin-left:-30%;
 }
 
 .modalText{
 	float:right !important;
 	display:inline-block;
 	text-align:left;
-	width:200px;
+	width:50%;
 }
 
 .modalArrow{
@@ -180,6 +201,7 @@ body{
 	min-width:0 !important;
 	height:auto !important;
 	margin-bottom:5px !important;
+	display:block !important;
 }
 
 .modalDialog:target {
@@ -193,13 +215,16 @@ body{
 }
 
 .modalDialog > div {
-	width: 80% !important;
+	width: 60% !important;
 	/**height:auto !important;**/
 	position: relative;
 	margin: 5% auto;
 	padding: 13px 10px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
+	max-height:80% !important;
+	height:auto !important;
+	overflow:scroll;
 }
 
 .close {
@@ -235,7 +260,9 @@ body{
 	color: #fff; 
 	background-color: #00bcd4;
 	min-height:1000px;
+	#height:auto;
 	text-align: justify;
+	margin-bottom:-5px;
 }
 
 #tsasection4 a, #tsasection5 a{
@@ -247,37 +274,101 @@ body{
 	color: #B7E0ED;
 }
 
-#natConf{
-	display:inline-block;
-	float:left;
-	width:auto;
+#tsasection4 p{
+	font-size:16px;
+}
+
+#tsasection4 img{
+	border-radius:50%;
 }
 
 #offpic{
 	display:inline-block;
-	height:30%;
-	width:30%;
-	float:right;
-	padding:10px;
-	margin-right:10%;
+	height:35%;
+	width:35%;
+	#float:right;
+	margin-left:10%;
 }
 
-#vexPar{
-	float:right;
+#banpic{
 	display:inline-block;
-	width:auto;
-}
-
-#vexPar h3{
-	text-align:right;
+	#float:left;
+	height:35%;
+	width:35%;
+	margin-left:10%;
 }
 
 #vexImage{
-	height:40%;
-	width:40%;
-	float:left;
+	height:35%;
+	width:35%;
 	display:inline-block;
+	margin-left:10%;
 }
+
+#happyvexteam{
+	height:35%;
+	width:35%;
+	display:inline-block;
+	margin-left:10%;
+}
+
+#natconf{
+	display:block;
+}
+
+
+/* text appears on fade hover code edited from http://www.hongkiat.com/blog/css3-image-captions/ */
+#mainwrapper { /*main formatting */
+  font: 12px Roboto;
+  height: auto;
+  text-align: center;
+  width:auto;
+}
+
+#mainwrapper .box {
+    cursor: pointer;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    border-radius:auto;
+}
+ 
+#mainwrapper .box img { /*image inside box */
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+#mainwrapper .box .caption { /*caption inside box*/
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    left: 0;
+    height:auto;
+    width:auto;
+    border-radius:auto;
+}
+
+#mainwrapper .box .fade-caption, #mainwrapper .box .scale-caption {
+    opacity: 0;
+    width:auto;
+    height:auto;
+}
+
+#mainwrapper .box:hover .fade-caption { /*appears on hover*/
+    opacity: 1;
+}
+/* end text on fade hover code */
+
 
 #tsasection5 {
 	color: #fff; 
@@ -305,9 +396,17 @@ body{
 	font-size:16px;
 }
 
+#comm{
+	width:auto;
+	height:auto;
+	float:left;
+}
+
 #acsimage{
-	width:30%;
-	height:30%;
+	width:20%;
+	height:20%;
+	float:right;
+	position:relative;
 }
 
 .creed_bar{
