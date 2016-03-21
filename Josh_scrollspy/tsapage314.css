@@ -275,14 +275,31 @@ body{
 }
 
 .creed_bar{
-	#font-family:'Roboto',sans-serif;
-	#height:auto;
-	#background-color:black;
-	#color:#EEEEEE;
+	font-family:'Roboto',sans-serif;
+	height:auto;
+	background-color:white;
+	color:black;
 	text-align:justify;
-	#padding:20px;
-	#padding-left:120px;
-	margin-bottom:20px;
+	padding:20px 40px 20px 120px;
+	#margin-bottom:20px;
+}
+
+.creed_bar img {
+	display:inline-block;
+	height:80px;
+	width:130px;
+	position:absolute;
+}
+
+.creed_bar .text {
+	display:inline-block;
+	width:auto;
+	position:relative;
+	margin-left:150px;
+}
+
+.creed_bar span{
+	font-weight:bold;
 }
 
 .info_footer{
