@@ -98,12 +98,13 @@ $(document).ready(function(){
   $("#LeftSide").click(function(){
     if(TriggerClick==0){
          TriggerClick=1;
-         $("div#LeftSide").animate({width:'50%'}, 500);
-         $("div#RightSide").animate({display:'block'}, 500);
-    }else{
-         TriggerClick=0;
          $("div#LeftSide").animate({width:'100%'}, 500);
          $("div#RightSide").animate({display:'none'}, 500);
+    }else{
+         TriggerClick=0;
+         $("div#LeftSide").animate({width:'50%'}, 500);
+         $("div#RightSide").animate({display:'block'}, 500);
+         
     };
   });
 });
