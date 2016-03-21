@@ -22,7 +22,7 @@ body{
 
 #tsasection1, #tsasection2, #tsasection3, #tsasection4, #tsasection5 {
 	font-family:'Roboto',sans-serif;
-	padding-top:1px;
+	padding-top:30px;
 	padding-left: 120px;
 	min-height:100%;
 	width:100%;
@@ -61,22 +61,38 @@ body{
 	background-color: #FF4C65;
 }
 
-.leftOfCarousel{
-	float:left;
-	margin-left:50px;
-	display:inline-block;
+#tsasection2 p{
+	font-size:16px;
+	text-align: justify;
+}
+
+#samslidey {
+ 	height:700px;
+ 	width:700px;
+ }
+
+.aboveCarousel{
+	margin-left:10%;
+	margin-right:10%;
 	min-width:30%;
 }
 
 .centerCarousel {
-	float:right;
-	margin-right:50px;
-	display:inline-block;
+	margin-top:20px;
+	padding-right:auto;
+	padding-left:auto;
+	min-width:700px;
+	overflow:hidden;
+}
+
+.carousel-caption p{
+	text-align:center;
+	background-color:black;
 }
 
 #tsasection2 img{
-	height:500px;
-	width:1000px;
+	height:80%;
+	width:80%;
 }
 
 #tsasection2 h1, #tsasection3 h1, #tsasection4 h1, #tsasection5 h1{
@@ -104,7 +120,7 @@ body{
 	transition: .2s ease-in-out; /* general & Google Chrome */
 }
 
-#tsasection3 div img:hover{
+.tableOfPictures > div > a > img:hover{
 
 	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
   	-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
@@ -113,7 +129,7 @@ body{
 
 /** http://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image **/
 
-#tsasection3 div p{
+#tsasection3 .ofName{
 	line-height:20%;
 }
 
@@ -139,16 +155,53 @@ body{
 	right:0;
 	left:0;
 	top:0;
+	height:auto !important;
 
 	color:black;
 
 	background-color: rgba(0,0,0,0.7);
 	z-index: 99999;
 	opacity:0;
+	/**
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
+	**/
 	pointer-events: none;
+}
+
+/** testing **/
+
+.tableOfPictures > div > a:active .modalDialog{
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+
+.modalPicture{
+	float:left !important;
+	display:inline-block;
+	position:fixed;
+	margin-left: -15%;
+}
+
+#specialBrian{
+	margin-left:-30%;
+}
+
+.modalText{
+	float:right !important;
+	display:inline-block;
+	text-align:left;
+	width:50%;
+}
+
+.modalArrow{
+	width:auto !important;
+	min-width:0 !important;
+	height:auto !important;
+	margin-bottom:5px !important;
+	display:block !important;
 }
 
 .modalDialog:target {
@@ -156,24 +209,33 @@ body{
 	pointer-events: auto;
 }
 
+/** this does nothing **/
+.modalDialog:active body{
+	background-color:black;
+}
+
 .modalDialog > div {
-	width: 500px;
+	width: 60% !important;
+	/**height:auto !important;**/
 	position: relative;
-	margin: 10% auto;
-	padding: 13px 20px 13px 20px;
+	margin: 5% auto;
+	padding: 13px 10px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
+	max-height:80% !important;
+	height:auto !important;
+	overflow:scroll;
 }
 
 .close {
 	background: #FF0000;
-	color: #EEEEEE;
-	line-height: 25px;
+	color: #EEEEEE !important;
+	line-height: 25px !important;
 	position: absolute;
 	text-align: center;
 	width: 24px;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: bold !important;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
@@ -194,29 +256,186 @@ body{
 }
 /* end modal box code */
 
-
-
 #tsasection4 {
 	color: #fff; 
 	background-color: #00bcd4;
-	height:1000px;
+	min-height:1000px;
+	#height:auto;
+	text-align: justify;
+	margin-bottom:-5px;
 }
+
+#tsasection4 a, #tsasection5 a{
+	text-decoration:none;
+	color: #DAEEF5;
+}
+
+#tsasection4 a:hover, #tsasection5 a:hover{
+	color: #B7E0ED;
+}
+
+#tsasection4 p{
+	font-size:16px;
+}
+
+#tsasection4 img{
+	border-radius:50%;
+}
+
+#offpic{
+	display:inline-block;
+	height:35%;
+	width:35%;
+	#float:right;
+	margin-left:10%;
+}
+
+#banpic{
+	display:inline-block;
+	#float:left;
+	height:35%;
+	width:35%;
+	margin-left:10%;
+}
+
+#vexImage{
+	height:35%;
+	width:35%;
+	display:inline-block;
+	margin-left:10%;
+}
+
+#happyvexteam{
+	height:35%;
+	width:35%;
+	display:inline-block;
+	margin-left:10%;
+}
+
+#natconf{
+	display:block;
+}
+
+
+/* text appears on fade hover code edited from http://www.hongkiat.com/blog/css3-image-captions/ */
+#mainwrapper { /*main formatting */
+  font: 12px Roboto;
+  height: auto;
+  text-align: center;
+  width:auto;
+}
+
+#mainwrapper .box {
+    cursor: pointer;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    border-radius:auto;
+}
+ 
+#mainwrapper .box img { /*image inside box */
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+#mainwrapper .box .caption { /*caption inside box*/
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    left: 0;
+    height:auto;
+    width:auto;
+    border-radius:auto;
+}
+
+#mainwrapper .box .fade-caption, #mainwrapper .box .scale-caption {
+    opacity: 0;
+    width:auto;
+    height:auto;
+}
+
+#mainwrapper .box:hover .fade-caption { /*appears on hover*/
+    opacity: 1;
+}
+/* end text on fade hover code */
+
 
 #tsasection5 {
 	color: #fff; 
 	background-color: #009688;
 	height:1000px;
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.8), 
+	      rgba(0, 0, 0, 0.8)
+	    ),
+		url("../tsa_pictures/dallas2015.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
+
+#tsasection5 div, #tsasection4 div{
+	margin-right:10%;
+	margin-left:10%;
+}
+
+#tsasection5 p, #tsasection5 ul{
+	font-size:16px;
+}
+
+#comm{
+	width:auto;
+	height:auto;
+	float:left;
+}
+
+#acsimage{
+	width:20%;
+	height:20%;
+	float:right;
+	position:relative;
 }
 
 .creed_bar{
-	#font-family:'Roboto',sans-serif;
-	#height:auto;
-	#background-color:black;
-	#color:#EEEEEE;
+	font-family:'Roboto',sans-serif;
+	height:auto;
+	background-color:white;
+	color:black;
 	text-align:justify;
-	#padding:20px;
-	#padding-left:120px;
-	margin-bottom:20px;
+	padding:20px 40px 20px 120px;
+	#margin-bottom:20px;
+}
+
+.creed_bar img {
+	display:inline-block;
+	height:80px;
+	width:130px;
+	position:absolute;
+}
+
+.creed_bar .text {
+	display:inline-block;
+	width:auto;
+	position:relative;
+	margin-left:150px;
+	text-align:justify;
+}
+
+.creed_bar span{
+	font-weight:bold;
 }
 
 .info_footer{
@@ -225,5 +444,6 @@ body{
 	background-color:#FF4C65;
 	color: #EEEEEE;
 	text-align:center;
-	padding:20px;
+	margin-bottom:-10px;
+	padding: 20px 120px 20px 120px;
 }
