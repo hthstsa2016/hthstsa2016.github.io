@@ -62,6 +62,10 @@ body{
 	background-color: #FF4C65;
 }
 
+#tsasection2 #cheesytext{
+	text-align:center;
+}
+
 #tsasection2 p{
 	font-size:16px;
 	text-align: justify;
@@ -169,14 +173,29 @@ body{
 	transition: opacity 400ms ease-in;
 	**/
 	pointer-events: none;
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
 }
 
 /** testing **/
 
 .firstOpen{
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
+}
+
+.nextOpen{
+	-webkit-transition: none !important; /* Safari */
+	-moz-transition: none !important; /* Mozilla Firefox */
+	-ms-transition: none !important; /* Microsoft specific */
+	-o-transition: none !important; /* Opera */
+	transition: none !important; /* general & Google Chrome */
 }
 
 .modalPicture{
@@ -185,10 +204,6 @@ body{
 	position:fixed;
 	margin-left: -135px !important;
 }
-/**
-#specialBrian{
-	margin-left:-305px;
-}**/
 
 #specialDennis{
 	overflow:hidden !important;
@@ -215,11 +230,6 @@ body{
 	pointer-events: auto;
 }
 
-/** this does nothing **/
-.modalDialog:active body{
-	background-color:black;
-}
-
 .modalDialog > div {
 	width: 600px !important;
 	/**height:auto !important;**/
@@ -230,7 +240,6 @@ body{
 	background: #fff;
 	max-height:80% !important;
 	height:auto !important;
-	#overflow:scroll;
 }
 
 .close {
