@@ -67,19 +67,24 @@ body{
 }
 
 #tsasection2 p{
-	font-size:18px;
-	text-align: justify;
+	font-size:16px;
 }
 
 #samslidey {
- 	height:700px;
+ 	height:auto;
  	width:700px;
  }
 
-.aboveCarousel{
+.aboveCarousel,.belowCarousel{
 	margin-left:10%;
 	margin-right:10%;
 	min-width:30%;
+	text-align:justify;
+}
+
+.belowCarousel{
+	text-align:center;
+	margin-bottom:10%;
 }
 
 .centerCarousel {
@@ -88,6 +93,7 @@ body{
 	padding-left:auto;
 	min-width:700px;
 	overflow:hidden;
+	height:auto;
 }
 
 .carousel-caption p{
@@ -423,10 +429,11 @@ body{
 	font-size:16px;
 }
 
-#tsasection5 span{
+#backCaption{
 	font-size:12px;
-	padding-bottom:-500px;
-	text-transform:italic;
+	font-style:italic;
+	text-align:center;
+	margin-bottom:0;
 }
 
 #comm{
