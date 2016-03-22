@@ -1,35 +1,35 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,500italic,400italic,300italic,300,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,500italic,400italic,300italic,300);
 
 * { margin: 0; padding: 0; border: 0; outline: 0; font-size:100%; font:inherit; vertical-align:baseline;} /* to prevent gaps between elements / content in browser window  */
 
 body{
 	font-family:'Roboto',sans-serif;
+	font-weight:400;
 	overflow-x:hidden;
 	height:100%;
 	margin-top:-20px;
-}
-
-::-webkit-scrollbar{
-	width:12px;
-}
-
-::-webkit-scrollbar-thumb{
-	border-radius:10px;
-	background-color: #0000cd;
-}
-
-::-webkit-scrollbar-track{
-	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius:10px;
 }
 
 nav{
 	overflow-y:auto;
 }
 
+.navbar-header{
+	padding-left:100px;
+}
+
+/**this does nothing **/
+.navbar-header a:hover, .navbar-header a:active{
+	color:#FF4C65;
+}
+
+.tooltip{
+	overflow-x:hidden;
+}
+
 #tsasection1, #tsasection2, #tsasection3, #tsasection4, #tsasection5 {
 	font-family:'Roboto',sans-serif;
-	padding-top:30px;
+	padding-top:40px;
 	padding-left: 120px;
 	min-height:100%;
 	width:100%;
@@ -66,7 +66,17 @@ nav{
 #tsasection2 {
 	height:1000px;
 	color: #fff; 
-	background-color: #FF4C65;
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.5), 
+	      rgba(0, 0, 0, 0.5)
+	    ),
+		url("../tsa_pictures/keyboard.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
 }
 
 #tsasection2 p{
@@ -117,7 +127,17 @@ nav{
 
 #tsasection3 {
 	color: #fff; 
-	background-color: #ff9800;
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.5), 
+	      rgba(0, 0, 0, 0.5)
+	    ),
+		url("../tsa_pictures/sec3back.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
 	text-align:center;
 	min-height:1000px;
 }
@@ -291,7 +311,17 @@ nav{
 
 #tsasection4 {
 	color: #fff; 
-	background-color: #00bcd4;
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.7), 
+	      rgba(0, 0, 0, 0.7)
+	    ),
+		url("../tsa_pictures/boardback.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
 	min-height:1000px;
 	#height:auto;
 	text-align: justify;
@@ -300,11 +330,11 @@ nav{
 
 #tsasection4 a, #tsasection5 a{
 	text-decoration:none;
-	color: #DAEEF5;
+	color: #B7E0ED;
 }
 
 #tsasection4 a:hover, #tsasection5 a:hover{
-	color: #B7E0ED;
+	color: #FF4C65;
 }
 
 #tsasection4 p{
@@ -409,11 +439,11 @@ nav{
 #tsasection5 {
 	color: #fff; 
 	background-color: #009688;
-	height:1000px;
+	height:800px;
 	background:
 		linear-gradient(
-	      rgba(0, 0, 0, 0.8), 
-	      rgba(0, 0, 0, 0.8)
+	      rgba(0, 0, 0, 0.7), 
+	      rgba(0, 0, 0, 0.7)
 	    ),
 		url("../tsa_pictures/dallas2015.jpg") no-repeat center center fixed;
 
@@ -428,6 +458,10 @@ nav{
 	margin-left:10%;
 }
 
+#tsasection5 #innerBullet{
+	margin-left:5%;
+}
+
 #tsasection5 div p, #tsasection5 ul{
 	font-size:16px;
 }
@@ -436,7 +470,7 @@ nav{
 	font-size:12px;
 	font-style:italic;
 	text-align:center;
-	margin-bottom:0;
+	margin-top:25%;
 }
 
 #comm{
@@ -484,7 +518,7 @@ nav{
 .info_footer{
 	font-family:'Roboto',sans-serif;
 	height:100px;
-	background-color:#FF4C65;
+	background-color:#3AA3C1;
 	color: #EEEEEE;
 	text-align:center;
 	margin-bottom:-10px;
@@ -512,15 +546,45 @@ nav{
 
 /** for Internet Explorer modal picture margins **/
 /**IE 9 & Newer **/
-@media screen and (min-width:0) and (min-resolution: +72dpi) {
-	.modalPicture{
-		margin-left: -20px !important;
-	}
-}
 
 /**Before IE 9**/
+
+/*
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .
 	.modalPicture { 
-		margin-left:-20px\9 !important;
+		margin-left:-100px\9 !important;
 	} 
 }
+*/
+
+
+
+@media (min-width: 250px) {
+	/* Sidebar settings */
+	.navbar-toggle {
+	  color: white;
+	  border-color: transparent;
+	  background-color: transparent;
+	}
+
+	nav.sidebar{
+	  padding-top: 52px;
+	  padding-bottom:0px;
+	}
+/*
+	.tooltip{
+		visibility:hidden;
+	}*/
+}
+
+@media (max-width:768px){
+		.creed_bar{
+			padding-left:25px !important;
+		}
+
+
+		#tsasection1{
+			padding-top:-20px;
+		}
+
+	}
