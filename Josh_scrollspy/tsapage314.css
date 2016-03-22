@@ -213,26 +213,6 @@ nav{
 	*/
 }
 
-/** testing **/
-
-/**
-.firstOpen{
-	-webkit-transition: .2s ease-in-out; 	
-	-moz-transition: .2s ease-in-out; 
-	-ms-transition: .2s ease-in-out; 
-	-o-transition: .2s ease-in-out; 
-	transition: .2s ease-in-out; 
-}
-
-.nextOpen{
-	-webkit-transition: none !important;
-	-moz-transition: none !important; 
-	-ms-transition: none !important; 
-	-o-transition: none !important; 
-	transition: none !important; 
-}
-**/
-
 .modalPicture{
 	float:left !important;
 	display:inline-block;
@@ -376,63 +356,6 @@ nav{
 	display:block;
 }
 
-
-/* text appears on fade hover code edited from http://www.hongkiat.com/blog/css3-image-captions/ */
-#mainwrapper { /*main formatting */
-  font: 12px Roboto;
-  height: auto;
-  text-align: center;
-  width:auto;
-}
-
-#mainwrapper .box {
-    cursor: pointer;
-    height: 100px;
-    position: relative;
-    overflow: hidden;
-    width: 100px;
-    border-radius:50%;
-}
- 
-#mainwrapper .box img { /*image inside box */
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-}
-
-#mainwrapper .box .caption { /*caption inside box*/
-    background-color: rgba(0,0,0,0.8);
-    position: absolute;
-    color: #fff;
-    z-index: 100;
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-    left: 0;
-    height:100px;
-    width:100px;
-    border-radius:50%;
-    overflow:hidden;
-}
-
-#mainwrapper .box .fade-caption, #mainwrapper .box .scale-caption {
-    opacity: 0;
-    width:100px;
-    height:100px;
-    font-size:auto !important;
-}
-
-#mainwrapper .box:hover .fade-caption { /*appears on hover*/
-    opacity: 1;
-    font-size:auto !important;
-}
-/* end text on fade hover code */
-
-
 #tsasection5 {
 	color: #fff; 
 	background-color: #009688;
@@ -467,7 +390,7 @@ nav{
 	font-size:12px;
 	font-style:italic;
 	text-align:center;
-	margin-top:25%;
+	margin-top:20%;
 }
 
 #comm{
