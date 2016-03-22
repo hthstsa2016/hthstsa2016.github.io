@@ -1,14 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,500italic,400italic,300italic,300,700,700italic);
 
+* { margin: 0; padding: 0; border: 0; outline: 0; font-size:100%; font:inherit; vertical-align:baseline;} /* to prevent gaps between elements / content in browser window  */
+
 body{
 	font-family:'Roboto',sans-serif;
 	overflow-x:hidden;
+	height:100%;
+	margin-top:-20px;
 }
 
 ::-webkit-scrollbar{
 	width:12px;
 }
-
 
 ::-webkit-scrollbar-thumb{
 	border-radius:10px;
@@ -20,6 +23,9 @@ body{
 	border-radius:10px;
 }
 
+nav{
+	overflow-y:auto;
+}
 
 #tsasection1, #tsasection2, #tsasection3, #tsasection4, #tsasection5 {
 	font-family:'Roboto',sans-serif;
@@ -31,6 +37,7 @@ body{
 
 #tsasection1{
 	height:1000px;
+	padding-top:-30px !important;
 	color: #fff; 
 	background:
 		linear-gradient(
@@ -64,18 +71,23 @@ body{
 
 #tsasection2 p{
 	font-size:16px;
-	text-align: justify;
 }
 
 #samslidey {
- 	height:700px;
+ 	height:auto;
  	width:700px;
  }
 
-.aboveCarousel{
+.aboveCarousel,.belowCarousel{
 	margin-left:10%;
 	margin-right:10%;
 	min-width:30%;
+	text-align:justify;
+}
+
+.belowCarousel{
+	text-align:center;
+	margin-bottom:10%;
 }
 
 .centerCarousel {
@@ -84,6 +96,7 @@ body{
 	padding-left:auto;
 	min-width:700px;
 	overflow:hidden;
+	height:auto;
 }
 
 .carousel-caption p{
@@ -419,10 +432,11 @@ body{
 	font-size:16px;
 }
 
-#tsasection5 span{
+#backCaption{
 	font-size:12px;
-	padding-bottom:10px;
-	text-transform:italic;
+	font-style:italic;
+	text-align:center;
+	margin-bottom:0;
 }
 
 #comm{
@@ -475,4 +489,38 @@ body{
 	text-align:center;
 	margin-bottom:-10px;
 	padding: 20px 120px 20px 120px;
+}
+
+@media (max-width: 750px) {
+	#tsasection2 img {
+	height:40%;
+	width:40%;
+	}
+
+	.carousel-caption p{
+		font-size:12px;
+		background-color:rgba(0,0,0,0);
+		margin-top:-150px;
+		width:200px;
+		margin-left:140px;
+	}
+
+	.centerCarousel{
+		margin-left:-35%;
+	}
+}
+
+/** for Internet Explorer modal picture margins **/
+/**IE 9 & Newer **/
+@media screen and (min-width:0) and (min-resolution: +72dpi) {
+	.modalPicture{
+		margin-left: -20px !important;
+	}
+}
+
+/**Before IE 9**/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .
+	.modalPicture { 
+		margin-left:-20px\9 !important;
+	} 
 }
