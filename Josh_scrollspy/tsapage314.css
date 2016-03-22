@@ -1,14 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,500italic,400italic,300italic,300,700,700italic);
 
+* { margin: 0; padding: 0; border: 0; outline: 0; font-size:100%; font:inherit; vertical-align:baseline;} /* to prevent gaps between elements / content in browser window  */
+
 body{
 	font-family:'Roboto',sans-serif;
 	overflow-x:hidden;
+	height:100%;
+	margin-top:-20px;
 }
 
 ::-webkit-scrollbar{
 	width:12px;
 }
-
 
 ::-webkit-scrollbar-thumb{
 	border-radius:10px;
@@ -31,6 +34,7 @@ body{
 
 #tsasection1{
 	height:1000px;
+	padding-top:-30px !important;
 	color: #fff; 
 	background:
 		linear-gradient(
@@ -63,7 +67,7 @@ body{
 }
 
 #tsasection2 p{
-	font-size:16px;
+	font-size:18px;
 	text-align: justify;
 }
 
@@ -421,7 +425,7 @@ body{
 
 #tsasection5 span{
 	font-size:12px;
-	padding-bottom:10px;
+	padding-bottom:-500px;
 	text-transform:italic;
 }
 
@@ -475,4 +479,11 @@ body{
 	text-align:center;
 	margin-bottom:-10px;
 	padding: 20px 120px 20px 120px;
+}
+
+@media (max-width: 620px) {
+	#tsasection2 img {
+	height:40%;
+	width:40%;
+	}
 }
