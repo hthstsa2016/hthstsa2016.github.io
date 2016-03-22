@@ -588,3 +588,7 @@ nav{
 		}
 
 	}
+
+#myNavbar li a:hover, #myNavbar li:active a:active, .fa-home:hover{
+	color: #FF4C65 !important;
+}

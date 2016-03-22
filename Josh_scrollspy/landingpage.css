@@ -1,0 +1,177 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; } /* to prevent gaps between elements / content in browser window  */
+
+ body {
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+	url("ctePics/tech.gif") no-repeat center center fixed;
+
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	min-width:620px;
+  	overflow-x:auto;
+}
+ 
+::-webkit-scrollbar{
+	height:4px !important;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius:3px;
+	height:4px;
+	background-color: #8DC6FF;
+}
+
+::-webkit-scrollbar-track{
+	background-color:rgb(0,0,0);
+}
+
+
+.title{
+	text-align:center;
+	color:rgba(255,255,255,.9);
+	font-weight:bold;
+	text-shadow: 0 0 20px #7AA5D2;
+	/** play with text-shadow**/
+	font-family:Roboto;
+}
+
+span.larger{
+	font-size:100px;
+}
+
+.buttonRow{
+	text-align:center;
+}
+
+.buttonCTE{
+	display:inline-block;
+	/**width:100px;**/
+	float:left;
+	margin-left:20%;
+}
+
+.buttonTSA{
+	display:inline-block;
+	width:100px;
+}
+
+.buttonUAS{
+	display:inline-block;
+	width:100px;
+	float:right;
+	margin-right:20%;
+}
+
+.buttonCTE, .buttonUAS, .buttonTSA{
+	text-decoration:none !important;
+	font-family:"Roboto";
+
+	position: relative;
+	/**font-family: 'Muli', sans-serif;**/
+	/**font-weight: 400;**/
+	font-size: 25px;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+
+
+	background: rgba(0,0,0,0);
+	border-style:solid;
+	border-width:4px;
+	border-color:white;
+	width: 80px;
+	height: 80px;
+	
+	/* CSS transitions */
+	-webkit-transition: .5s ease-in-out; /* Safari */
+	-moz-transition: .5s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .5s ease-in-out; /* Microsoft specific */
+	-o-transition: .5s ease-in-out; /* Opera */
+	transition: .5s ease-in-out; /* general & Google Chrome */
+
+	line-height:90%;
+
+	/**unsure about this one
+	z-index:-1;
+	**/
+}
+
+.buttonCTE, .buttonUAS, .buttonTSA{
+  -webkit-box-shadow: 0 0px 15px 0 #7AA5D2;
+  -moz-box-shadow: 0 0px 15px 0 #7AA5D2;
+  box-shadow:  0 0px 15px 0 #7AA5D2; 
+
+
+/**text-shadow: 0 0 20px #7AA5D2;**/
+}
+
+.buttonCTE:hover, .buttonUAS:hover, .buttonTSA:hover{
+  -webkit-box-shadow: 0 0px 30px 0 #7AA5D2;
+  -moz-box-shadow: 0 0px 30px 0 #7AA5D2;
+  box-shadow: 0 0px 30px 0 #7AA5D2; 
+}
+
+/**
+.buttonTSA:hover, .buttonUAS:hover{
+	background-color:rgba(122, 165, 210, .7);
+}
+**/
+
+a:hover i.fa-graduation-cap, a:hover i.fa-flask, a:hover i.fa-space-shuttle{
+  opacity:0;
+}
+
+i{
+  -webkit-transition: .5s opacity; /* Safari */
+  -moz-transition: .5s opacity; /* Mozilla Firefox */
+  -ms-transition: .5s opacity; /* Microsoft specific */
+  -o-transition: .5s opacity; /* Opera */
+  transition: .5s opacity; /* general & Google Chrome */
+}
+
+i.fa-graduation-cap, i.fa-flask, i.fa-space-shuttle{
+	font-size:45px;
+	color:white;
+}
+
+i.fa-graduation-cap{
+	margin-top:15px;
+}
+
+i.fa-flask{
+	margin-top:12px;
+}
+
+i.fa-space-shuttle{
+	margin-top:12px;
+}
+
+.buttonHoverTitle{
+  opacity:0;
+  margin-top:-60px;
+}
+
+a:hover .buttonHoverTitle{
+  opacity:1;
+
+  -webkit-transition: .5s opacity; /* Safari */
+  -moz-transition: .5s opacity; /* Mozilla Firefox */
+  -ms-transition: .5s opacity; /* Microsoft specific */
+  -o-transition: .5s opacity; /* Opera */
+  transition: .5s opacity; /* general & Google Chrome */
+
+  color:white;
+}
+
+p.buttonCaption{
+	margin-top:25px;
+}
