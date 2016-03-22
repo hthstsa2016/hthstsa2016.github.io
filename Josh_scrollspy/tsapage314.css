@@ -23,6 +23,9 @@ body{
 	border-radius:10px;
 }
 
+nav{
+	overflow-y:auto;
+}
 
 #tsasection1, #tsasection2, #tsasection3, #tsasection4, #tsasection5 {
 	font-family:'Roboto',sans-serif;
@@ -488,9 +491,36 @@ body{
 	padding: 20px 120px 20px 120px;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 750px) {
 	#tsasection2 img {
 	height:40%;
 	width:40%;
 	}
+
+	.carousel-caption p{
+		font-size:12px;
+		background-color:rgba(0,0,0,0);
+		margin-top:-150px;
+		width:200px;
+		margin-left:140px;
+	}
+
+	.centerCarousel{
+		margin-left:-35%;
+	}
+}
+
+/** for Internet Explorer modal picture margins **/
+/**IE 9 & Newer **/
+@media screen and (min-width:0) and (min-resolution: +72dpi) {
+	.modalPicture{
+		margin-left: -20px !important;
+	}
+}
+
+/**Before IE 9**/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .
+	.modalPicture { 
+		margin-left:-20px\9 !important;
+	} 
 }

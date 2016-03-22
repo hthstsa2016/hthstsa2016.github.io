@@ -114,10 +114,19 @@ span.larger{
 	**/
 }
 
+.buttonCTE, .buttonUAS, .buttonTSA{
+  -webkit-box-shadow: 0 0px 15px 0 #7AA5D2;
+  -moz-box-shadow: 0 0px 15px 0 #7AA5D2;
+  box-shadow:  0 0px 15px 0 #7AA5D2; 
+
+
+/**text-shadow: 0 0 20px #7AA5D2;**/
+}
+
 .buttonCTE:hover, .buttonUAS:hover, .buttonTSA:hover{
-  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
+  -webkit-box-shadow: 0 0px 30px 0 #7AA5D2;
+  -moz-box-shadow: 0 0px 30px 0 #7AA5D2;
+  box-shadow: 0 0px 30px 0 #7AA5D2; 
 }
 
 /**
@@ -128,7 +137,9 @@ span.larger{
 
 a:hover i.fa-graduation-cap, a:hover i.fa-flask, a:hover i.fa-space-shuttle{
   opacity:0;
+}
 
+i{
   -webkit-transition: .5s opacity; /* Safari */
   -moz-transition: .5s opacity; /* Mozilla Firefox */
   -ms-transition: .5s opacity; /* Microsoft specific */
@@ -160,6 +171,7 @@ i.fa-space-shuttle{
 
 a:hover .buttonHoverTitle{
   opacity:1;
+
   -webkit-transition: .5s opacity; /* Safari */
   -moz-transition: .5s opacity; /* Mozilla Firefox */
   -ms-transition: .5s opacity; /* Microsoft specific */
@@ -170,5 +182,5 @@ a:hover .buttonHoverTitle{
 }
 
 p.buttonCaption{
-	margin-top:15px;
+	margin-top:25px;
 }
