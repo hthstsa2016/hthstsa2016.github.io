@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>UAS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="shortcut icon" href="Pictures/dronefav.ico" type="image/x-icon">
+  <link rel="icon" href="Pictures/dronefav.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="uas_skeleton_march13_2.css">
+  <link rel="stylesheet" href="uas_skeleton_march13.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
+  <link rel="stylesheet" href="animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
+  <script src="uas_skeleton_march13.js"></script>
+
+
+<link rel="stylesheet" type='text/css' href="mainCss.css">
+<link rel = "stylesheet" type = 'text/css' href = "animate.css">
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+<script>
+function parallax(){
+  var prlx_lyr_1 = document.getElementById('c1');
+  var prlx_lyr_2 = document.getElementById('c2');
+  var prlx_lyr_3 = document.getElementById('c3');
+  var prlx_lyr_4 = document.getElementById('c4');
+  var prlx_lyr_5 = document.getElementById('c5');
+  var prlx_lyr_6 = document.getElementById('c6');
+  var prlx_lyr_7 = document.getElementById('c7');
+  var prlx_lyr_8 = document.getElementById('c8');
+  var prlx_lyr_9 = document.getElementById('c9');
+  var prlx_lyr_10 = document.getElementById('c10');
+  var prlx_lyr_11 = document.getElementById('cloudWrapper');
+  var prlx_lyr_12 = document.getElementById('droneHeaderBackground');
+
+
+  prlx_lyr_1.style.top = -(window.pageYOffset / 2.4)+'px';
+  prlx_lyr_2.style.top = -(window.pageYOffset / 2.3)+'px';
+  prlx_lyr_3.style.top = -(window.pageYOffset / 1.4)+'px';
+  prlx_lyr_4.style.top = -(window.pageYOffset / 2.4)+'px';
+  prlx_lyr_5.style.top = -(window.pageYOffset / 1.4)+'px';
+  prlx_lyr_6.style.top = -(window.pageYOffset / 2.3)+'px';
+  prlx_lyr_7.style.top = -(window.pageYOffset / 2.5)+ 'px';
+  prlx_lyr_8.style.top = -(window.pageYOffset / 1.4)+'px';
+  prlx_lyr_9.style.top = -(window.pageYOffset / 2.5)+'px';
+  prlx_lyr_10.style.top = -(window.pageYOffset / 2.1)+'px';
+  prlx_lyr_11.style.top = -(window.pageYOffset / 3.5)+'px';
+  prlx_lyr_12.style.top = -(window.pageYOffset / 2.5)+'px';
+
+}
+window.addEventListener("scroll", parallax, false);
+
+jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+ 
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.content1').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+
+
+  $(document).ready(function($) {
+    $('#accordion').find('.accordion-toggle').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+
+      //Hide the other panels
+      $(".accordion-content").not($(this).next()).slideUp('fast');
+
+    });
+  });
+
+//$('#invisible').hide();
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1100)
+     {
+        $('#invisible').fadeIn();
+     }
+    else
+     {
+      $('#invisible').fadeOut();
+     }
+ });
+
+</script>
+</head>
+
+<!--content-->
+<body>  
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" id="submenu" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse">CTE</button>
+      <button type="button" id="mainmenu" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">Menu</button>
+      <a class="navbar-brand" href="landingpage321.htm"> Webmaster 2016 <i class="fa fa-home"></i> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="cte_march21.htm">CTE</a></li>
+        <li><a href="tsapage314.htm">TSA</a></li>
+        <li class="active"><a href="uas322_2.htm">UAS</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Translate</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-inverse sidebar" id="invisible" role="navigation">
+  <div class="container-fluid">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li id='circle1'><a href='#uassection1' id="Route Planner">
+          <span class="fa-stack fa-2x" data-toggle="tooltip" title="Students dig deep into the engineering design process, applying math, science, and engineering standards to hands-on projects. They work both individually and in teams to design solutions to a variety of problems using 3D modeling software, and use an engineering notebook to document their work.">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-info faa-tada animated-hover fa-stack-1x"></i>
+          </span>
+        </a></li>
+
+
+        <li id='circle2'><a href="#uassection2" id="Travel Stops">
+          <span class="fa-stack fa-2x" data-toggle="tooltip" title="Through problems that engage and challenge, students explore a broad range of engineering topics, including mechanisms, the strength of structures and materials, and automation. Students develop skills in problem solving, research, and design while learning strategies for design process documentation, collaboration, and presentation.">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-paper-plane faa-float animated-hover fa-stack-1x"></i>
+          </span>
+        </a></li>
+
+
+        <li id='circle3'><a href="#uassection3" id="Itineraryy">
+          <span class="fa-stack fa-2x" data-toggle="tooltip" title="Manufactured items are part of everyday life, yet most students have not been introduced to the high-tech, innovative nature of modern manufacturing. This course illuminates the opportunities related to understanding manufacturing. At the same time, it teaches students about manufacturing processes, product design, robotics, and automation.">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-cog faa-spin animated-hover fa-stack-1x"></i>
+          </span>
+        </a></li>
+
+
+        <li id='circle4'><a href="#uassection4" id="Itineraryy2">
+          <span class="fa-stack fa-2x" data-toggle="tooltip" title="While this course can be a student's first in computer science, students without prior computing experience are encouraged to start with Introduction to Computer Science. CSE helps students develop programming expertise and explore the workings of the Internet.">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-map faa-pulse animated-hover fa-stack-1x"></i>
+          </span>
+        </a></li>
+
+        <li id='circle5'><a href="#uassection5" id="Itineraryy2">
+          <span class="fa-stack fa-2x" data-toggle="tooltip" title="From smart phones to appliances, digital circuits are all around us. This course provides a foundation for students who are interested in electrical engineering, electronics, or circuit design.">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-object-group faa-tada animated-hover fa-stack-1x"></i>
+          </span>
+        </a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<img src="Pictures/droneMain.jpg" id="droneHeaderBackground" style="z-index:-2000;"/> 
+
+<!--Begin Drone Heading-->
+<div id = "introWrapper">
+
+  <div class = "headingWrapper" > 
+      <div class="headingWrapperPrimary animated fadeInUp">
+        <!--<a class='hvr-float-shadow' href="">-->
+
+        DRONES
+      </div> 
+
+      <hr class="style-two"> </hr>
+
+      <div class="headingWrapperSecondary animated fadeInUp">
+      Welcome a <span style = "color:#2197ff;"> Revolution </span>
+      </div>
+   </div>
+</div>
+
+<!--color:#6AC5AC;-->
+
+    
+<!--End Drone Heading-->
+
+<div id ="cloudWrapper"> </div>
+<!--Begin Parallax Clouds-->
+<div id= "cloudContainer">
+  <div id ="c1">
+    <img src = "Pictures/cloud6.png" id = "cloud1"/>
+  </div>
+  <div id ="c2">
+    <img src = "Pictures/cloud5.png" id = "cloud2"/>
+  </div>
+  <div id ="c3">
+    <img src = "Pictures/cloud2.png" id = "cloud3"/>
+  </div>
+  <div id ="c4">
+    <img src = "Pictures/cloud4.png" id = "cloud4"/>
+  </div>
+  <div id ="c5">
+    <img src = "Pictures/cloud2.png" id = "cloud5"/>
+  </div>
+  <div id ="c6">
+    <img src = "Pictures/cloud4.png" id = "cloud6"/>
+  </div>
+  <div id ="c7">
+    <img src = "Pictures/cloud2.png" id = "cloud7"/>
+  </div>
+  <div id ="c8">
+    <img src = "Pictures/cloud4.png" id = "cloud8"/>
+  </div>
+  <div id ="c9">
+    <img src = "Pictures/cloud6.png" id = "cloud9"/>
+  </div>
+  <div id ="c10">
+    <img src = "Pictures/cloud5.png" id = "cloud10"/>
+  </div>
+</div>
+<!--End Parallax Clouds-->
+
+
+<div id = "transition"> 
+
+</div>
+
+<div class="container-fluid" id="mainContainer">
+<div class="main" data-offset="15"> 
+
+  <div id="uassection1">
+    
+    <div id="infoDrone" class="animated fadeInLeft">
+      <h2 id="droneTitle" class="animated lightSpeedIn"> WHAT IS A DRONE? </h2>
+      <hr class="style14">
+      <br>
+      <p>
+        A drone is technically a remotely piloted or autonomous aircraft used to gather data and imagery. The combination of the drone with ground ground control stations or software instructions as well as data links  forms the unmanned aerial system (UAS). The two terms are interchangeable, however. Overall, the market for UAS technology is booming. A study by the Teal Group estimated that the world market for UAS research, development, and procurement was US $6 billion in 2012. </p>
+    </div> 
+
+  </div>
+
+  <div id="uassection2">
+
+    <div id="typdrone" class="animated fadeInLeft">
+      <h2 id="droneTitle" class="animated lightSpeedIn">TYPES OF DRONES</h2>
+      <hr class="style14" id="linee">
+      <br>
+      <p>
+          <div class="tabs">
+            <ul class="tab-links">
+                <li class="active"><a href="#tab1">Micro and Mini UAV's</a></li>
+                <li><a href="#tab2">Tactical UAV's</a></li>
+                <li><a href="#tab3">Strategic UAV's</a></li>
+            </ul>
+         
+            <div class="tab-content">
+                <div id="tab1" class="tab active"> 
+                    The first category, micro and mini drones, consists of drones weighing less than 30 kg. They usually fly at altitudes of 300 meters or less and primarily have recreational applications. Common examples include the Hubsan X4 and Nano QX, both of which are recreational drones.
+                </div>
+         
+                <div id="tab2" class="tab">
+                    Tactical drones consist of drones between 150 and 1500 kg in weight and/or those that fly at altitudes between 3,000 to 8,000 meters. These drones mainly have commercial and military applications. 
+                </div>
+         
+                <div id="tab3" class="tab">
+                    Finally, strategic drones consist of all drones greater than 1,500 kg and/or those that can fly up to 20,000 m in altitude. Drones of this size usually have military applications.
+                </div> 
+        </div>
+    </div>
+      </p>
+
+    </div> 
+
+  </div>
+
+
+  <div id="uassection3">
+
+    <div id="curdrone" class="animated fadeInLeft">
+      <h2 id="droneTitle" class="animated lightSpeedIn">CURRENT USES</h2>
+      <hr class="style14" id="linee">
+      <br>
+      <p>
+        Drones have significant advantages over conventional aircraft. Operating a drone is inherently less risky due to to the lack of a pilot. Drones are also able to fulfill tasks with greater precision. Both of these advantages have led to an explosion in the commercial and scientific use of drones. 
+        </p>
+        
+        <div id="accordion">
+  <h4 class="accordion-toggle" id = "accordion-toggle1"> Moviemaking </h4>
+  <div class="accordion-content default">
+    <p>Drones have significantly reduced the effort required to film difficult shots in movies. From the aerial battle scenes of Avatar to footage of the war against terrorism in Seal Team 6, drones have become invaluable in the film industry.</p>
+  </div>
+  <h4 class="accordion-toggle">Disaster Relief</h4>
+  <div class="accordion-content">
+    <p>Drones were used in search and rescue and damage assessment missions after Hurricane Katrina struck in 2008. They carried an optical sensor and synthetic aperture radar, which can provide images through adverse weather conditions. Micro - drones such as the Aeryon Scout have been used to search for specific missing persons.</p>
+  </div>
+  <h4 class="accordion-toggle">Oil, Gas, and Minerals</h4>
+  <div class="accordion-content">
+    <p>Drones are regularly used by oil and gas companies to monitor the state of pipelines and related installations.</p>
+  </div>
+  <h4 class="accordion-toggle">Conservation</h4>
+  <div class="accordion-content">
+    <p>In June 2012, World Wide Fund for Nature(WWF) began using UAVs in Nepal to aid conservation efforts following a successful trial of two aircraft in Chitwan National Park. The drones were equipped with time-lapse cameras and could fly at heights of 650 ft. </p>
+  </div>
+  <h4 class="accordion-toggle">Scientific Research</h4>
+  <div class="accordion-content">
+    <p>The US National Oceanic and Atmospheric Administration (NOAA) uses the Aerosonde UAS to fly directly into hurricanes and communicate data to the National Hurricane Center.</p>
+  </div>
+</div>
+ 
+
+      
+    </div>
+  
+  </div>
+
+  <div id="uassection4">
+
+    <div id="futdrone" class="animated fadeInLeft">
+      <h2 id="droneTitle" class="animated lightSpeedIn">THE FUTURE OF DRONES</h2>
+      <hr class="style14" id="linee">
+      <br>
+      
+
+<div class="tabs">
+            <ul class="tab-links">
+                <li class="active"><a href="#tab1">Postal delivery</a></li>
+                <li><a href="#tab2">Swarms</a></li>
+                <li><a href="#tab3">Mining</a></li>
+                <li><a href="#tab4">Healthcare</a></li>
+            </ul>
+         
+            <div class="tab-content">
+                <div id="tab1" class="tab active">
+                    Drones are currently used for small - scale deliveries. However, companies such as Amazon and Google are experimenting with larger scale deliveries that could one day replace our current postal service.
+                </div>
+         
+                <div id="tab2" class="tab">
+                    Engineers are currently developing the next generation of “swarming” drones. These drones will work together and share data, forming an intelligent network that can address myriad problems. For example, a swarm of drones could coordinate a response to a natural disaster or manage an oil rig.  
+                </div>
+         
+                <div id="tab3" class="tab">
+                    Drones could possibly be used by mining companies to perform geophysical surveys. Using magnetometers, a drone could analyze the strength of Earth’s magnetic field at different locations. These measurements could then be used to determine the likely location of mineral deposits.  
+                </div> 
+
+                <div id="tab4" class="tab">
+                    Ambulance drones" could rapidly deliver defibrillators in the crucial few minutes after cardiac arrests, and include livestream communication capability allowing paramedics to remotely observe and instruct on-scene individuals in how to use the defibrillators.
+                </div> 
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+  </div>
+
+
+  <div id="uassection5">
+  
+    <div id="safpriv" class="animated fadeInLeft">
+      <h2 id="droneTitle" class="animated lightSpeedIn">Safety and Privacy Concerns </h2>
+      <hr class="style14" id="linee">
+      <br>
+      <p>
+       As drones become increasingly more prevalent in our society, various safety and privacy concerns have materialized. The first of these is the problem of air traffic. The drones have to keep clear of other aircraft. Because of their mobility, like cars, they are also safety hazards. To combat this issue, the Federal Aviation Administration (FAA) released a series of regulations. All recreational drones must now be registered, and registration of commercial drones will be reviewed on a case - by - case basis. As for operating guidelines, recreational drones must operate at less than 400 feet in altitude, and all drones must operate within the controller’s line of site. However, these regulations do not establish a pathway by which the drones can be operated beyond the line of site for businesses, which obviously cannot heed this requirement. 
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+</body>
+<html>
