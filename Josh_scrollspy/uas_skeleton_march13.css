@@ -390,8 +390,8 @@ hr.style14 {
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(255, 255, 255, 0.8), 
-		rgba(255, 255, 255, 0.8)
+		rgba(237,247,254, 0.8), 
+		rgba(237,247,254, 0.8)
 		),
 		url(ctePics/measure.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -595,7 +595,7 @@ hr.style14 {
 	margin-bottom:auto;
 	margin-top:auto;
 	width:50%;
-	height:50%;
+	height:40%;
 	margin-left:auto;
 	margin-right:auto;
 	z-index:900;
@@ -664,17 +664,23 @@ hr.style14 {
 	font-family: 'Roboto';
 	font-size: 25px;
 	font-weight:400;
+	background-color:rgba(0,0,0,0.45);
+    border-radius: 25px;
+    color:white;
 }
 
 #teachTitle {
 	font-weight:600;
+	margin-left:15px;
 }
 
 #teacherNames {
 	font-size: 16px;
 	font-weight: 400;
+	margin-left:15px;
 }
 
 #teacherQuote {
 	font-weight: 400;
+	margin-left:15px;
 }
