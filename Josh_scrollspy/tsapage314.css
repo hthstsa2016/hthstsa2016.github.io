@@ -66,7 +66,17 @@ nav{
 #tsasection2 {
 	height:1000px;
 	color: #fff; 
-	background-color: #283996;
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.5), 
+	      rgba(0, 0, 0, 0.5)
+	    ),
+		url("../tsa_pictures/keyboard.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
 }
 
 #tsasection2 p{
@@ -117,7 +127,17 @@ nav{
 
 #tsasection3 {
 	color: #fff; 
-	background-color: #3AA3c1;
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.5), 
+	      rgba(0, 0, 0, 0.5)
+	    ),
+		url("../tsa_pictures/sec3back.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
 	text-align:center;
 	min-height:1000px;
 }
@@ -291,7 +311,17 @@ nav{
 
 #tsasection4 {
 	color: #fff; 
-	background-color: #283996;
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.7), 
+	      rgba(0, 0, 0, 0.7)
+	    ),
+		url("../tsa_pictures/boardback.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
 	min-height:1000px;
 	#height:auto;
 	text-align: justify;
@@ -548,21 +578,10 @@ nav{
 }
 
 @media (max-width:768px){
-		div[id*='tsasection'] {
-		  padding-left: 0px !important;
-		}
-
 		.creed_bar{
 			padding-left:25px !important;
 		}
 
-		.info_footer{
-			padding: 20px 20px 20px 20px !important;
-		}
-
-		.navbar-header{
-			padding-left:0px;
-		}
 
 		#tsasection1{
 			padding-top:-20px;

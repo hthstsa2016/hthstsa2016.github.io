@@ -122,6 +122,27 @@
 		}
 	}
 
+	@media (max-width:768px){
+		div[id*='tsasection'], div[id*='mainsection'],div[id*='uassection'] {
+		  padding-left: 0px !important;
+		}
+
+		.info_footer{
+			padding: 20px 20px 20px 20px !important;
+		}
+
+		.navbar-header{
+			padding-left:0px !important;
+		}
+
+		.navbar{
+			min-height:20px !important;
+			margin-bottom:0px !important;
+		}
+
+	}
+
+
   #mainsection1 {
   	padding-top:1px;
   	height:1000px;
