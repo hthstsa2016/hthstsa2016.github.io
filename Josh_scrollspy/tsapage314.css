@@ -178,7 +178,9 @@ body{
 	transition: .2s ease-in-out; 
 	*/
 
+	/*
 	transition: all 1s linear;
+	*/
 }
 
 /** testing **/
@@ -413,8 +415,14 @@ body{
 	margin-left:10%;
 }
 
-#tsasection5 p, #tsasection5 ul{
+#tsasection5 div p, #tsasection5 ul{
 	font-size:16px;
+}
+
+#tsasection5 span{
+	font-size:12px;
+	padding-bottom:10px;
+	text-transform:italic;
 }
 
 #comm{

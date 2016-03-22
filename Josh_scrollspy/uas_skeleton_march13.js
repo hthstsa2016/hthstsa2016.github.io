@@ -98,8 +98,8 @@ $(document).ready(function(){
   $("#LeftSide").click(function(){
     if(TriggerClick==0){
          TriggerClick=1;
-         $("div#LeftSide").animate({width:'100%'}, 500);
-         $("div#RightSide").animate({visibility:'hidden'}, 500);
+         $("div#LeftSide").animate({width:'100%',overflow:'hidden'}, 500);
+         //$("div#RightSide").animate({visibility:'hidden',overflow:'hidden'}, 500);
     }else{
          TriggerClick=0;
          $("div#LeftSide").animate({width:'50%'}, 500);
@@ -124,3 +124,21 @@ $(document).ready(function(){
 //     };
 //   });
 // });
+
+
+/*//Sam's Modal Closing
+$(document).ready(function(){
+  modalClick = 0;
+
+  $("#RightSide").click(function(){
+    if(modalClick==0){
+         modalClick=1;
+         $("div#RightSide").animate({width:'50%'}, 500);
+         $("div#LeftSide").animate({width:'50%'}, 500);
+    }else{
+         TriggerClick=0;
+         $("div#RightSide").animate({width:'100%'}, 500);
+         $("div#LeftSide").animate({width:'0%'}, 500);
+    };
+  });
+});*/
