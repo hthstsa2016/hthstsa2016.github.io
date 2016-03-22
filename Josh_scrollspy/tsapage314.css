@@ -428,6 +428,10 @@ nav{
 	margin-left:10%;
 }
 
+#tsasection5 #innerBullet{
+	margin-left:5%;
+}
+
 #tsasection5 div p, #tsasection5 ul{
 	font-size:16px;
 }
@@ -436,7 +440,7 @@ nav{
 	font-size:12px;
 	font-style:italic;
 	text-align:center;
-	margin-bottom:0;
+	margin-top:60%;
 }
 
 #comm{
@@ -512,15 +516,13 @@ nav{
 
 /** for Internet Explorer modal picture margins **/
 /**IE 9 & Newer **/
-@media screen and (min-width:0) and (min-resolution: +72dpi) {
-	.modalPicture{
-		margin-left: -20px !important;
-	}
-}
 
 /**Before IE 9**/
+
+/*
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .
 	.modalPicture { 
-		margin-left:-20px\9 !important;
+		margin-left:-100px\9 !important;
 	} 
 }
+*/
