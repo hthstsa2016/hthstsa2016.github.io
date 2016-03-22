@@ -9,7 +9,7 @@ body{
 	height:100%;
 	margin-top:-20px;
 }
-
+/**
 nav{
 	overflow-y:auto;
 }
@@ -18,14 +18,11 @@ nav{
 	padding-left:100px;
 }
 
-/**this does nothing **/
-.navbar-header a:hover, .navbar-header a:active{
-	color:#FF4C65;
-}
 
 .tooltip{
 	overflow-x:hidden;
 }
+**/
 
 #tsasection1, #tsasection2, #tsasection3, #tsasection4, #tsasection5 {
 	font-family:'Roboto',sans-serif;
@@ -556,11 +553,13 @@ nav{
 	} 
 }
 */
-
+/**
 
 
 @media (min-width: 250px) {
 	/* Sidebar settings */
+
+	/*
 	.navbar-toggle {
 	  color: white;
 	  border-color: transparent;
@@ -582,13 +581,8 @@ nav{
 			padding-left:25px !important;
 		}
 
-
 		#tsasection1{
 			padding-top:-20px;
 		}
 
 	}
-
-#myNavbar li a:hover, #myNavbar li:active a:active, .fa-home:hover{
-	color: #FF4C65 !important;
-}

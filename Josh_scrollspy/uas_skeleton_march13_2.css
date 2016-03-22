@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,500italic,400italic,300italic,300,700,700italic);
+	/* Gives main container section th entire screen */
+	#mainContainer {
+	  padding-top: 0px;
+	  padding-left: 0px;
+	}
+
+	/* Gives main section the entire main container space */
+	.main{
+	  position: absolute;
+	  width: 100%;
+	}  
+
+	/* Sidebar settings */
+	nav.sidebar.navbar {
+		border-radius: 0px;
+		background-color:transparent;
+		border-color: transparent;
+	}
+
+	/* sidebar default hover and focus setting for Non-active selections */
+	nav.sidebar .navbar-nav > li > a:hover, nav.sidebar .navbar-nav > li > a:focus {
+		color:red;
+	}
+
+	/* sidebar default hover and focus setting for Active selections */
+	nav.sidebar .navbar-nav > li.active > a, nav.sidebar .navbar-nav > li.active > a:hover, 
+	  nav.sidebar .navbar-nav > li.active > a:focus {
+		background-color:transparent;
+		border-color: transparent;
+		color:red;
+	}
+
+	/* Sidebar tooltip settings  */ 
+	#bs-sidebar-navbar-collapse .tooltip,
+	#bs-sidebar-navbar-collapse .tooltip .tooltip-inner {
+	      width:600px;
+	      padding: 5px;
+	      font-size: 90%;
+	      word-wrap: break-word;
+  	}
+
+	nav.sidebar, .main{
+	    -webkit-transition: margin 200ms ease-out;
+	    -moz-transition: margin 200ms ease-out;
+	    -o-transition: margin 200ms ease-out;
+	    transition: margin 200ms ease-out;
+	}
+
+	/*small/medium side display - When is screen is resized */
+        /* View settings on screen size width (or wider) below */
+	@media (min-width: 250px) {
+	}
+
+        /* View settings on screen size width (or wider) below */
+	@media (min-width: 768px) {
+
+		/*allows nav box to use 100% width*/
+		nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+			padding: 0 0px 0 0px;
+		}
+
+		nav.sidebar{
+			width: 120px;
+			height: 100%;
+			z-index: 8000;
+			margin-bottom: 0px;
+			margin-left: 0px;
+			position: fixed;
+		}
+
+		/* Settings for all sections within the main section  */
+		div[id*='uassection'] {
+		  padding-left: 120px;
+		}
+
+		/*Center Brand*/
+		nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+			margin-left: 0px;
+		}
+		/*Center Brand*/
+		nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+			text-align: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		/*Center Icons*/
+		nav.sidebar a{
+			padding-right: 13px;
+		}
+	}
+
+  #uassection1 {
+  	padding-top:1px;
+  	height:1000px;
+  	width:100%;
+	background:
+		linear-gradient(
+		rgba(0, 0, 0, 0.6), 
+		rgba(0, 0, 0, 0.6)
+		),
+		url(Pictures/drone_sunset7.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter:gray;
+	}
+
+
+  #uassection2 {
+  	padding-top:1px;
+  	height:1000px;
+  	width:100%; 
+  	background:
+  		linear-gradient(
+		rgba(0, 0, 0, 0.6), 
+		rgba(0, 0, 0, 0.6)
+		),
+		url(Pictures/section2.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter:gray;
+  }
+
+   #uassection3 {
+  	padding-top:1px;
+  	height:1000px;
+  	width:100%; 
+  	background:
+  		linear-gradient(
+		rgba(0, 0, 0, 0.6), 
+		rgba(0, 0, 0, 0.6)
+		),
+		url(Pictures/section3.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter:gray;
+  }
+
+   #uassection4 {
+  	padding-top:1px;
+  	height:1000px;
+  	width:100%; 
+  	background:
+  		linear-gradient(
+		rgba(0, 0, 0, 0.6), 
+		rgba(0, 0, 0, 0.6)
+		),
+		url(Pictures/section4.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		filter:gray;
+  }
+
+  #uassection5 {
+  	padding-top:1px;
+  	height:1000px;
+  	width:100%; 
+	background:
+  		linear-gradient(
+		rgba(0, 0, 0, .6), 
+		rgba(0, 0, 0, .6)
+		),
+		url(Pictures/section5.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+  }
+
+#droneTitle  {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 80px;
+	font-weight: bold;
+	/**color:#22313F;**/
+	color:white;
+	font-family: "Roboto";
+}
+
+#infoDrone, #typdrone, #futdrone, #safpriv {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	z-index:1;
+	margin-top:18%;
+	margin-bottom:auto;
+	left:2%;
+	width:80%;
+	height:30%;
+	text-align: justify;
+	font-family: "Roboto";
+	/**color:black;**/
+	color:white;
+	font-size:21px;
+}
+
+#curdrone{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	z-index:1;
+	margin-top:50px;
+	margin-bottom:auto;
+	left:2%;
+	width:80%;
+	height:30%;
+	text-align: justify;
+	font-family: "Roboto";
+	/**color:black;**/
+	color:white;
+	font-size:21px;
+}
+
+hr.style14 { 
+	width:40%;
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+#invisible{
+	display:none;
+}
