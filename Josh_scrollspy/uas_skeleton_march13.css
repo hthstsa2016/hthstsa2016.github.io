@@ -69,6 +69,18 @@ body{
 		nav.sidebar ul li{
 		  display:inline-block;
 		}
+
+        #engineerTitle  {
+          text-align:center;
+         margin-left:auto;
+          margin-right:auto;
+          font-size: 45px;
+          font-weight: bold;
+          /**color:#22313F;**/
+          color:white;
+          font-family: "Roboto";
+        }
+
 	}
 
         /* View settings on screen size width (or wider) below */
@@ -123,6 +135,18 @@ body{
 		  padding-top: 30px;
 		  padding-left: 0px;
 		}
+
+	      #engineerTitle  {
+	      text-align:center;
+	      margin-left:auto;
+	      margin-right:auto;
+	      font-size: 80px;
+	      font-weight: bold;
+	      /**color:#22313F;**/
+	      color:white;
+	      font-family: "Roboto";
+	    }
+
 	}
 
 	@media (max-width:768px){
@@ -357,16 +381,17 @@ body{
 div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color:yellow}
 div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover{color:#fff}*/
 
-#engineerTitle  {
+/*#engineerTitle  {
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
 	font-size: 80px;
 	font-weight: bold;
 	/**color:#22313F;**/
-	color:white;
+/*	color:white;
 	font-family: "Roboto";
-}
+}*/
+
 #engineerTitle2  {
 	text-align:center;
 	margin-left:auto;
