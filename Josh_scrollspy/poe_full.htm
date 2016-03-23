@@ -1,57 +1,9 @@
-<!-- <html>
-<head>
-  <title>Sophomore Education</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="uas_skeleton_march13.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
-  <link rel="stylesheet" href="animate.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="uas_skeleton_march13.js"></script>
-</head>
-<body>
-
-  <div class="alert alert-dismissible alert-info" id="alertt">
-    <button type="button" class="close" data-dismiss="alert" id="closeTech">×</button>
-    <strong>Welcome to Sophomore Year at High Tech</strong>
-    <br>
-    <a href="javascript:void(0)" class="alert-link" style="text-decoration:none;cursor:default">Pick a course to see the full package!</a>
-  </div>
-
-	<div id="LeftSide2">
-		<h1 id="techBig">Principles of Engineering</h1>
-		<hr class="style14" id="linee">
-		<div id="techText">
-			<p>
-        Through problems that engage and challenge, students explore a broad range of engineering topics, including mechanisms, the strength of structures and materials, and automation. Students develop skills in problem solving, research, and design while learning strategies for design process documentation, collaboration, and presentation.
-			</p>
-    </div>
-	</div>
-
-	<div id="RightSide2">
-    <h1 id="techBig">Computer Programming for Engineers</h1>
-    <hr class="style14" id="linee">
-    <div id="techText">
-      <p>
-        COPE is a rapid introduction to programming in Java. Students begin by learning about basic concepts such as primitive data types and eventually progress to more advanced concepts such as algorithm analysis and recursion. Emphasis is placed on constant practice with programming projects, assignments, and assessments.
-      </p>
-    </div>
-	</div>
-
-</body>
-</html> -->
-
-<!-- Each year, freshmen receive their first experience in the field of engineering through Ms. Linda Grunthaner's Introduction to Engineering Design course, taught using the Project Lead The Way curriculum. -->
-
 <html>
 <head>
   <title>Sophomore Education</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="uas_skeleton_march13 Alec Version.css">
+  <link rel="stylesheet" href="uas_skeleton_march13.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
@@ -64,23 +16,44 @@
   <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
 </head>
 <body>
-  
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" id="submenu" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse">CTE</button>
+      <button type="button" id="mainmenu" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">Menu</button>
+      <a class="navbar-brand" href="landingpage321.htm"> Webmaster 2016 <i class="fa fa-home"></i> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="cte_march21.htm">CTE</a></li>
+        <li><a href="tsapage314.htm">TSA</a></li>
+        <li><a href="uas322_3.htm">UAS</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Translate</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   <!--Warning-->
-  <div class="alert alert-dismissible alert-info" id="alertt">
+<!--   <div class="alert alert-dismissible alert-info" id="alertt">
     <button type="button" class="close" data-dismiss="alert" id="closeTech">×</button>
-    <strong>Welcome to Sophomore Year at High Tech</strong>
+    <strong>Welcome to Freshman Year at High Tech</strong>
     <br>
     <a href="javascript:void(0)" class="alert-link" style="text-decoration:none;cursor:default">Pick a course to see the full package!</a>
-  </div>
+  </div> -->
 
-  <div id="LeftSide2" style="width:100%">
-    <h1 id="techBig">Principles of Engineering</h1>
+  <div id="LeftSide">
+    <h1 id="techBig">Principles of Engineering Design</h1>
     <hr class="style14" id="linee">
-    <div class="centerCarousel">
+    <div id="posCarousel">
     <div class="container" id="slidey">
       <br>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
+        
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -90,76 +63,175 @@
           <li data-target="#myCarousel" data-slide-to="5"></li>
         </ol>
 
-        <!-- Wrapper for slides -->
+        
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="../tsa_pictures/tsa2006.jpg" alt="TSA 2006">
+            <img src="ctePics/cse1.jpeg" alt="TSA 2006">
           </div>
 
           <div class="item">
-            <img src="../tsa_pictures/tsa2010.jpg" alt="TSA 2010">
+            <img src="ctePics/cse3.jpeg" alt="TSA 2010">
           </div>
         
           <div class="item">
-            <img src="../tsa_pictures/tsa2012.jpg" alt="TSA 2012">
-          </div>
-
-          <div class="item">
-            <img src="../tsa_pictures/tsa2015.jpg" alt="TSA 2015">
-          </div>
-
-          <div class="item">
-            <img src="../tsa_pictures/vexteam.jpg" alt="2016 Vex Team">
-          </div>
-
-          <div class="item">
-            <img src="../tsa_pictures/vexteam2.jpg" alt="2016 Vex Team">
-          </div>
+            <img src="ctePics/cse2.jpeg" alt="TSA 2012">
         </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" id="rightt" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" id="leftt" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
   </div>
-    <div id="techText">
-      <p>
-        Through problems that engage and challenge, students explore a broad range of engineering topics, including mechanisms, the strength of structures and materials, and automation. Students develop skills in problem solving, research, and design while learning strategies for design process documentation, collaboration, and presentation.
-      </p>
-    
-  
-        <div class= "GPic">
-            <a class= "GPic" href => <img class= "GPic" src="../tsa_pictures/hanas.jpg"> </a>
-        </div>
-        <div class = "DennisInfo">
-          <h3>Mr. Christopher Hanas</h3>
-          <p>Christopher Hanas teaches Principles of Engineering and Computer Science/Software Engineering at High Technology High School. He has held the position for 4 years.
+
+      <!--Course description-->
+      <div id="techText2">
+        <p id="describeSTEM">
+           With Freshman year completed, High Tech students move on through their education in engineering to Principles of Engineering Design. The class teaches students about simple machines, the mathematics behind simple engineering concepts (like stress, simple machines, etc.). The students also learn about engineering ethics and recycling, concepts important to grasp so that in their careers, they can be not only efficient and successful but responsible engineers.
+          <br>
+          <br>
+
+
+          The second half of the year is mainly spent on using VEX robotics and learning the programming language RobotC. These skills are mastered as different sensors, motors, and equipment are handled, programmed, and applied to complete tasks. In addition, team projects help reestablish the theme that teamwork is an essential skill for an engineer. For example, all students work with a group to build a tower that is 8 feet tall and can support a soccer ball for at least 24 hours out of only newspaper and tape. All of these skills and teamwork lessons ultimately prepare the students to venture into their Junior year electives.
+
+        </p>
+      </div>
+      
+         <!--Picture of instructor-->
+      <div class= "GPic">
+          <a class= "GPicPic" href = "mailto:hanas@ctemc.org?subject=Webmaster" target="_newtab"> <img class= "GPic" src="../tsa_pictures/chris.jpg"> </a>
+      </div>
+
+
+      <div class = "instructInfo">
+        <b><h1 id="teachTitle">Mr. Christopher Hanas</h1></b>
+        <p id="teacherNames">
+            Mr. Christopher Hanas teaches Computer Science and Engineering and Principles of Engineering at High Technology High School.
+        </p>
+
+        <p id="teacherQuote">
+            <em>"POE is focused on introducing students to the fundamental concepts in mechanical, civil, electrical and chemical engineering.  This is a part of the the Project Lead the Way pre-engineering program for students who are interested in pursuing an engineering or science degree when at college.  As an engineering course, the topics focus heavily on scientific concepts and applied mathematics such as: The Engineering Design Process, Vectors, Energy & Power (Mechanisms, Energy Sources, Energy Applications), Materials & Structures (Statics, Material Properties, Material Testing), Control Systems (Robot Control, Fluid Power), and Kinematics & Statistics."</em>
             <br />
-            Interview Questions:
-            <br />
-            ​1.Manufacturing in the U.S. is facing a critical shortage of engineers and technicians. A whole generation is retiring and there are not enough qualified young people to replace them. Contrary to headlines, the U.S. is a world leader in precision manufacturing and innovation. Today's manufacturing is complex and high tech, requiring problem-solvers with good STEM skills (Science, Technology, Engineering, Mathematics).
-            <br />
-            2.  Yes.  Many students return after they are in college and have been exposed to several of their engineering lab classes and say that many of the skills learned in CIM has helped them in the college courses.​
-<br />
-            3.  Health and Safety Engineer, Precision Machinist, Manufacturing Engineer, Quality Engineer, Robotics Engineer and Industrial Engineer.
-<br />
-            4.  Learn up close how things are made. Is the process for making a water bottle the same as a musical instrument? How are assembly lines designed and automated? Through your growing knowledge of the history, principles, and processes of manufacturing, you will design and build your own automated manufacturing system, factoring in safety, quality, cost, and efficiency. Use technologies in your projects that have revolutionized manufacturing: computer modeling, Computer Numeric Control (CNC) technology, Computer Aided Manufacturing (CAM) software, robotics, and flexible manufacturing systems.      
-<p>
+            <em>When asked about skills the students learn in POE, Mr. Hanas replied: "In place of unit tests, POE uses group-based unit projects to assess the students’ design and analysis capabilities.  These projects require the students to research, brainstorm, prototype and test their designs.   In addition to a working design model, the students are also responsible for submitting a final design report and, in some cases, making a verbal presentation to the class.  Due to the project scope, the successful team must demonstrate strong collaboration among all members."</em>
+        </p>
+      </div>
 
-
-
-
-        </div>
-</div>
+  </div>
 
 </body>
 </html>
+<!--<html>
+<head>
+  <title>Freshman Education</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="uas_skeleton_march13.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="bootstrap-material-design-master/dist/css/bootstrap-material-design.css">
+  <link rel="stylesheet" href="bootstrap-material-design-master/dist/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="tsapage314.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
+<!--</head>
+<body>
 
-<!-- Each year, freshmen receive their first experience in the field of engineering through Ms. Linda Grunthaner's Introduction to Engineering Design course, taught using the Project Lead The Way curriculum. -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+<!--    <div class="navbar-header">
+      <button type="button" id="submenu" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse">CTE</button>
+      <button type="button" id="mainmenu" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">Menu</button>
+      <a class="navbar-brand" href="landingpage321.htm"> Webmaster 2016 <i class="fa fa-home"></i> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="cte_march21.htm">CTE</a></li>
+        <li><a href="tsapage314.htm">TSA</a></li>
+        <li><a href="uas322_3.htm">UAS</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Translate</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!--Warning-->
+<!--   <div class="alert alert-dismissible alert-info" id="alertt">
+    <button type="button" class="close" data-dismiss="alert" id="closeTech">×</button>
+    <strong>Welcome to Freshman Year at High Tech</strong>
+    <br>
+    <a href="javascript:void(0)" class="alert-link" style="text-decoration:none;cursor:default">Pick a course to see the full package!</a>
+  </div> -->
+
+<!--  <div id="LeftSide">
+    <h1 id="techBig">Principles of Engineering Design</h1>
+    <hr class="style14" id="linee">
+    <div id="posCarousel">
+    <div class="container" id="slidey">
+      <br>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="ctePics/cse1.jpeg" alt="TSA 2006">
+          </div>
+
+          <div class="item">
+            <img src="ctePics/cse3.jpeg" alt="TSA 2010">
+          </div>
+        
+          <div class="item">
+            <img src="ctePics/cse2.jpeg" alt="TSA 2012">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!--Course description-->
+<!--      <div id="techText2">
+        <p id="describeSTEM">
+          With Freshman year completed, High Tech students move on through their education in engineering to Principles of Engineering Design. The class teaches students about simple machines, the mathematics behind simple engineering concepts (like stress, simple machines, etc.). The students also learn about engineering ethics and recycling, concepts important to grasp so that in their careers, they can be not only efficient and successful but responsible engineers.
+
+          <br>
+          <br>
+
+
+          The second half of the year is mainly spent on using VEX robotics and learning the programming language RobotC. These skills are mastered as different sensors, motors, and equipment are handled, programmed, and applied to complete tasks. In addition, team projects help reestablish the theme that teamwork is an essential skill for an engineer. For example, all students work with a group to build a tower that is 8 feet tall and can support a soccer ball for at least 24 hours out of only newspaper and tape. All of these skills and teamwork lessons ultimately prepare the students to venture into their Junior year electives.
+
+        </p>
+      </div>
+      
+         <!--Picture of instructor-->
+<!--      <div class= "GPic">
+          <a class= "GPicPic" href = "mailto:grunthaner@ctemc.org?subject=Webmaster" target="_newtab"> <img class= "GPic" src="../tsa_pictures/grunthaner.jpg"> </a>
+      </div>
+
+
+      <div class = "instructInfo">
+        <b><h1 id="teachTitle">Mr. Christopher Hanas</h1></b>
+        <p id="teacherNames">
+            Mr. Christopher Hanas teaches Computer Science and Engineering and Principles of Engineering at High Technology High School.
+        </p>
+
+        <p id="teacherQuote">
+            <em>"POE is focused on introducing students to the fundamental concepts in mechanical, civil, electrical and chemical engineering.  This is a part of the the Project Lead the Way pre-engineering program for students who are interested in pursuing an engineering or science degree when at college.  As an engineering course, the topics focus heavily on scientific concepts and applied mathematics such as: The Engineering Design Process, Vectors, Energy & Power (Mechanisms, Energy Sources, Energy Applications), Materials & Structures (Statics, Material Properties, Material Testing), Control Systems (Robot Control, Fluid Power), and Kinematics & Statistics."</em>
+            <br />
+            <em>When asked about skills the students learn in POE, Mr. Hanas replied: "In place of unit tests, POE uses group-based unit projects to assess the students’ design and analysis capabilities.  These projects require the students to research, brainstorm, prototype and test their designs.   In addition to a working design model, the students are also responsible for submitting a final design report and, in some cases, making a verbal presentation to the class.  Due to the project scope, the successful team must demonstrate strong collaboration among all members."</em>
+"
+        </p>
+      </div>
+
+  </div>
+
+</body>
+</html>
