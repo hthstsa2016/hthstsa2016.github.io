@@ -772,6 +772,7 @@ hr.style14 {
 }
 
 .learnMoreButton{
+	min-width:100px;
 	width:auto;
 	height:auto;
 	background-color:#FF4C65;
