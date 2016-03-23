@@ -77,19 +77,22 @@ body{
 */
 
 	.headingWrapper{	
-
-		background-color:rgba(0,0,0,0.45);
+		background-color:rgba(0,0,0,0.75);
     	border-radius: 25px;
 		padding: 25px 20px 30px 20px;
 		width:450px;
-		margin-top:150px;
+		margin-top:76px;
 		font-family: 'Orbitron', sans-serif;
+		-webkit-transform:scale(1,0.8); /* Safari and Chrome */
+-moz-transform:scale(1,0.8); /* Firefox */
+-ms-transform:scale(1,0.8); /* IE 9+ */
+-o-transform:scale(1,0.8); /* Opera */
 	}
 
 		.headingWrapperPrimary{
 			position:relative;
 			z-index:40;
-			font-size:80px;
+			font-size:65px;
 			color: #E4F1FE;
 		    text-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 		}
@@ -366,6 +369,7 @@ body{
 .tabs {
     width:100%;
     display:inline-block;
+    margin-left:8%;
 }
  
     /*----- Tab Links -----*/
@@ -410,6 +414,7 @@ body{
 		padding: 25px 40px 30px 20px;
 		padding-left:40px;
 		width:auto;
+		max-width:1100px;
 		font-size:20px;
     }
  
@@ -466,3 +471,90 @@ border-top-right-radius: 40px;
 
   }
   .accordion-content.default {display: block;}
+.imgBorder {
+  padding: 15px 15px 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+.taped-up {
+  display: inline-block; /* displays element as an inline element similar to <span> */
+  padding: 15px; /* size of the white border */
+  margin: 30px 30px 30px 70px; /* position image with other page elements */
+  /* give the border's background color a gradient */
+  /* depending on the colors you give you can make it look new or old and faded */
+  background-color: #daecff;
+  /* give the image a drop shadow */
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.75);
+  /* give the image a slight rotation for a realistic effect */
+  -ms-transform:rotate(3deg); /* IE 9 */
+  -webkit-transform:rotate(3deg); /* Safari and Chrome */
+  transform:rotate(3deg); /* Standard syntax (should be last) */
+  /* Cleans up the jagged edges caused by the rotation a bit */
+  -webkit-backface-visibility:hidden; /* Chrome and Safari */
+  -moz-backface-visibility:hidden; /* Firefox */
+  -ms-backface-visibility:hidden; /* Internet Explorer */
+  backface-visibility:hidden; /* Standard syntax (should be last) */
+  position: relative; /* lets us later position the tape relative to the box */
+}
+
+.taped-up:before {
+  content: ''; /* create an empty psuedo element */
+  position: absolute; /* positions the tape relative to the box created above rather than the whole page */
+  background-color: rgba(255,255,255,0.4); /* using rgba for the color lets us make the tape transparent */
+  height: 26px; /* height of the tape */
+  /* using :before places the tape on the left of the div */
+  left:100px; /* position from the left edge of the .taped-up div edge */
+  top: -14px; /* position from the top edge of the .taped-up div edge */
+  width: 95px; /* width of the tape */
+  /*rotate the tape 5 degrees counter-clockwise*/
+  -ms-transform:rotate(-5deg); /* IE 9 */
+  -webkit-transform:rotate(-5deg); /* Safari and Chrome */
+  transform:rotate(-5deg); /* Standard syntax (should be last) */
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1); /* give the tape a slight drop shadow */
+  /* giving the tape an almost transparent dotted border on the right and left gives it a nicely perforated-look at the edges */
+  border-style: dotted;
+  border-color: rgba(0,0,0,0.1);
+  border-width: 0 2px; /* border only on right and left sides */
+}
+
+.tapeChange{
+	-ms-transform:rotate(-3deg); /* IE 9 */
+  -webkit-transform:rotate(-3deg); /* Safari and Chrome */
+  transform:rotate(-3deg); /* Standard syntax (should be last) */
+}
+
+.tapeHolder{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:1000px;
+}
+
+.circle{
+	margin:30px;
+	width: 260px;
+	height: 260px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-webkit-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+	-moz-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+	box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+}
+
+.accContainer{
+	overflow:hidden;
+	height:auto;
+	min-height:320px;
+}
+
+#d1{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#d2{
+	float:right;
+}
