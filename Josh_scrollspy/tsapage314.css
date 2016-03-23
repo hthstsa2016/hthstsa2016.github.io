@@ -24,6 +24,14 @@ nav{
 }
 **/
 
+.navbar .active{
+	color:#FF4C65 !important;
+}
+
+.navbar-header{
+	font-family:'Roboto' !important;
+}
+
 #tsasection1, #tsasection2, #tsasection3, #tsasection4, #tsasection5 {
 	font-family:'Roboto',sans-serif;
 	padding-top:40px;
