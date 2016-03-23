@@ -445,7 +445,8 @@ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span
 
 hr.style14 { 
 	width:40%;
-	border:1px solid #FF4C65; 
+	border: 0;
+    border-top: 1px solid #FF4C65;
 	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
