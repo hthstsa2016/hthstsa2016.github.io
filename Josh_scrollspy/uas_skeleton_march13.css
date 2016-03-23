@@ -81,6 +81,21 @@ body{
           font-family: "Roboto";
         }
 
+        #techText2 {
+          width:100%;
+          margin-left:0%;
+        }
+
+        .instructInfo{
+          width:100%;
+          margin-top:0%;
+          margin-left:0%;
+        }
+
+	    #LeftSide{
+	    	height:100%;
+	    }
+
 	}
 
         /* View settings on screen size width (or wider) below */
@@ -146,6 +161,20 @@ body{
 	      color:white;
 	      font-family: "Roboto";
 	    }
+
+        #techText2 {
+          width:50%;
+          margin-left:10%;
+        }
+        .instructInfo{
+          width:59%;
+          margin-top:-15%;
+          margin-left:30%;
+        }
+
+        #LeftSide{
+          height:1000px;
+        }
 
 	}
 
@@ -314,11 +343,11 @@ body{
       margin: auto;
   }
 
- #slidey {
+/* #slidey {
  	height:1500px;
  	width:1500px;
  	float:right;
- }
+ }*/
 
   #leftt, #rightt {
 	background-image: none;
@@ -439,8 +468,8 @@ hr.style14 {
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(237,247,254, 0.8), 
-		rgba(237,247,254, 0.8)
+		rgba(0,0,0, 0.7), 
+		rgba(0,0,0, 0.7)
 		),
 		url(ctePics/measure.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -449,7 +478,8 @@ hr.style14 {
 		background-size: cover;
 }
 
-#RightSide{
+
+/*#RightSide{
 	width:50%;
 	height:1000px;
 	float:right;
@@ -465,7 +495,7 @@ hr.style14 {
 		-o-background-size: cover;
 		background-size: cover;
 	transition: width 2s;
-}
+}*/
 
 /*#RightSide:hover{
 	width:50%;
@@ -526,8 +556,8 @@ hr.style14 {
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(237,247,254, 0.8), 
-		rgba(237,247,254, 0.8)
+		rgba(0,0,0, 0.7), 
+		rgba(0,0,0, 0.7)
 		),
 		url(ctePics/civilea.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -535,6 +565,7 @@ hr.style14 {
 		-o-background-size: cover;
 		background-size: cover;
 }
+
 
 #RightTopSide{
 	display:inline-block;
@@ -545,8 +576,8 @@ hr.style14 {
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(237,247,254, 0.8), 
-		rgba(237,247,254, 0.8)
+		rgba(0,0,0, 0.7), 
+		rgba(0,0,0, 0.7)
 		),
 		url(ctePics/keyboard.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -554,6 +585,7 @@ hr.style14 {
 		-o-background-size: cover;
 		background-size: cover;
 }
+
 
 #LeftSide4{
 	display:inline-block;
@@ -564,8 +596,8 @@ hr.style14 {
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(237,247,254, 0.8), 
-		rgba(237,247,254, 0.8)
+		rgba(0,0,0, 0.7), 
+		rgba(0,0,0, 0.7)
 		),
 		url(ctePics/solar.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -573,6 +605,7 @@ hr.style14 {
 		-o-background-size: cover;
 		background-size: cover;
 }
+
 
 #RightSide4{
 	width:50%;
@@ -592,10 +625,12 @@ hr.style14 {
 	transition: width 2s;
 }
 
+
+/*This is for the text inside each course page*/
 #techBig {
 	visibility: visible;
 	margin-bottom:auto;
-	margin-top:3%;
+	margin-top:5%;
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
@@ -604,12 +639,16 @@ hr.style14 {
 	left:2%;
 	font-family: "Roboto";
 	font-size:45px;
-	color:black;
+	color:white;
 	font-weight:700;
 }
 
+#linee {
+	margin-left:auto;
+	margin-right:auto;
+}
 
-#techText {
+/*#techText {
 	visibility: visible;
 	margin-bottom:auto;
 	margin-top:auto;
@@ -624,32 +663,23 @@ hr.style14 {
 	text-align: justify;
 	font-family: "Roboto";
 	font-size: 21px;
-	color:black;
+	color:white;
 	font-weight:400;
-}
+}*/
 
 #techText2 {
-	width:50%;
-	height:50%;
-	margin-left:7%;
+	min-height:35%;
+	margin-top:2.5%;
 	z-index:900;
-	margin-top:1%;
 	text-align: justify;
 	font-family: "Roboto";
-	font-size: 25px;
-	color:black;
+	font-size: 21px;
+	color:white;
 	font-weight:400;
+	background-color:rgba(0,0,0,0.45);
+    border-radius: 25px;
+    word-wrap: break-word;
 }
-
-/*#iedBig:hover {
-	visibility: visible;
-	color:white;
-}
-
-#iedText:hover {
-	visibility: visible;
-	color:white;
-}*/
 
 #alertt {
 	position:absolute;
@@ -658,19 +688,30 @@ hr.style14 {
 	z-index:1000;
 }
 
+#describeSTEM {
+	margin-left:4%;
+	margin-right:4%;
+	margin-top:5%;
+	margin-bottom:2%;
+	word-wrap: break-word;
+}
+
+#posCarousel {
+	top:2.5%;
+	margin-right:6%;
+}
+
 /*#techText2{
 	display:block;
 }*/
 
 
 .GPic{
-	display:inline-block;
-	float:left;
 	width:275px;
 	height:275px;
 	border-radius:50%;
-	margin-top:-2%;
-	margin-left:6%;
+	margin-top:4%;
+	margin-left:10%;
 }
 
 .GPic img:hover{
@@ -679,35 +720,41 @@ hr.style14 {
   	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
 }
 
-.DennisInfo{
-	float: right;
-	display:inline-block;
-	position:relative;
-	width:70%;
-	margin-left:25%;
-	margin-top:-15%;
+.instructInfo{
 	font-family: 'Roboto';
-	font-size: 25px;
+	font-size: 21px;
 	font-weight:400;
 	background-color:rgba(0,0,0,0.45);
     border-radius: 25px;
     color:white;
+    text-align: justify;
+    z-index:100000;
 }
 
 #teachTitle {
+	margin-left:4%;
+	margin-right:4%;
+	margin-top:5%;
+	margin-bottom:2%;
+	word-wrap: break-word;
 	font-weight:600;
-	margin-left:15px;
 }
 
 #teacherNames {
+	margin-left:4%;
+	margin-right:4%;
+	word-wrap: break-word;
 	font-size: 16px;
 	font-weight: 400;
-	margin-left:15px;
 }
 
 #teacherQuote {
+	margin-left:4%;
+	margin-right:4%;
+	word-wrap: break-word;
 	font-weight: 400;
-	margin-left:15px;
+	word-wrap: break-word;
+	text-align:justify;
 }
 
 ::-webkit-scrollbar{
