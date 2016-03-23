@@ -166,7 +166,8 @@
 
   #uassection5 {
   	padding-top:1px;
-  	height:1000px;
+  	padding-bottom:20px;
+  	min-height:1000px;
   	width:100%; 
 	background:
   		linear-gradient(
@@ -256,3 +257,25 @@ hr.style14 {
 #invisible{
 	display:none;
 }
+
+.problemTitle{
+	color:#FF4C65;
+	font-size:22px;
+}
+
+#sources{
+	background-color:#FF4C65;
+	color:white;
+	height:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-decoration:none;
+	color:white !important;
+	margin-bottom:-10px;
+	padding: 20px 120px 20px 120px;
+}
+
+#sources a:hover{
+	color:#3AA3C1;
+	text-decoration:none;
+	}
