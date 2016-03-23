@@ -297,11 +297,6 @@ body{
 		background-size: cover;
   }
 
-
-  #mainsection6 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
-  #mainsection7 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #8DC6FF;}
-  #mainsection8 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
-
 /*#caroslide {
 	width:100px;
 }*/
@@ -365,7 +360,7 @@ body{
   	}
 
 	#slidey {
-	 	height:700px;
+	 	height:500px;
 	 	width:700px;
 	 	float:right;
 	}
@@ -383,7 +378,7 @@ body{
   	}
 
 	#slidey {
-	 	height:700px;
+	 	height:500px;
 	 	width:700px;
 	 	float:right;
 	}
@@ -450,8 +445,7 @@ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span
 
 hr.style14 { 
 	width:40%;
-	border: 0; 
-	height: 1px; 
+	border:1px solid #FF4C65; 
 	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
@@ -630,7 +624,7 @@ hr.style14 {
 #techBig {
 	visibility: visible;
 	margin-bottom:auto;
-	margin-top:5%;
+	margin-top:6%;
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
@@ -773,4 +767,28 @@ hr.style14 {
 
 #myNavbar li a:hover, #myNavbar li:active a:active, .navbar-header a:hover{
 	color: #FF4C65 !important;
+}
+
+.learnMoreButton{
+	width:auto;
+	height:auto;
+	background-color:#FF4C65;
+	color:#EEEEEE;
+	text-align:center;
+	text-decoration:none;
+	padding:10px;
+	border-radius:10px;
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
+}
+
+.learnMoreButton:hover{
+	text-decoration:none;
+	color:#EEEEEE;
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
 }
