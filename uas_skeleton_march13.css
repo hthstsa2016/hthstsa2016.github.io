@@ -145,7 +145,7 @@ body{
 
 		/* Settings for all sections within the main section  */
 		div[id*='mainsection'] {
-		  padding-left: 120px;
+		  /*padding-left: 120px;*/
 		}
 
 		/*Center Brand*/
@@ -235,8 +235,8 @@ body{
   #mainsection1 {
   	padding-top:1px;
   	height:1000px;
-  	width:100%;
-	background:
+  }
+/*	background:
 		linear-gradient(
 		rgba(0, 0, 0, 0.6), 
 		rgba(0, 0, 0, 0.6)
@@ -247,24 +247,13 @@ body{
 		-o-background-size: cover;
 		background-size: cover;
 		filter:gray;
-	}
+	}*/
 
 
   #mainsection2 {
   	padding-top:1px;
   	height:1000px;
   	width:100%; 
-  	background:
-  		linear-gradient(
-		rgba(0, 0, 0, 0.6), 
-		rgba(0, 0, 0, 0.6)
-		),
-		url(ctePics/juniorPic.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		filter:gray;
   }
 
    #mainsection3 {
@@ -739,8 +728,6 @@ hr.style14 {
 	width:275px;
 	height:275px;
 	border-radius:50%;
-	margin-top:4%;
-	margin-left:10%;
 }
 
 .GPic img:hover{
@@ -761,26 +748,17 @@ hr.style14 {
 }
 
 #teachTitle {
-	margin-left:4%;
-	margin-right:4%;
-	margin-top:5%;
-	margin-bottom:2%;
 	word-wrap: break-word;
 	font-weight:600;
 }
 
 #teacherNames {
-	margin-left:4%;
-	margin-right:4%;
 	word-wrap: break-word;
 	font-size: 16px;
 	font-weight: 400;
 }
 
 #teacherQuote {
-	margin-left:4%;
-	margin-right:4%;
-	word-wrap: break-word;
 	font-weight: 400;
 	word-wrap: break-word;
 	text-align:justify;
@@ -837,4 +815,78 @@ hr.style14 {
 	text-align:center;
 	margin-bottom:-10px;
 	padding: 20px 120px 20px 120px;
+}
+
+/* Basic background image styling.
+.background-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+*/
+
+
+/*Course Halves for Each HS Year*/
+#Half1A, #Half1B, #Half2A, #Half2B, #Half3A, #Half3B, #Half4A, #Half4B {
+	height:1000px;
+	background:
+	  linear-gradient(
+	    rgba(0,0,0, 0.7), 
+	    rgba(0,0,0, 0.7)
+	  ),
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    margin-bottom: 0;
+}
+
+
+/*Modal CSS*/
+#bScreenModal {
+	width:55%;
+	height:3000px;
+}
+
+#bModalTitle {
+	font-family: 'Roboto';
+	font-size: 30px;
+}
+
+#bModalText {
+	font-family:'Roboto';
+	font-size:18px;
+}
+
+#leftFinga {
+	cursor:pointer;
+	float:left;
+}
+
+#leftFinga:hover {
+	color:#FF4C65;
+}
+
+#rightFinga {
+	cursor:pointer;
+	float:right;
+}
+
+#rightFinga:hover {
+	color:#FF4C65;
+}
+
+#courseDescriptionPageIED {
+	display:block;
+	transition: opacity 1s ease-out;
+}
+
+#mediaPageIED {
+	display:none;
+	transition: opacity 1s ease-out;
+}
+
+#teachNotePageIED {
+	display:none;
+	transition: opacity 1s ease-out;
 }
