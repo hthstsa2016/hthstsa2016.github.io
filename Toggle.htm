@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Career Technical Education</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="ctePics/lightbulbfav.ico" type="image/x-icon">
+  <link rel="icon" href="ctePics/lightbulbfav.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
+  <script src="uas_skeleton_march13.js"></script>
+</head>
+<style>
+
+	/* Gives main container section th entire screen */
+	#mainContainer {
+	  padding-top: 0px;
+	  padding-left: 0px;
+	}
+
+	/* Gives main section the entire main container space */
+	.main{
+	  position: absolute;
+	  width: 100%;
+	}  
+
+	/* sidebar default hover and focus setting for Non-active selections */
+	nav.sidebar .navbar-nav > li > a {
+		color:green;
+	}
+
+	/* sidebar default hover and focus setting for Non-active selections */
+	nav.sidebar .navbar-nav > li > a:hover, nav.sidebar .navbar-nav > li > a:focus {
+		color:red;
+	}
+
+	/* sidebar default hover and focus setting for Active selections */
+	nav.sidebar .navbar-nav > li.active > a, nav.sidebar .navbar-nav > li.active > a:hover, 
+	  nav.sidebar .navbar-nav > li.active > a:focus {
+		background-color:transparent;
+		border-color: transparent;
+		color:red;
+	}
+
+	/* Sidebar tooltip settings  */ 
+	#bs-sidebar-navbar-collapse .tooltip,
+	#bs-sidebar-navbar-collapse .tooltip .tooltip-inner {
+	      width:600px;
+	      padding: 5px;
+	      font-size: 90%;
+	      word-wrap: break-word;
+	      z-index: 9000;
+  	}
+
+	nav.sidebar, .main{
+	    -webkit-transition: margin 200ms ease-out;
+	    -moz-transition: margin 200ms ease-out;
+	    -o-transition: margin 200ms ease-out;
+	    transition: margin 200ms ease-out;
+	}
+
+	#Half1A, #Half1B, #Half2A, #Half2B,
+	#Half3A, #Half1B, #Half4A, #Half4B  {
+	    height:1000px;
+	    background:
+	    linear-gradient(
+        	rgba(0,0,0, 0.7), 
+        	rgba(0,0,0, 0.7)
+	    ),
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+  	    background-size: cover;
+	    margin-bottom: 0;
+	}
+
+	.circle {
+	    height:200px;
+	    width:200px;
+	    -moz-border-radius:100px;
+	    -webkit-border-radius:100px;
+	    text-align:center;
+	    color:white;
+	    line-height: 100px;
+	    font-weight: bold;
+	    font-size: 22px;
+	    font-family: sans-serif;
+	}
+
+	/*small/medium side display - When is screen is resized */
+        /* View settings on screen size width (or wider) below */
+	@media (min-width: 250px) {
+
+		/* Sidebar settings */
+		.navbar-toggle {
+		  color: white;
+		  border-color: transparent;
+		  background-color: transparent;
+		}
+
+		nav.sidebar{
+		  padding-top: 52px;
+		}
+
+		/* Change sidebar to horizontal format */
+		nav.sidebar {
+		  display:block;
+		  border-bottom: 1px solid #eee;
+		}
+		nav.sidebar ul {
+		  text-align:center;
+		  margin-bottom:0px;
+		}
+		nav.sidebar ul li{
+		  display:inline-block;
+		}
+
+	}
+        /* View settings on screen size width (or wider) below */
+	@media (min-width: 768px) {
+
+		/*allows nav box to use 100% width*/
+		nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+			padding: 0 0px 0 0px;
+		}
+
+		nav.sidebar{
+			width: 120px;
+			height: 100%;
+			z-index: 8000;
+			margin-bottom: 0px;
+			margin-left: 0px;
+			padding-top: 70px;
+			position: fixed;
+		}
+
+		/* Sidebar settings */
+		nav.sidebar.navbar {
+			border-radius: 0px;
+			background-color:transparent;
+			border-color: transparent;
+		} 
+
+		/* Settings for all sections within the main section  */
+		/*div[id*='mainsection'] {
+		  padding-left: 120px;
+		} */
+
+		/*Center Brand*/
+		nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+			margin-left: 0px;
+		}
+		/*Center Brand*/
+		nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+			text-align: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		/*Center Icons*/
+		nav.sidebar a{
+			padding-right: 13px;
+		}
+
+		/* Gives main container section th entire screen */
+		#mainContainer {
+		  padding-top: 30px;
+		  padding-left: 0px;
+		}
+	}
+
+  #mainsection1{padding-top:1px;height:1000px;}
+  #mainsection2 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #673ab7;}
+  #mainsection3 {padding-top:1px;height:1000px;}
+  #mainsection41 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #00bcd4;}
+  #mainsection42 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #009688;}  
+
+</style>
+<script>
+   var mindesktop = 768;  //anything less than this is mobile.
+   function htmlbodyHeightUpdate(){
+    var height3 = $(window).height();
+    var height1 = $('.nav').height()+50;
+    height2 = $('.main').height();
+    //alert($(window).width());
+    if(height2 > height3){
+      $('html').height(Math.max(height1,height3,height2)+10);
+      $('body').height(Math.max(height1,height3,height2)+10);
+    }
+    else {
+      $('html').height(Math.max(height1,height3,height2));
+      $('body').height(Math.max(height1,height3,height2));
+    }
+  }
+
+  $(document).ready(function(){
+      htmlbodyHeightUpdate();
+      $( window ).resize(function() {
+	htmlbodyHeightUpdate();
+      });
+      $( window ).scroll(function() {
+        height2 = $('.main').height();
+        htmlbodyHeightUpdate();
+      });
+
+      // Handler so that only one can be opened between Menu and Submenu 	 
+      $('#mainmenu').click(function() {
+        if($(window).width() < mindesktop ) {
+          $('#bs-sidebar-navbar-collapse').collapse('hide');
+        }
+      });
+      $('#submenu').click(function() {
+        if($(window).width() < mindesktop ) {
+          $('#myNavbar').collapse('hide');
+        }
+      });
+ 
+      //for Tooltip
+      $('#bs-sidebar-navbar-collapse [data-toggle="tooltip"]').tooltip({placement: "right"});
+      $('#bs-sidebar-navbar-collapse [data-toggle="tooltip"]').tooltip('hide'); 
+      /*$('#bs-sidebar-navbar-collapse [data-toggle="tooltip"]').tooltip('toggle');
+      $('#bs-sidebar-navbar-collapse [data-toggle="tooltip"]').tooltip({placement: "right"});
+      $('#bs-sidebar-navbar-collapse [data-toggle="tooltip"]').tooltip('show'); */
+      //Assign and enable scrollspy
+      $('body').scrollspy({target: "#bs-sidebar-navbar-collapse"})
+      //Enable smooth scrolling
+      $("#bs-sidebar-navbar-collapse a").click(
+    	function(event){
+          event.preventDefault();
+          var hash = this.hash;
+      	  $('html, body').animate({scrollTop: $(hash).offset().top},
+            800, function(){window.location.hash = hash;})
+	});  //("#bs-sidebar-navbar-collapse a").click
+  });  //document.ready
+
+  $(function() {
+    var courseyr1A = $('#Half1A');
+    var backgroundsyr1A = 
+           ['url(http://static.jsbin.com/images/jsbin_static.png)', 
+            'url(http://static.jsbin.com/images/popout.png)'];
+    var currentyr1A = 0;
+    function nextBackground1A() {
+      courseyr1A.css(
+       'background',
+        backgroundsyr1A[currentyr1A = ++currentyr1A % backgroundsyr1A.length]
+      );
+      setTimeout(nextBackground1A, 4000);
+    }
+    setTimeout(nextBackground1A, 4000);
+    courseyr1A.css('background', backgroundsyr1A[0]);
+
+    var courseyr1B = $('#Half1B');
+    var backgroundsyr1B = 
+           ['url(http://static.jsbin.com/images/jsbin_static.png)', 
+            'url(http://static.jsbin.com/images/popout.png)'];
+    var currentyr1B = 0;
+    function nextBackground1B() {
+      courseyr1B.css(
+       'background',
+        backgroundsyr1B[currentyr1B = ++currentyr1B % backgroundsyr1B.length]
+      );
+      setTimeout(nextBackground1B, 5000);
+    }
+    setTimeout(nextBackground1B, 5000);
+    courseyr1B.css('background', backgroundsyr1B[0]);
+  });
+
+  function Alerts() {
+    alert('This button works');
+  }
+
+</script>
+
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" id="submenu" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse">CTE</button>
+      <button type="button" id="mainmenu" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">Menu</button>
+      <a class="navbar-brand" href="#">Webmaster 2016</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="TSAPage.htm">HTHS</a></li>
+        <li><a href="TSAPage.htm">CTE</a></li>
+        <li><a href="TSAPage.htm">UAS</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Translate</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-inverse sidebar" role="navigation">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li id='circle1'><a href='#mainsection1' id="Route Planner" data-toggle="tooltip" title="The possibilities in commercial business are limitless with the advancements and technology of UAVs. Its benefits and uses facilitate several actions taken by various companies around the world.">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-group faa-tada animated-hover fa-stack-1x"></i>
+          </span>
+        </a></li>
+
+
+        <li id='circle2'><a href="#mainsection2" id="Travel Stops">
+          <span class="fa-stack fa-2x" data-toggle="tooltip" title="Education has never been more futuristic with UAV technology. Its capabilities allow students and teachers to explore remote areas and investigate surroudings.">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-line-chart faa-pulse animated-hover fa-stack-1x"></i>
+          </span>
+        </a></li>
+
+
+        <li id='circle3'><a href="#mainsection3" id="Itineraryy">
+          <span class="fa-stack fa-2x" data-toggle="tooltip" title="UAV technology all began with a little research. With the current technology and engineering, its time for UAV tech to give back to the research field. Just think about the views and tiny crevices on our planet that these small vehicles can explore.">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-cog faa-spin animated-hover fa-stack-1x"></i>
+          </span>
+        </a></li>
+
+
+        <li id='circle4'><a href="#mainsection41" id="Itineraryy2">
+          <span class="fa-stack fa-2x" data-toggle="tooltip" title="The future of technology has arrived, but engineering and science never cease to improve. What is the future of UAV technology?">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-fast-forward faa-passing animated-hover fa-stack-1x"></i>
+          </span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid" id="mainContainer">
+<div class="main" data-offset="300"> 
+  <div id="mainsection1">
+    <div class="row">
+      <h3>CAREER AND TECHNICAL EDUCATION</h3>
+      <p>U.S. News & World Report named High Technology High School the #1 STEM school in the entire nation. Specializing in science, mathematics, engineering, and technology, High Tech offers a multitude of Project Lead The Way courses that will fully prepare its students for a bright future in any one of these specific fields. From freshman to senior, the curriculum always remains challenging, yet rewarding at the same time.</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-3" style="background-color:lavender;">
+	<div class="circle" style="background-color:green;">FRESHMAN
+	</div>
+        <h3>A FRESH START</h3>
+        <p>When you first walk into High Technology High School as an incoming freshman, you are immediately immersed in a purely engineering environment. With two unique engineering classes, being "Introduction to Engineering Design" and "Computer Integrated Manufacturing", students are given a myriad of opportunities to apply themselves in this field and take off on the journey of finding their inner engineer.</p>
+        <a href="#mainsection41">Learn More <strong>+</strong></a>
+      </div>
+      <div class="col-sm-3" style="background-color:lavenderblush;">
+	<div class="circle" style="background-color:yellow;">SOPHOMORE
+	</div>
+        <h3>TAKING IT A LEVEL HIGHER</h3>
+        <p>Sophomore year at High Technology High School allows each student to enhance their knowledge of the engineering field, with two more insightful courses: "Principles of Engineering" and "Computer Programming for Engineers." Each course delves into the attributes of mechanincal engineering, programming, and real-world applications of the Project Lead The Way design process.</p>
+        <a href="#mainsection41">Learn More <strong>+</strong></a>
+      </div>
+      <div class="col-sm-3" style="background-color:lavender;">
+	<div class="circle" style="background-color:red;">JUNIOR
+	</div>
+        <h3>CHOOSING THE RIGHT PATH</h3>
+        <p>Choosing the right field in engineering is always a hard decision. However, junior year at High Technology High School offers 4 specific technology electives that will fulfill the desire to excel in a specific field or simply help each student realize their place in the vast world of STEM. Consisting of "Computer Science and Software Engineering" and "Civil Engineering and Architecture", our students are completely able to map out their futures.</p>
+        <a href="#mainsection41">Learn More <strong>+</strong></a>
+      </div>
+      <div class="col-sm-3" style="background-color:lavender;">
+	<div class="circle" style="background-color:blue;">SENIOR
+	</div>
+        <h3>APPLY YOUR KNOWLEDGE</h3>
+        <p>Senior Year. All the knowledge from 3 years of experience at High Technology High School culminates into the rigorous curriculum of Engineering Design & Development. Having learned nearly every aspect of PLTW's engineering curriculum, students are required to apply their immense knowledge and invent new things. Additionally, seniors are given the opportunity to perform research experiments.</p>
+        <a href="#mainsection41">Learn More <strong>+</strong></a>
+      </div>
+    </div>
+  </div>  
+  <div id="mainsection2">
+    <h1>Section 2</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  <div id="mainsection3" class="row">
+    <div id="Half1A" class="col-sm-6" style="padding-left:120px">
+        <h1 id="courseName">Introduction to Engineering Design</h1>
+        <p id="takeOff">TAKE OFF!!!</p>
+        <button type="button" onclick="Alerts();" style="text-align:center">LET'S GO!!!</button>
+        <br>
+    </div>
+    <div id="Half1B" class="col-sm-6" style="padding-left:120px">
+         <h1 id="courseName">Computer Integrated Manufacturing</h1>
+         <hr class="style14">
+    </div>
+  </div>
+  <div id="mainsection41">
+    <h1>Section 4 Submenu 1</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  <div id="mainsection42">
+    <h1>Section 4 Submenu 2</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-4</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-4</div>
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-4</div>
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-4</div>
+  </div>
+</div>
+</div>
+</body>
+</html>

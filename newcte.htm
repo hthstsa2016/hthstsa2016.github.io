@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 <html>
-
 
 <head>
   <title>Career Technical Education</title>
@@ -19,10 +17,8 @@
   <script src="uas_skeleton_march13.js"></script>
 </head>
 
-
-<!--content-->
 <body>
-  
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,63 +34,68 @@
         <li><a href="uas322_3.htm">UAS</a></li>
       </ul>
     </div>
+
+    <nav class="navbar navbar-inverse sidebar" role="navigation" id="mainSidebar">
+      <div class="container-fluid">
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse">
+          <ul class="nav navbar-nav">
+
+            <li id='circle1'><a href='#mainsection1' id="Route Planner">
+              <span class="fa-stack fa-2x" data-toggle="tooltip" title="CTE at High Technology High School is thriving and entering the nascent world of technology and engineering.">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-info faa-tada animated-hover fa-stack-1x"></i>
+              </span>
+            </a></li>
+
+
+            <li id='circle2'><a href="#mainsection2" id="Travel Stops">
+              <span class="fa-stack fa-2x" data-toggle="tooltip" title="Freshmen year at High Tech lays the foundation for each rising engineer, as students are taking off into the limitless skies of science and technology.">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-paper-plane faa-float animated-hover fa-stack-1x"></i>
+              </span>
+            </a></li>
+
+
+            <li id='circle3'><a href="#mainsection3" id="Itineraryy">
+              <span class="fa-stack fa-2x" data-toggle="tooltip" title="Sophomore year allows students to apply themselves further in the world of engineering.">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-cog faa-spin animated-hover fa-stack-1x"></i>
+              </span>
+            </a></li>
+
+
+            <li id='circle4'><a href="#mainsection4" id="Itineraryy2">
+              <span class="fa-stack fa-2x" data-toggle="tooltip" title="Choose a path to walk down, as juniors are given 2 choices in the many fields of engineering.">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-map faa-pulse animated-hover fa-stack-1x"></i>
+              </span>
+            </a></li>
+
+            <li id='circle5'><a href="#mainsection5" id="Itineraryy2">
+              <span class="fa-stack fa-2x" data-toggle="tooltip" title="Senior year at High Tech ties together everything learned in the previous 3 years.">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-object-group faa-tada animated-hover fa-stack-1x"></i>
+              </span>
+            </a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
   </div>
 </nav>
 
-<nav class="navbar navbar-inverse sidebar" role="navigation">
-  <div class="container-fluid">
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse">
-      <ul class="nav navbar-nav">
-
-        <li id='circle1'><a href='#mainsection1' id="Route Planner">
-          <span class="fa-stack fa-2x" data-toggle="tooltip" title="CTE at High Technology High School is thriving and entering the nascent world of technology and engineering.">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-info faa-tada animated-hover fa-stack-1x"></i>
-          </span>
-        </a></li>
-
-
-        <li id='circle2'><a href="#mainsection2" id="Travel Stops">
-          <span class="fa-stack fa-2x" data-toggle="tooltip" title="Freshmen year at High Tech lays the foundation for each rising engineer, as students are taking off into the limitless skies of science and technology.">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-paper-plane faa-float animated-hover fa-stack-1x"></i>
-          </span>
-        </a></li>
-
-
-        <li id='circle3'><a href="#mainsection3" id="Itineraryy">
-          <span class="fa-stack fa-2x" data-toggle="tooltip" title="Sophomore year allows students to apply themselves further in the world of engineering.">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-cog faa-spin animated-hover fa-stack-1x"></i>
-          </span>
-        </a></li>
-
-
-        <li id='circle4'><a href="#mainsection4" id="Itineraryy2">
-          <span class="fa-stack fa-2x" data-toggle="tooltip" title="Choose a path to walk down, as juniors are given 2 choices in the many fields of engineering.">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-map faa-pulse animated-hover fa-stack-1x"></i>
-          </span>
-        </a></li>
-
-        <li id='circle5'><a href="#mainsection5" id="Itineraryy2">
-          <span class="fa-stack fa-2x" data-toggle="tooltip" title="Senior year at High Tech ties together everything learned in the previous 3 years.">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-object-group faa-tada animated-hover fa-stack-1x"></i>
-          </span>
-        </a></li>
-
-      </ul>
-    </div>
-  </div>
-</nav>
+<!-- <div class="background-image toggle-image first-image show"></div>
+<div class="background-image toggle-image second-image"></div>
+<div class="background-image toggle-image third-image"></div> -->
 
 <div class="container-fluid" id="mainContainer">
 <div class="main" data-offset="15"> 
 
-  <div id="mainsection1">
+  <div id="mainsection1" class="background-image toggle-image first-image show">
     
     <div id="infoHTHS" class="animated fadeInLeft">
       <h2 id="engineerTitle" class="animated lightSpeedIn">CAREER AND TECHNICAL EDUCATION</h2>
@@ -107,7 +108,7 @@
 
   </div>
 
-  <div id="mainsection2">
+  <div id="mainsection2" class="background-image toggle-image second-image">
 
     <div id="infoFrosh" class="animated fadeInLeft">
       <h2 id="engineerTitle" class="animated lightSpeedIn">A FRESH START</h2>
@@ -123,7 +124,7 @@
   </div>
 
 
-  <div id="mainsection3">
+  <div id="mainsection3" class="background-image toggle-image third-image">
 
     <div id="infoSoph" class="animated fadeInLeft">
       <h2 id="engineerTitle" class="animated lightSpeedIn">TAKING IT A LEVEL HIGHER</h2>
@@ -138,7 +139,7 @@
   
   </div>
 
-  <div id="mainsection4">
+ <!--  <div id="mainsection4">
 
     <div id="infoJunior" class="animated fadeInLeft">
       <h2 id="engineerTitle" class="animated lightSpeedIn">CHOOSING THE RIGHT PATH</h2>
@@ -166,15 +167,12 @@
         <br/>
       <div><a href="edd_full.htm" class="transition learnMoreButton" style="float:left;">EDD</a></div>
       <div><a href="Research_fullAlec.htm" class="transition learnMoreButton" style="float:right;">Research</a></div>
-    </div>
+    </div> -->
 
   </div>
-   <div class="info_footer">
-      <p> This site uses modified Bootstrap code, open source icons, and Google's Roboto font. Any pictures are taken by HTHS TSA or are royalty free.</p>
+</div>
+</div>
 
-      <p> HTHS Webmaster Team: 2084148, 2084149, 2084150, 2084151, 2084152 </p>
-    </div>
-</div>
-</div>
 </body>
+
 </html>

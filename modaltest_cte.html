@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="ctePics/lightbulbfav.ico" type="image/x-icon">
+  <link rel="icon" href="ctePics/lightbulbfav.ico" type="image/x-icon">
+  <link rel="stylesheet" href="uas_skeleton_march13.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
+  <link rel="stylesheet" href="animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
+  <script src="uas_skeleton_march13.js"></script>
+</head>
+<body>
+
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <ul style="list-style-type: none;">
+    <li><a data-toggle="modal" data-target="#myModal">Course Description</a></li>
+    <li><a data-toggle="modal" data-target="#myModal">Media</a></li>
+    <li><a data-toggle="modal" data-target="#myModal">Teacher's Note</a></li>
+  </ul>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg" id="bScreenModal">
+    
+      <!-- Modal Course Description content-->
+      <div class="modal-content" id="courseDescriptionPageIED">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="bModalTitle">Introduction to Engineering Design</h4>
+        </div>
+
+        <div class="modal-body" id="bModalText">
+          <p>New students at High Technology High School are immediately immersed in the vast world of engineering. With such a rigorous and fruitful curriculum, Project Lead The Way provides a myriad of insightful lessons that include CAD modeling, sketch designs, and proper engineering notation. Just channel your inner genius.
+          </p>
+
+          <br>
+
+          <p>With the help of the teacher, students dig deep into the engineering design process, applying math, science, and engineering standards to hands-on projects. It all starts out with simple drawings, which then culminates into 3-D modeling on the Autodesk Inventor Professional software. Projects include the complete replication of a model car with the Autodesk software, in addition to a multitude of different CAD drawings that further aggrandize the aptitude of each student with this complicated software.
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible2()" id="leftFinga"></i>
+          <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible1()" id="rightFinga"></i>
+        </div>
+      </div>
+
+
+      <!--Media Content-->
+      <div class="modal-content" id="mediaPageIED">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="bModalTitle">Introduction to Engineering Design</h4>
+        </div>
+        <div class="modal-body" id="bModalText">
+          <img src="http://oraclearena.s3.amazonaws.com/img/Warriors-Team-Page-Logo.png">
+        </div>
+        <div class="modal-footer">
+          <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible4()" id="leftFinga"></i>
+          <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible3()" id="rightFinga"></i>
+        </div>
+      </div>
+
+
+      <!--Teacher's Note-->
+      <div class="modal-content" id="teachNotePageIED">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="bModalTitle">Introduction to Engineering Design</h4>
+        </div>
+
+        <div class="modal-body" id="bModalText">
+
+          <a class= "GPicPic" href = "mailto:grunthaner@ctemc.org?subject=Webmaster" target="_newtab"> <img class= "GPic" src="ctePics/grunthaner.jpg"> </a>
+
+          <b><h1 id="teachTitle">Ms. Linda Grunthaner</h1></b>
+
+          <p id="teacherNames">
+            Linda Grunthaner teaches Introduction to Engineering Design at High Technology High School. She has held the position for 17 years.
+          </p>
+
+          <p id="teacherQuote">
+          <br>
+            <em>"Introduction to Engineering, or IED, is a good introduction for the freshmen because it covers tool use, safety, Beginner to Advanced Autodesk Inventor software, and sketching. It also covers problem solving as a basis to all these design briefs. In my opinion, IED truly paves a road towards an engineering future, as several of my students revisit during or after college to tell me how much IED prepared them in all of their engineering courses."</em>
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible6()" id="leftFinga"></i>
+          <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible5()" id="rightFinga"></i>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
