@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="ctePics/lightbulbfav.ico" type="image/x-icon">
   <link rel="icon" href="ctePics/lightbulbfav.ico" type="image/x-icon">
-  <link rel="stylesheet" href="uas_skeleton_march13.css">
+  <link rel="stylesheet" href="uas_skeleton_may13.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
@@ -17,16 +17,11 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
   <script src="uas_skeleton_march13.js"></script>
-  <script>
-    function Alerts() {
-    alert('This button works');
-  }
-  </script>
 </head>
 
 
 <!--content-->
-<body>
+<body style="overflow-x:hidden">
   
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -44,7 +39,7 @@
       </ul>
     </div>
 
-    <nav class="navbar navbar-inverse sidebar" role="navigation" id="mainSidebar">
+    <nav class="navbar navbar-inverse sidebar" role="navigation" id="mainSidebar" style="display:none">
       <div class="container-fluid">
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -101,8 +96,71 @@
 <div class="main" data-offset="15"> 
 
 
+  <div id="mainsection1">
 
-  <div id="mainsection1" class="row" style='background-color:red;width:100%'>
+    <div class="row">
+      <h3>CAREER AND TECHNICAL EDUCATION</h3>
+      <p>U.S. News & World Report named High Technology High School the #1 STEM school in the entire nation. Specializing in science, mathematics, engineering, and technology, High Tech offers a multitude of Project Lead The Way courses that will fully prepare its students for a bright future in any one of these specific fields. From freshman to senior, the curriculum always remains challenging, yet rewarding at the same time.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-3" style="background-color:lavender;">
+        <div class="circlebase">
+          <a href="#mainsection2">
+        <div class="circleinfo">Read More<strong>+</strong>
+      </div>
+      </a>  
+    <div class="circlearea">FRESHMAN</div>
+    </div>
+        <h3>A FRESH START</h3>
+        <p>When you first walk into High Technology High School as an incoming freshman, you are immediately immersed in a purely engineering environment. With two unique engineering classes, being "Introduction to Engineering Design" and "Computer Integrated Manufacturing", students are given a myriad of opportunities to apply themselves in this field and take off on the journey of finding their inner engineer.</p>
+        <a href="#mainsection2">Learn More <strong>+</strong></a>
+      </div>
+      <div class="col-sm-3" style="background-color:lavenderblush;">
+  <div class="circlebase" style="background:yellow;">
+    <a href="#mainsection3">
+      <div class="circleinfo">Read More<strong>+</strong>
+      </div>
+    </a>
+
+
+    <div class="circlearea">SOPHOMORE</div>
+  </div>
+       <h3>TAKING IT A LEVEL HIGHER</h3>
+        <p>Sophomore year at High Technology High School allows each student to enhance their knowledge of the engineering field, with two more insightful courses: "Principles of Engineering" and "Computer Programming for Engineers." Each course delves into the attributes of mechanincal engineering, programming, and real-world applications of the Project Lead The Way design process.</p>
+        <a href="#mainsection3">Learn More <strong>+</strong></a>
+      </div>
+      <div class="col-sm-3" style="background-color:lavender;">
+  <div class="circlebase" style="background:red;">
+    <a href="#mainsection4">
+      <div class="circleinfo">Read More<strong>+</strong>
+      </div>
+    </a>  
+    <div class="circlearea">JUNIOR</div>
+  </div>
+        <h3>CHOOSING THE RIGHT PATH</h3>
+        <p>Choosing the right field in engineering is always a hard decision. However, junior year at High Technology High School offers 4 specific technology electives that will fulfill the desire to excel in a specific field or simply help each student realize their place in the vast world of STEM. Consisting of "Computer Science and Software Engineering" and "Civil Engineering and Architecture", our students are completely able to map out their futures.</p>
+        <a href="#mainsection4">Learn More <strong>+</strong></a>
+      </div>
+      <div class="col-sm-3" style="background-color:lavender;">
+  <div class="circlebase" style="background:blue;">
+    <a href="#mainsection5">
+      <div class="circleinfo">Read More<strong>+</strong>
+      </div>
+    </a>  
+    <div class="circlearea">SENIOR</div>
+  </div>
+        <h3>APPLY YOUR KNOWLEDGE</h3>
+        <p>Senior Year. All the knowledge from 3 years of experience at High Technology High School culminates into the rigorous curriculum of Engineering Design & Development. Having learned nearly every aspect of PLTW's engineering curriculum, students are required to apply their immense knowledge and invent new things. Additionally, seniors are given the opportunity to perform research experiments.</p>
+        <a href="#mainsection5">Learn More <strong>+</strong></a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div id="mainsection2" class="row">
     <div id="Half1A" class="col-sm-6" style="padding-left:120px">
       <h1 id="courseName">Introduction to Engineering Design</h1>
       <hr class="style14">
@@ -199,63 +257,675 @@
     <div id="Half1B" class="col-sm-6">
       <h1 id="courseName">Computer Integrated Manufacturing</h1>
       <hr class="style14">
-      <button type="button" onclick="Alerts()">LET'S GO!</button>
+      
+      <!-- Trigger the modal with a button -->
+      <ul id="modalList">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal2">Course Description</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal2">Media</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal2">Teacher's Note</a></li>
+      </ul>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog modal-lg" id="bScreenModal">
+        
+          <!-- Modal Course Description content-->
+          <div class="modal-content" id="courseDescriptionPageCIM">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Computer Integrated Manufacturing</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+              <p>In this course, students are able to simultaneously learn about the engineering design process and physically apply what they've learned so far. CIM focuses on the ethics and strategies of manufacturing, as well as the assembly and programming of <b><a href="http://www.fischertechnik.de/en/Home/Education.aspx" style="text-decoration:none">Fischertechnik</a></b> parts to create practical contraptions. CIM is a great introduction into the world of automted manufacturing, as it reminds students of the importance and efficiency of automation in the world.
+              </p>
+
+              <br>
+
+              <p>Topics such as Six Sigma, rapid prototyping, and 3D prototyping were all discssed. In addition to these skills, teamwork exercises were given to groups of students to ensure that engineers graduating from High Tech could work well, not only individually, but also in a team. The combination of team and individual projects introduced by Mr. Robert Dennis allows the students to learn to function with other people and as individual engineers, giving each student an extensive knowledge of the topics covered. A quick synopsis of the topics covered is listed: Kaisen theory, lean manufacturing, the history of manufacturing, the assembly line, rapid prototyping techniques, and Computer Numerical Control programming are just a few of the expansive curriculum.
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible8()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible7()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Media Content-->
+          <div class="modal-content" id="mediaPageCIM">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Computer Integrated Manufacturing</h4>
+            </div>
+            <div class="modal-body" id="bModalText">
+              <img src="http://oraclearena.s3.amazonaws.com/img/Warriors-Team-Page-Logo.png">
+            </div>
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible10()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible9()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Teacher's Note-->
+          <div class="modal-content" id="teachNotePageCIM">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Computer Integrated Manufacturing</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+
+              <a class= "GPicPic" href = "mailto:dennis@ctemc.org?subject=Webmaster" target="_newtab"> <img class= "GPic" src="ctePics/mrdennis.jpg"> </a>
+
+              <b><h1 id="teachTitle">Mr. Robert Dennis</h1></b>
+
+              <p id="teacherNames">
+                Mr. Dennis teaches Computer Integrated Manufacturing and Civil Engineering and Architecture at High Technology High School.
+              </p>
+
+              <p id="teacherQuote">
+              <br>
+                <em>"Manufacturing in the U.S. is facing a critical shortage of engineers and technicians. A whole generation is retiring and there are not enough qualified young people to replace them. Whether it's Health and Safety Engineers, Precision Machinists, Manufacturing Engineers, Quality Engineers, Robotics Engineers or Industrial Engineers, the kids have a huge amount of jobs in manufacturing offered to them when they enter the engineering career field."</em>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible12()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible11()" id="rightFinga"></i>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </div>
-
-</div>
-
-
-
-
-  <div id="mainsection2">
-
-    <div id="infoFrosh" class="animated fadeInLeft">
-      <h2 id="engineerTitle" class="animated lightSpeedIn">A FRESH START</h2>
-      <hr class="style14" id="linee">
-      <br>
-      <p id="describeEngineer">
-        When you first walk into High Technology High School as an incoming freshman, you are immediately immersed in a purely engineering environment. With two unique engineering classes, being "Introduction to Engineering Design" and "Computer Integrated Manufacturing", students are given a myriad of opportunities to apply themselves in this field and <b>take off</b> on the journey of finding their inner engineer.</p>
-        <br/>
-      <div><a href="ied3_full.htm" class="transition learnMoreButton" style="float:left;">IED</a></div>
-      <div><a href="cim_full.htm" class="transition learnMoreButton" style="float:right;">CIM</a></div>
-    </div> 
 
   </div>
 
 
-  <div id="mainsection3">
 
-    <div id="infoSoph" class="animated fadeInLeft">
-      <h2 id="engineerTitle" class="animated lightSpeedIn">TAKING IT A LEVEL HIGHER</h2>
-      <hr class="style14" id="linee">
-      <br>
-      <p id="describeEngineer">
-        Sophomore year at High Technology High School allows each student to enhance their knowledge of the engineering field, with two more insightful courses: "Principles of Engineering" and "Computer Programming for Engineers." Each course delves into the attributes of mechanincal engineering, programming, and real-world applications of the Project Lead The Way design process. </p>
-        <br/>
-      <div><a href="poe_full.htm" class="transition learnMoreButton" style="float:left;">POE</a></div>
-      <div><a href="cope_full.htm" class="transition learnMoreButton" style="float:right;">COPE</a></div>
+  <div id="mainsection3" class="row" style="padding-left:120px">
+
+    <div id="Half2A" class="col-sm-6">
+      <h1 id="courseName">Principles of Engineering</h1>
+      <hr class="style14">
+      
+      <!-- Trigger the modal with a button -->
+      <ul id="modalList">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal3">Course Description</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal3">Media</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal3">Teacher's Note</a></li>
+      </ul>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog modal-lg" id="bScreenModal">
+        
+          <!-- Modal Course Description content-->
+          <div class="modal-content" id="courseDescriptionPagePOE">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Principles of Engineering</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+              <p>With Freshman year completed, High Tech students move on through their education in engineering to Principles of Engineering Design. The class teaches students about simple machines, the mathematics behind simple engineering concepts (like stress, simple machines, etc.). The students also learn about engineering ethics and recycling, concepts important to grasp so that in their careers, they can be not only efficient and successful but responsible engineers.
+              </p>
+
+              <br>
+
+              <p>he second half of the year is mainly spent on using VEX robotics and learning the programming language RobotC. These skills are mastered as different sensors, motors, and equipment are handled, programmed, and applied to complete tasks. In addition, team projects help reestablish the theme that teamwork is an essential skill for an engineer. For example, all students work with a group to build a tower that is 8 feet tall and can support a soccer ball for at least 24 hours out of only newspaper and tape. All of these skills and teamwork lessons ultimately prepare the students to venture into their Junior year electives.
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible14()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible13()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Media Content-->
+          <div class="modal-content" id="mediaPagePOE">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Principles of Engineering</h4>
+            </div>
+            <div class="modal-body" id="bModalText">
+              <img src="http://oraclearena.s3.amazonaws.com/img/Warriors-Team-Page-Logo.png">
+            </div>
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible16()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible15()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Teacher's Note-->
+          <div class="modal-content" id="teachNotePagePOE">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Principles of Engineering</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+
+              <a class= "GPicPic" href = "mailto:dennis@ctemc.org?subject=Webmaster" target="_newtab"> <img class= "GPic" src="ctePics/hanas.jpg"> </a>
+
+              <b><h1 id="teachTitle">Mr. Chris Hanas</h1></b>
+
+              <p id="teacherNames">
+                Mr. Christopher Hanas teaches Computer Science and Engineering and Principles of Engineering at High Technology High School.
+              </p>
+
+              <p id="teacherQuote">
+              <br>
+                <em>"POE is focused on introducing students to the fundamental concepts in mechanical, civil, electrical and chemical engineering.  This is a part of the the Project Lead the Way pre-engineering program for students who are interested in pursuing an engineering or science degree when at college.  As an engineering course, the topics focus heavily on scientific concepts and applied mathematics such as: The Engineering Design Process, Vectors, Energy & Power (Mechanisms, Energy Sources, Energy Applications), Materials & Structures (Statics, Material Properties, Material Testing), Control Systems (Robot Control, Fluid Power), and Kinematics & Statistics."</em>
+                <br />
+                <em>When asked about skills the students learn in POE, Mr. Hanas replied: "In place of unit tests, POE uses group-based unit projects to assess the students’ design and analysis capabilities.  These projects require the students to research, brainstorm, prototype and test their designs.   In addition to a working design model, the students are also responsible for submitting a final design report and, in some cases, making a verbal presentation to the class.  Due to the project scope, the successful team must demonstrate strong collaboration among all members."</em>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible18()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible17()" id="rightFinga"></i>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </div>
-  
+
+    <div id="Half2B" class="col-sm-6">
+      <h1 id="courseName">Computer Programming for Engineers</h1>
+      <hr class="style14">
+      
+      <!-- Trigger the modal with a button -->
+      <ul id="modalList">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal4">Course Description</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal4">Media</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal4">Teacher's Note</a></li>
+      </ul>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog modal-lg" id="bScreenModal">
+        
+          <!-- Modal Course Description content-->
+          <div class="modal-content" id="courseDescriptionPageCOPE">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Computer Programming for Engineers</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+              <p>During sophomore year, all High Tech students take Computer Programming for Engineers, commonly known as COPE. The course, which is taught by Mr. Borchardt, is a rigorous introduction to programming in Java. Students begin by learning about basic concepts such as primitive data types and eventually progress to more advanced concepts such as algorithm analysis and recursion. Emphasis is placed on constant practice with programming projects, assignments, and assessments. By the end of the course, students are well-prepared to take the AP Computer Science A exam.
+              </p>
+
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible20()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible19()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Media Content-->
+          <div class="modal-content" id="mediaPageCOPE">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Computer Programming for Engineers</h4>
+            </div>
+            <div class="modal-body" id="bModalText">
+              <img src="http://oraclearena.s3.amazonaws.com/img/Warriors-Team-Page-Logo.png">
+            </div>
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible22()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible21()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Teacher's Note-->
+          <div class="modal-content" id="teachNotePageCOPE">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Introduction to Engineering Design</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+
+              <a class= "GPicPic" href = "mailto:borschardt@ctemc.org?subject=Webmaster" target="_newtab"> <img class= "GPic" src="ctePics/peter.jpg"> </a>
+
+              <b><h1 id="teachTitle">Mr. Peter Borschardt</h1></b>
+
+              <p id="teacherNames">
+                Mr. Borchardt teaches Computer Programming for Engineers and Digital Electronics at High Technology High School. He has held the position for 20 years.
+              </p>
+
+              <p id="teacherQuote">
+              <br>
+                <em>"Computer science is one of the fastest growing STEM career fields. We give the kids a great head start on some important programming languages in COPE that gives them an advantage over students without this type of education."</em>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible24()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible23()" id="rightFinga"></i>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <div id="mainsection4">
 
-    <div id="infoJunior" class="animated fadeInLeft">
-      <h2 id="engineerTitle" class="animated lightSpeedIn">CHOOSING THE RIGHT PATH</h2>
-      <hr class="style14" id="linee">
-      <br>
-      <p id="describeEngineer">
-        Choosing the right field in engineering is always a hard decision. However, junior year at High Technology High School offers 4 specific technology electives that will fulfill the desire to excel in a specific field or simply help each student realize their place in the vast world of STEM. Consisting of "Computer Science and Software Engineering" and "Civil Engineering and Architecture", our students are completely able to <b>map out</b> their futures. </p>
-        <br/>
-      <div><a href="cse_full.htm" class="transition learnMoreButton" style="float:left;">CSE</a></div>
-      <div><a href="cea_full.htm" class="transition learnMoreButton" style="float:right;">CEA</a></div>
+  <div id="mainsection4" class="row" style="padding-left:120px">
 
+    <div id="Half3A" class="col-sm-6">
+      <h1 id="courseName">Computer Science and Software Engineering</h1>
+      <hr class="style14">
+      
+      <!-- Trigger the modal with a button -->
+      <ul id="modalList">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal5">Course Description</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal5">Media</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal5">Teacher's Note</a></li>
+      </ul>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog modal-lg" id="bScreenModal">
+        
+          <!-- Modal Course Description content-->
+          <div class="modal-content" id="courseDescriptionPageCSE">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Computer Science and Software Engineering</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+              <p>
+
+                Using Python® as a primary tool and incorporating multiple platforms and languages for computation, this course aims to develop computational thinking, generate excitement about career paths that utilize computing, and introduce professional tools that foster creativity and collaboration.
+
+                <br>
+
+                While this course can be a student's first in computer science, students without prior computing experience are encouraged to start with Introduction to Computer Science. CSP helps students develop programming expertise and explore the workings of the Internet. Projects and problems include app development, visualization of data, cybersecurity, and simulation. The course curriculum is a College Board-approved implementation of AP CS Principles.
+
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible26()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible25()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Media Content-->
+          <div class="modal-content" id="mediaPageCSE">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Computer Science and Software Engineering</h4>
+            </div>
+            <div class="modal-body" id="bModalText">
+              <img src="http://oraclearena.s3.amazonaws.com/img/Warriors-Team-Page-Logo.png">
+            </div>
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible28()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible27()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Teacher's Note-->
+          <div class="modal-content" id="teachNotePageCSE">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Computer Science and Software Engineering</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+
+              <a class= "GPicPic" href = "mailto:hanas@ctemc.org?subject=Webmaster" target="_newtab"> <img class= "GPic" src="ctePics/hanas.jpg"> </a>
+
+              <b><h1 id="teachTitle">Mr. Chris Hanas</h1></b>
+
+              <p id="teacherNames">
+                Mr. Christopher Hanas teaches Computer Science and Software Engineering and Principles of Engineering at High Technology High School.
+              </p>
+
+              <p id="teacherQuote">
+              <br>
+                <em>"Out of my 12 years of teaching, CSE has been the most enjoyable class. All of my students are eager to delve into the world of computers and programming, as we work with Python and web design to create open source software projects. I agree that CSE is extremely challenging, but it prepares all my students 100% in college."</em>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible30()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible29()" id="rightFinga"></i>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="Half3B" class="col-sm-6">
+      <h1 id="courseName">Civil Engineering and Architecture</h1>
+      <hr class="style14">
+      
+      <!-- Trigger the modal with a button -->
+      <ul id="modalList">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal6">Course Description</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal6">Media</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal6">Teacher's Note</a></li>
+      </ul>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal6" role="dialog">
+        <div class="modal-dialog modal-lg" id="bScreenModal">
+        
+          <!-- Modal Course Description content-->
+          <div class="modal-content" id="courseDescriptionPageCEA">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Civil Engineering and Architecture</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+              <p>
+
+                Students start out learning about architecture and the principles of design by researching famous structures, architects, and building styles. They later draw floor plans, build models, and learn to use Autodesk Revit. As the course progresses, the focus shifts more towards civil engineering, and students learn the math and science behind getting their creations to stand, applying building codes and other environmental constraints to their designs.
+
+                <br>
+
+                In addition to PLTW projects, including designing a fully functional Habitat for Humanities home (with electricity, plumbing, wastewater management, etc), constructing a scaled model of a wall section, and building roof systems on tissue boxes, the CEA class does work with Lego Architecture.
+              </p>
+
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible32()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible31()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Media Content-->
+          <div class="modal-content" id="mediaPageCEA">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Civil Engineering and Architecture</h4>
+            </div>
+            <div class="modal-body" id="bModalText">
+              <img src="http://oraclearena.s3.amazonaws.com/img/Warriors-Team-Page-Logo.png">
+            </div>
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible34()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible33()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Teacher's Note-->
+          <div class="modal-content" id="teachNotePageCEA">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Civil Engineering and Architecture</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+
+              <a class= "GPicPic" href = "mailto:dennis@ctemc.org?subject=Webmaster" target="_newtab"> <img class= "GPic" src="ctePics/mrdennis.jpg"> </a>
+
+              <b><h1 id="teachTitle">Mr. Robert Dennis</h1></b>
+
+              <p id="teacherNames">
+               Robert Dennis teaches Civil Engineering & Architecture at High Technology High School. He has held the position for 15 years.
+              </p>
+
+              <p id="teacherQuote">
+              <br>
+                <em>"Civil Engineering and Architecture expose our students to the beauty of construction and design. Aside from what they learn in class, they also take several field trips to numerous areas, where they experience the design process first-hand and gain valuable knowledge related to this field. So many alumni have come to me after college...telling me how essential CEA was for their college education."</em>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible36()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible35()" id="rightFinga"></i>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="mainsection5" class="row" style="padding-left:120px">
+
+    <div id="Half4A" class="col-sm-6">
+      <h1 id="courseName">Engineering Design and Development</h1>
+      <hr class="style14">
+      
+      <!-- Trigger the modal with a button -->
+      <ul id="modalList">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal7">Course Description</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal7">Media</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal7">Teacher's Note</a></li>
+      </ul>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal7" role="dialog">
+        <div class="modal-dialog modal-lg" id="bScreenModal">
+        
+          <!-- Modal Course Description content-->
+          <div class="modal-content" id="courseDescriptionPageEDD">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Engineering Design and Development</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+              <p>
+
+                For the final year of the Project Lead the Way track, students take Engineering Design and Development. This class features a senior design project in which students can either invent or build upon a technological device of their choosing. Students work on their device from the beginning of a semester to the end.
+
+                <br>
+
+                They are heavily involved with the design, planning, building, and documentation of the product. If merited by the design, the students can also work with a patent lawyer to patent the device. The instructor, Dr. Raymond Eng, guides the students as a mentor. Students must present multimedia progress reports, submit interim and final written reports, and present their fully-functioning inventions and projects to a panel of outside reviewers and professionals at the conclusion of the course.
+
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible38()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible37()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Media Content-->
+          <div class="modal-content" id="mediaPageEDD">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Engineering Design and Development</h4>
+            </div>
+            <div class="modal-body" id="bModalText">
+              <img src="http://oraclearena.s3.amazonaws.com/img/Warriors-Team-Page-Logo.png">
+            </div>
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible40()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible39()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Teacher's Note-->
+          <div class="modal-content" id="teachNotePageEDD">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Engineering Design and Development</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+
+              <a class= "GPicPic" href = "mailto:eng@ctemc.org?subject=Webmaster" target="_newtab"> <img class= "GPic" src="ctePics/raymond.jpg"> </a>
+
+              <b><h1 id="teachTitle">Dr. Raymond Eng</h1></b>
+
+              <p id="teacherNames">
+                Raymond Eng teaches Engineering Design and Development at High Technology High School. He has held the position for 2 years.
+              </p>
+
+              <p id="teacherQuote">
+              <br>
+                <em>"EDD is the one course that truly tests how a student has developed as an engineer during his/her years at High Tech. It requires critical thinking, problem solving, and intuition to engineer an original product that serves a practical purpose. I always have full confidence in my students because they think outside the box. They're curious and eager to help the world. All my students ace this class, and that just goes to show the extent of our STEM courses at High Tech."</em>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible42()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible41()" id="rightFinga"></i>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="Half4B" class="col-sm-6">
+      <h1 id="courseName">Introduction to Research</h1>
+      <hr class="style14">
+      
+      <!-- Trigger the modal with a button -->
+      <ul id="modalList">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal8">Course Description</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal8">Media</a></li>
+        <hr class="style14">
+        <li><a id="Modali" data-toggle="modal" data-target="#myModal8">Teacher's Note</a></li>
+      </ul>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal8" role="dialog">
+        <div class="modal-dialog modal-lg" id="bScreenModal">
+        
+          <!-- Modal Course Description content-->
+          <div class="modal-content" id="courseDescriptionPageRes">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Introduction to Research</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+              <p>
+
+               One aspect of academics High Tech strongly supports and urges upon its students is research. Throughout Senior year, Introduction to Research gives students the opportunity to decide what research project they would like to conduct, and to create a professional experiment briefing. Although the class doesn't include any actual testing, the undeniably important "pre-experiment" phase is deeply explored throughout the class. The class is taught by Mr. Roche, who is assisted by a variety of teachers, including Mrs. Macneil, Ms. Babbin, and Ms. Pannapara. 
+
+               <br>
+
+               Mr. Roche acts as an excellent source for students who may never have written professional scientific proposals before to discover the increasingly important skill. As future engineers, it is doubtful that many students will never encounter such another project in their career, and High Tech allows the students to get a head start on mastering the skill. Some examples of topics explored in these project proposals include: Music Science, mathematics, acoustics, biology/herbology, sports science, oneirology (Sleep Science), and the science of human patterns and tendencies.
+              </p>
+
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible44()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible43()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Media Content-->
+          <div class="modal-content" id="mediaPageRes">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Introduction to Research</h4>
+            </div>
+            <div class="modal-body" id="bModalText">
+              <img src="http://oraclearena.s3.amazonaws.com/img/Warriors-Team-Page-Logo.png">
+            </div>
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible46()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible45()" id="rightFinga"></i>
+            </div>
+          </div>
+
+
+          <!--Teacher's Note-->
+          <div class="modal-content" id="teachNotePageRes">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="bModalTitle">Introduction to Research</h4>
+            </div>
+
+            <div class="modal-body" id="bModalText">
+
+              <a class= "GPicPic" href = "mailto:roche@ctemc.org?subject=Webmaster" target="_newtab"> <img class= "GPic" src="ctePics/roche.jpg"> </a>
+
+              <b><h1 id="teachTitle">Mr. Michael Roche</h1></b>
+
+              <p id="teacherNames">
+               Michael Roche is the freshman biology and freshman Introduction to Research teacher at High Tech.
+              </p>
+
+            </div>
+
+            <div class="modal-footer">
+              <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible48()" id="leftFinga"></i>
+              <i class="fa fa-hand-o-right fa-3x" onclick="switchVisible47()" id="rightFinga"></i>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </div>
 
   </div>
 
 
-  <div id="mainsection5">
+<!--   <div id="mainsection5">
   
     <div id="infoSenior" class="animated fadeInLeft">
       <h2 id="engineerTitle" class="animated lightSpeedIn">APPLY YOUR KNOWLEDGE</h2>
@@ -266,9 +936,8 @@
         <br/>
       <div><a href="edd_full.htm" class="transition learnMoreButton" style="float:left;">EDD</a></div>
       <div><a href="Research_fullAlec.htm" class="transition learnMoreButton" style="float:right;">Research</a></div>
-    </div>
+    </div> -->
 
-  </div>
    <div class="info_footer">
       <p> This site uses modified Bootstrap code, open source icons, and Google's Roboto font. Any pictures are taken by HTHS TSA or are royalty free.</p>
 

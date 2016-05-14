@@ -178,6 +178,10 @@ body{
  		      display: block;
 		}
 
+		#mainSidebar {
+			display:none;
+		}
+
 		/* Gives main container section th entire screen */
 		#mainContainer {
 		  padding-top: 30px;
@@ -586,7 +590,7 @@ hr.style14 {
 .info_footer{
 	font-family:'Roboto',sans-serif;
 	height:100px;
-	background-color:rgb(1,39,119);
+	background-color:#3AA3C1;
 	color: #EEEEEE;
 	text-align:center;
 	margin-bottom:-10px;
