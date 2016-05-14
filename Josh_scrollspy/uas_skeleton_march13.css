@@ -81,6 +81,21 @@ body{
           font-family: "Roboto";
         }
 
+        #techText2 {
+          width:100%;
+          margin-left:0%;
+        }
+
+        .instructInfo{
+          width:100%;
+          margin-top:0%;
+          margin-left:0%;
+        }
+
+	    #LeftSide{
+	    	height:100%;
+	    }
+
 	}
 
         /* View settings on screen size width (or wider) below */
@@ -132,6 +147,7 @@ body{
 
 		/* Gives main container section th entire screen */
 		#mainContainer {
+		  padding-top: 30px;
 		  padding-left: 0px;
 		}
 
@@ -145,6 +161,20 @@ body{
 	      color:white;
 	      font-family: "Roboto";
 	    }
+
+        #techText2 {
+          width:50%;
+          margin-left:10%;
+        }
+        .instructInfo{
+          width:59%;
+          margin-top:-15%;
+          margin-left:30%;
+        }
+
+        #LeftSide{
+          height:1000px;
+        }
 
 	}
 
@@ -267,11 +297,6 @@ body{
 		background-size: cover;
   }
 
-
-  #mainsection6 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
-  #mainsection7 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #8DC6FF;}
-  #mainsection8 {padding-top:1px;height:1000px;width:100%;color: #fff; background-color: #E4F1FE;}
-
 /*#caroslide {
 	width:100px;
 }*/
@@ -313,11 +338,11 @@ body{
       margin: auto;
   }
 
- #slidey {
+/* #slidey {
  	height:1500px;
  	width:1500px;
  	float:right;
- }
+ }*/
 
   #leftt, #rightt {
 	background-image: none;
@@ -335,7 +360,7 @@ body{
   	}
 
 	#slidey {
-	 	height:700px;
+	 	height:500px;
 	 	width:700px;
 	 	float:right;
 	}
@@ -353,7 +378,7 @@ body{
   	}
 
 	#slidey {
-	 	height:700px;
+	 	height:500px;
 	 	width:700px;
 	 	float:right;
 	}
@@ -420,8 +445,8 @@ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span
 
 hr.style14 { 
 	width:40%;
-	border: 0; 
-	height: 1px; 
+	border:0
+	height:1px;
 	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
@@ -438,25 +463,27 @@ hr.style14 {
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(237,247,254, 0.8), 
-		rgba(237,247,254, 0.8)
+		rgba(0,0,0, 0.7), 
+		rgba(0,0,0, 0.7)
 		),
 		url(ctePics/measure.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+	margin-bottom: 0;
 }
 
+
 #RightSide{
-	width:50%;
+	width:100%;
 	height:1000px;
 	float:right;
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(255, 255, 255, 0.8), 
-		rgba(255, 255, 255, 0.8)
+		rgba(0,0,0, 0.7), 
+		rgba(0,0,0, 0.7)
 		),
 		url(ctePics/bits.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -525,8 +552,8 @@ hr.style14 {
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(237,247,254, 0.8), 
-		rgba(237,247,254, 0.8)
+		rgba(0,0,0, 0.7), 
+		rgba(0,0,0, 0.7)
 		),
 		url(ctePics/civilea.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -534,6 +561,7 @@ hr.style14 {
 		-o-background-size: cover;
 		background-size: cover;
 }
+
 
 #RightTopSide{
 	display:inline-block;
@@ -544,8 +572,8 @@ hr.style14 {
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(237,247,254, 0.8), 
-		rgba(237,247,254, 0.8)
+		rgba(0,0,0, 0.7), 
+		rgba(0,0,0, 0.7)
 		),
 		url(ctePics/keyboard.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -553,6 +581,7 @@ hr.style14 {
 		-o-background-size: cover;
 		background-size: cover;
 }
+
 
 #LeftSide4{
 	display:inline-block;
@@ -563,8 +592,8 @@ hr.style14 {
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(237,247,254, 0.8), 
-		rgba(237,247,254, 0.8)
+		rgba(0,0,0, 0.7), 
+		rgba(0,0,0, 0.7)
 		),
 		url(ctePics/solar.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -573,15 +602,16 @@ hr.style14 {
 		background-size: cover;
 }
 
+
 #RightSide4{
-	width:50%;
+	width:100%;
 	height:1000px;
 	float:right;
   	padding-top:1px;
   	background:
   		linear-gradient(
-		rgba(255, 255, 255, 0.8), 
-		rgba(255, 255, 255, 0.8)
+		rgba(0,0,0, 0.7), 
+		rgba(0,0,0, 0.7)
 		),
 		url(ctePics/scope.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -591,10 +621,12 @@ hr.style14 {
 	transition: width 2s;
 }
 
+
+/*This is for the text inside each course page*/
 #techBig {
 	visibility: visible;
 	margin-bottom:auto;
-	margin-top:3%;
+	margin-top:6%;
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
@@ -603,12 +635,16 @@ hr.style14 {
 	left:2%;
 	font-family: "Roboto";
 	font-size:45px;
-	color:black;
+	color:white;
 	font-weight:700;
 }
 
+#linee {
+	margin-left:auto;
+	margin-right:auto;
+}
 
-#techText {
+/*#techText {
 	visibility: visible;
 	margin-bottom:auto;
 	margin-top:auto;
@@ -623,32 +659,23 @@ hr.style14 {
 	text-align: justify;
 	font-family: "Roboto";
 	font-size: 21px;
-	color:black;
+	color:white;
 	font-weight:400;
-}
+}*/
 
 #techText2 {
-	width:50%;
-	height:50%;
-	margin-left:7%;
+	min-height:35%;
+	margin-top:2.5%;
 	z-index:900;
-	margin-top:1%;
 	text-align: justify;
 	font-family: "Roboto";
-	font-size: 25px;
-	color:black;
+	font-size: 21px;
+	color:white;
 	font-weight:400;
+	background-color:rgba(0,0,0,0.45);
+    border-radius: 25px;
+    word-wrap: break-word;
 }
-
-/*#iedBig:hover {
-	visibility: visible;
-	color:white;
-}
-
-#iedText:hover {
-	visibility: visible;
-	color:white;
-}*/
 
 #alertt {
 	position:absolute;
@@ -657,19 +684,30 @@ hr.style14 {
 	z-index:1000;
 }
 
+#describeSTEM {
+	margin-left:4%;
+	margin-right:4%;
+	margin-top:5%;
+	margin-bottom:2%;
+	word-wrap: break-word;
+}
+
+#posCarousel {
+	top:2.5%;
+	margin-right:6%;
+}
+
 /*#techText2{
 	display:block;
 }*/
 
 
 .GPic{
-	display:inline-block;
-	float:left;
 	width:275px;
 	height:275px;
 	border-radius:50%;
-	margin-top:-2%;
-	margin-left:6%;
+	margin-top:4%;
+	margin-left:10%;
 }
 
 .GPic img:hover{
@@ -678,35 +716,41 @@ hr.style14 {
   	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
 }
 
-.DennisInfo{
-	float: right;
-	display:inline-block;
-	position:relative;
-	width:70%;
-	margin-left:25%;
-	margin-top:-15%;
+.instructInfo{
 	font-family: 'Roboto';
-	font-size: 25px;
+	font-size: 21px;
 	font-weight:400;
 	background-color:rgba(0,0,0,0.45);
     border-radius: 25px;
     color:white;
+    text-align: justify;
+    z-index:100000;
 }
 
 #teachTitle {
+	margin-left:4%;
+	margin-right:4%;
+	margin-top:5%;
+	margin-bottom:2%;
+	word-wrap: break-word;
 	font-weight:600;
-	margin-left:15px;
 }
 
 #teacherNames {
+	margin-left:4%;
+	margin-right:4%;
+	word-wrap: break-word;
 	font-size: 16px;
 	font-weight: 400;
-	margin-left:15px;
 }
 
 #teacherQuote {
+	margin-left:4%;
+	margin-right:4%;
+	word-wrap: break-word;
 	font-weight: 400;
-	margin-left:15px;
+	word-wrap: break-word;
+	text-align:justify;
 }
 
 ::-webkit-scrollbar{
@@ -725,4 +769,39 @@ hr.style14 {
 
 #myNavbar li a:hover, #myNavbar li:active a:active, .navbar-header a:hover{
 	color: #FF4C65 !important;
+}
+
+.learnMoreButton{
+	min-width:100px;
+	width:auto;
+	height:auto;
+	background-color:#FF4C65;
+	color:#EEEEEE;
+	text-align:center;
+	text-decoration:none;
+	padding:10px;
+	border-radius:10px;
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
+}
+
+.learnMoreButton:hover{
+	text-decoration:none;
+	color:#EEEEEE;
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+}
+
+.info_footer{
+	font-family:'Roboto',sans-serif;
+	height:100px;
+	background-color:#3AA3C1;
+	color: #EEEEEE;
+	text-align:center;
+	margin-bottom:-10px;
+	padding: 20px 120px 20px 120px;
 }
