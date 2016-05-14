@@ -69,12 +69,13 @@ nav{
 }
 
 #tsasection2 {
-	height:1000px;
+	min-height:1000px;
+	#height:auto;
 	color: #fff; 
 	background:
 		linear-gradient(
-	      rgba(0, 0, 0, 0.5), 
-	      rgba(0, 0, 0, 0.5)
+	      rgba(0, 0, 0, 0.7), 
+	      rgba(0, 0, 0, 0.7)
 	    ),
 		url("tsa_pictures/keyboard.jpg") no-repeat center center fixed;
 
@@ -85,7 +86,7 @@ nav{
 }
 
 #tsasection2 p{
-	font-size:16px;
+	font-size:18px;
 }
 
 #samslidey {
@@ -102,7 +103,7 @@ nav{
 
 .belowCarousel{
 	text-align:center;
-	margin-bottom:10%;
+	margin-bottom:-10px;
 }
 
 .centerCarousel {
@@ -120,6 +121,16 @@ nav{
 	border-radius:10px;
 }
 
+#memnum{
+	color:#FF4C65;
+	font-weight:bold;
+}
+
+.specialstats {
+	font-size:30px;
+	color:#FF4C65;
+}
+
 #tsasection2 img{
 	height:80%;
 	width:80%;
@@ -134,8 +145,8 @@ nav{
 	color: #fff; 
 	background:
 		linear-gradient(
-	      rgba(0, 0, 0, 0.5), 
-	      rgba(0, 0, 0, 0.5)
+	      rgba(0, 0, 0, 0.7), 
+	      rgba(0, 0, 0, 0.7)
 	    ),
 		url("tsa_pictures/sec3back.jpg") no-repeat center center fixed;
 
@@ -170,7 +181,16 @@ nav{
 /** http://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image **/
 
 #tsasection3 .ofName{
-	line-height:20%;
+	line-height:10%;
+}
+
+#tsasection3 .modalDialog h4{
+	color:#FF4C65;
+	font-weight:bold;
+}
+
+#tsasection3 h3{
+	color:#FF4C65;
 }
 
 .tableOfPictures{
@@ -184,6 +204,10 @@ nav{
 	display:inline-block;
 	min-width:250px;
 	height:260px;
+}
+
+#tsasection3 a:hover{
+	text-decoration:none;
 }
 
 /* modal box code edited from http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ */
@@ -298,8 +322,8 @@ nav{
 	color: #fff; 
 	background:
 		linear-gradient(
-	      rgba(0, 0, 0, 0.7), 
-	      rgba(0, 0, 0, 0.7)
+	      rgba(0, 0, 0, 0.8), 
+	      rgba(0, 0, 0, 0.8)
 	    ),
 		url("tsa_pictures/boardback.jpg") no-repeat center center fixed;
 
@@ -328,6 +352,10 @@ nav{
 
 #tsasection4 img{
 	border-radius:50%;
+}
+
+#tsasection4 h3{
+	color:#FF4C65;
 }
 
 #offpic{
@@ -394,6 +422,10 @@ nav{
 	font-size:16px;
 }
 
+#tsasection5 h3{
+	color:#FF4C65;
+}
+
 #backCaption{
 	font-size:12px;
 	font-style:italic;
@@ -425,18 +457,22 @@ nav{
 }
 
 .creed_bar img {
-	display:inline-block;
+	#display:inline-block;
 	height:80px;
 	width:130px;
-	position:absolute;
+	#position:absolute;
+	float:left;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
 }
 
 .creed_bar .text {
-	display:inline-block;
-	width:auto;
-	position:relative;
-	margin-left:150px;
-	text-align:justify;
+	#display:inline-block;
+	#width:auto;
+	#position:relative;
+	#margin-left:150px;
+	#text-align:justify;
 }
 
 .creed_bar span{
