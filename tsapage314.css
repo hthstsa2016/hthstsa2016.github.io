@@ -61,6 +61,8 @@ nav{
 #tsasection1 h1{
 	font-size:80px;
 	font-weight:500;
+	#text-shadow: 2px 2px #FF4C65;
+	text-shadow: 0 0 50px #0237A9;
 }
 
 #tsasection1 h3{
