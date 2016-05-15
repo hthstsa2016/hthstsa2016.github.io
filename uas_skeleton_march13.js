@@ -1439,9 +1439,9 @@ function switchVisible48() {
       /*Senior starts here*/
     var courseyr4A = $('#Half4A');
     var backgroundsyr4A = 
-           ['url("ctePics/stockPhotos/PoeStock3.jpg")', 
-            'url("ctePics/stockPhotos/PoeStock1.jpg")',
-            'url("ctePics/stockPhotos/PoeStock2.jpg")'];
+           ['url("ctePics/stockPhotos/EddStock1.jpg")', 
+            'url("ctePics/stockPhotos/EddStock2.jpg")',
+            'url("ctePics/stockPhotos/EddStock3.jpg")'];
     var currentyr4A = 0;
     function nextBackground4A() {
       courseyr4A.css('background-image', backgroundsyr4A[currentyr4A = ++currentyr4A % backgroundsyr4A.length]);
@@ -1452,9 +1452,9 @@ function switchVisible48() {
 
     var courseyr4B = $('#Half4B');
     var backgroundsyr4B = 
-           ['url("ctePics/stockPhotos/CopeStock1.jpg")', 
-            'url("ctePics/stockPhotos/CopeStock2.jpg")',
-            'url("ctePics/stockPhotos/CopeStock3.jpg")'];
+           ['url("ctePics/stockPhotos/ResearchStock1.jpg")', 
+            'url("ctePics/stockPhotos/ResearchStock2.jpg")',
+            'url("ctePics/stockPhotos/ResearchStock3.jpg")'];
     var currentyr4B = 0;
     function nextBackground4B() {
       courseyr4B.css(
