@@ -178,6 +178,10 @@ body{
  		      display: block;
 		}
 
+		#mainSidebar {
+			display:none;
+		}
+
 		/* Gives main container section th entire screen */
 		#mainContainer {
 		  padding-top: 0px;
@@ -233,21 +237,21 @@ body{
 
 
   #mainsection1 {
+  	overflow-x:hidden;
   	padding-top:1px;
   	height:1000px;
+ 	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)
+    ),
+	url("ctePics/iedCircle3.jpg") no-repeat center center fixed;
+
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
   }
-/*	background:
-		linear-gradient(
-		rgba(0, 0, 0, 0.6), 
-		rgba(0, 0, 0, 0.6)
-		),
-		url(ctePics/office.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		filter:gray;
-	}*/
 
 
   #mainsection2 {
@@ -260,98 +264,24 @@ body{
   	padding-top:1px;
   	height:1000px;
   	width:100%; 
-  	background:
-  		linear-gradient(
-		rgba(0, 0, 0, 0.6), 
-		rgba(0, 0, 0, 0.6)
-		),
-		url(ctePics/springs.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		filter:gray;
   }
 
    #mainsection4 {
   	padding-top:1px;
   	height:1000px;
   	width:100%; 
-  	background:
-  		linear-gradient(
-		rgba(0, 0, 0, 0.6), 
-		rgba(0, 0, 0, 0.6)
-		),
-		url(ctePics/pencil2.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		filter:gray;
   }
 
   #mainsection5 {
   	padding-top:1px;
   	height:1000px;
   	width:100%; 
-  	/**
-  	background:
-  		linear-gradient(
-		rgba(0, 0, 0, 0), 
-		rgba(0, 0, 0, 0)
-		),
-		url(ctePics/motherboard2.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		filter:gray;
-	**/
-	background:
-  		linear-gradient(
-		rgba(0, 0, 0, .6), 
-		rgba(0, 0, 0, .6)
-		),
-		url(ctePics/motherboard.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
   }
-
-/*#caroslide {
-	width:100px;
-}*/
-
-/*.item, img{
-	height: auto;
-    width:  60% !important;
-    max-height:450px;
-    float:right;
-}
-
-.carousel-inner > .item > img {
-	margin: 0 auto;
-}
-
-#leftt, #rightt {
-	width:5%;
-	height:100%;
-	z-index:3000;
-}
-
-#leftt {
-	left:62%;
-}
-
-#rightt {
-	right:2%;
-}
 
 #presentation {
 	height:100%;
 	width:100%;
-}*/
+}
 
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -566,18 +496,17 @@ hr.style14 {
 }
 
 ::-webkit-scrollbar{
-	width:10px;
+	width:4px;
 }
 
 ::-webkit-scrollbar-thumb{
-	border-radius:4px;
+	border-radius:3px;
 	background-color: #FF4C65;
 }
 
 ::-webkit-scrollbar-track{
-	#-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
-	#border-radius:4px;
-	background-color:#9D9D9D;
+	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius:10px;
 }
 
 #myNavbar li a:hover, #myNavbar li:active a:active, .navbar-header a:hover{
@@ -606,42 +535,162 @@ hr.style14 {
 
 
 /*Course Halves for Each HS Year*/
-#Half1A, #Half1B, #Half2A, #Half2B, #Half3A, #Half3B, #Half4A, #Half4B {
-	height:1000px;
-	width:50%;
-	background:
-	  linear-gradient(
-	    rgba(0,0,0, 0.7), 
-	    rgba(0,0,0, 0.7)
-	  ),
+
+	#Half1A, #Half1B, #Half2A, #Half2B,
+	#Half3A, #Half1B, #Half4A, #Half4B  {
+	    height:1000px;
+	    box-shadow: 0px 1000px rgba(0, 0, 0, 0.6) inset;
 	    -webkit-background-size: cover;
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
-	    background-size: cover;
+  	    background-size: cover;
 	    margin-bottom: 0;
+	    -webkit-transition: background 3.0s linear;
+	    -moz-transition: background 3.0s linear;
+	    -o-transition: background 3.0s linear;
+	    transition: background 3.0s linear;
+	} 
+
+
+#rowOne, #rowTwo {
+    padding-left:50px;
+    padding-top:50px;
 }
 
+#rowTwo {
+	padding-left: 50px;
+	padding-right:50px;
+}
+
+#openingCTE {
+	color:white;
+	font-size:60px;
+	text-align:center;
+   	-webkit-stroke-width: 5.3px;
+   	-webkit-stroke-color: #FFFFFF;
+   	-webkit-fill-color: #FFFFFF;
+   	text-shadow: 1px 0px 20px #0237A9;
+   	-webkit-transition: width 0.3s; /*Safari & Chrome*/
+   	transition: width 0.3s;
+   	-moz-transition: width 0.3s; /* Firefox 4 */
+   	-o-transition: width 0.3s; /* Opera */
+}
+
+#openingpgraphCTE {
+	color:white;
+	top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:18px;
+	width:60%;
+}
+
+#cteWWD {
+	color:white;
+	font-size:40px;
+	color:#FF4C65;
+	text-align:center;
+	font-weight: bold;
+}
+
+/*Section 1 1/4 Section Styling*/
+#froshQuarter, #sophQuarter, #juniorQuarter, #seniorQuarter {
+	overflow-x:hidden;
+	text-align:justify;
+	font-size:14px;
+	color:white;
+	text-decoration: none;
+}
+
+#hthsTitle {
+	text-align:center;
+	font-weight:bolder;
+	color:#FF4C65;
+}
 
 /* Circle options for each program year */
 .circlebase {
-    width:200px;
-    height:200px;
-    -moz-border-radius:200px;
-    -webkit-border-radius:200px;
+	margin-left: auto;
+	margin-right:auto;
+    width:250px;
+    height:250px;
+    -moz-border-radius:250px;
+    -webkit-border-radius:250px;
     color:white;
-    line-height: 200px;
+    line-height: 250px;
     font-weight: bold;
     font-size: 22px;
     font-family: sans-serif;
     position:relative;
 }
 
+#backCircle1 {
+	background:
+		linear-gradient(
+      	rgba(0, 0, 0, 0.55), 
+      	rgba(0, 0, 0, 0.55)
+    	),
+		url("ctePics/ied1.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	border:3px solid #0237A9;
+}
+
+#backCircle2 {
+	background:
+		linear-gradient(
+      	rgba(0, 0, 0, 0.55), 
+      	rgba(0, 0, 0, 0.55)
+    	),
+		url("ctePics/sophCircle.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	border:3px solid #0237A9;
+}
+
+#backCircle3 {
+	background:
+		linear-gradient(
+      	rgba(0, 0, 0, 0.55), 
+      	rgba(0, 0, 0, 0.55)
+    	),
+		url("ctePics/cope_1.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	border:3px solid #0237A9;
+}
+
+#backCircle4 {
+	background:
+		linear-gradient(
+      	rgba(0, 0, 0, 0.55), 
+      	rgba(0, 0, 0, 0.55)
+    	),
+		url("ctePics/edd1.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	border:3px solid #0237A9;
+	
+}
+
 .circleinfo {
     width:90%;
     height:90%;
     margin:5%;
-    -moz-border-radius:90%;
-    -webkit-border-radius:90%;
+    color:white;
+    transition:all 3s linear;
+    -moz-border-radius:235px;
+    -webkit-border-radius:235px;
+    line-height: 235px;
     position:absolute;
     text-align:center;
     transition:opacity 3s;
@@ -651,35 +700,42 @@ hr.style14 {
     display:none;
 }
 
-.circlebase {
-		background:
-	url(ctePics/type.jpg)
-	  linear-gradient(
-	    rgba(0,0,0, 0.7), 
-	    rgba(0,0,0, 0.7)
-	  ),
-	    -webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    -o-background-size: cover;
-	    background-size: cover;
-	    margin-bottom: 0;
-}
-
 .circlebase .circlearea {
     text-align:center;
-    position:relative;
+    color:white;
+    text-shadow: 1px 0px 20px #0237A9;
 }
-.circlebase:hover .circleinfo{
-    opacity:1;
+
+.circlebase:hover .circlearea { 
+	color:transparent;
+}
+
+.circlebase:hover .circleinfo {
+	display:block;
+	background-color:#0237A9;
+	opacity:0.8;
     display:block;
 }
+
+
+
 /* End circle options for each program year */
 
+#myModal {
+	width:700px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-/*Modal CSS*/
-#bScreenModal {
-	width:55%;
-	height:3000px;
+.modal-dialog{
+	width:800px;
+    overflow-y: scroll !important
+}
+
+.modal-body{
+	width:inherit;
+  	height: 500px;
+  	overflow-x:hidden;
 }
 
 #bModalTitle {
@@ -688,29 +744,40 @@ hr.style14 {
 }
 
 #bModalText {
-	font-family:'Roboto';
-	font-size:18px;
+	font-size: 20px;
+	font-family: 'Roboto';
 }
 
+
 #modalList {
-	margin-top:30%;
+	margin-top:15%;
 	margin-left:20%;
-	list-style-type: none;
 	font-size: 20px;
-	color:white;
+	font-weight: 500;
 	cursor:pointer;
 	text-decoration:none;
+}
+
+#mList {
+	list-style-type: none;
 }
 
 #Modali {
-	font-size: 40px;
+	font-size: 25px;
 	color:white;
 	cursor:pointer;
 	text-decoration:none;
+	list-style-type: none;
 }
 
 #Modali:hover {
-	color:#3AA3C1;
+	color:#0237A9;
+}
+
+#linedText {
+	width:425px;
+	margin-left:0;
+	border-color:gray;
 }
 
 #leftFinga {
@@ -728,6 +795,13 @@ hr.style14 {
 }
 
 #rightFinga:hover {
+	color:#FF4C65;
+}
+
+#courseName {
+	margin-top:200px;
+	text-align: center;
+	font-weight: bolder;
 	color:#FF4C65;
 }
 

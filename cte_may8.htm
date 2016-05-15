@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="ctePics/lightbulbfav.ico" type="image/x-icon">
   <link rel="icon" href="ctePics/lightbulbfav.ico" type="image/x-icon">
-  <link rel="stylesheet" href="uas_skeleton_may13.css">
+  <link rel="stylesheet" href="uas_skeleton_march13.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
@@ -138,7 +138,7 @@
         </div>
 
          <h3 id="hthsTitle">TAKING IT A LEVEL HIGHER</h3>
-          <p>Sophomore year at High Technology High School allows each student to enhance their knowledge of the engineering field, with two more insightful courses. Each course delves into the attributes of mechanincal engineering, programming, and real-world applications.</p>
+          <p>Sophomore year at High Technology High School allows each student to enhance their knowledge of the engineering field, with two more insightful courses. Each course delves into the attributes of mechanical engineering, programming, and real-world applications.</p>
           <a style="text-decoration: none;font-size:16px" href="#mainsection3">Learn More <strong>+</strong></a>
 
       </div>
@@ -185,21 +185,23 @@
       <h1 id="courseName">Introduction to Engineering Design</h1>
 
       <!-- Trigger the modal with a button -->
-      <ul id="modalList">
+      <div id="modalList">
+      <ul id="mList">
         <li><a id="Modali" data-toggle="modal" data-target="#myModal">COURSE DESCRIPTION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
         <hr id="linedText">
         <li><a id="Modali" data-toggle="modal" data-target="#myModal">MEDIA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
         <hr id="linedText">
         <li><a id="Modali" data-toggle="modal" data-target="#myModal">TEACHER'S NOTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
       </ul>
+      </div>
 
 
       <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog modal-lg" id="bScreenModal">
+      <div class="modal modal-wide fade" id="myModal" role="dialog">
+        <div class="modal-dialog" id="bScreenModal">
         
           <!-- Modal Course Description content-->
-          <div class="modal-content" id="courseDescriptionPageIED">
+          <div class="modal-content" style="overflow:auto;max-height:900px" id="courseDescriptionPageIED">
 
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -230,7 +232,41 @@
               <h4 class="modal-title" id="bModalTitle">Introduction to Engineering Design</h4>
             </div>
             <div class="modal-body" id="bModalText">
-              <img src="http://oraclearena.s3.amazonaws.com/img/Warriors-Team-Page-Logo.png">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <img src="ctePics/ied4.jpg" alt="TSA 2010">
+          </div>
+        
+          <div class="item">
+            <img src="ctePics/ied10.jpg" alt="TSA 2012">
+          </div>
+
+          <div class="item">
+            <img src="ctePics/ied7.jpg" alt="TSA 2015">
+          </div>
+
+          <div class="item">
+            <img src="ctePics/IMG_1937.jpg" alt="2016 Vex Team">
+          </div>
+
+          <div class="item">
+            <img src="ctePics/ied9.jpg" alt="2016 Vex Team">
+          </div>
+        </div>
+      </div>
             </div>
             <div class="modal-footer">
               <i class="fa fa-hand-o-left fa-3x" onclick="switchVisible4()" id="leftFinga"></i>
@@ -276,7 +312,8 @@
     <div id="Half1B" class="col-sm-6">
       <h1 id="courseName">Computer Integrated Manufacturing</h1>
       
-      <ul id="modalList">
+      <div id="modalList">
+      <ul id="mList">
         <!-- Trigger the modal with a button -->
         <li><a id="Modali" data-toggle="modal" data-target="#myModal2">COURSE DESCRIPTION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
         <hr id="linedText">
@@ -284,6 +321,7 @@
         <hr id="linedText">
         <li><a id="Modali" data-toggle="modal" data-target="#myModal2">TEACHER'S NOTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
       </ul>
+      </div>
 
 
       <!-- Modal -->
@@ -374,7 +412,8 @@
     <div id="Half2A" class="col-sm-6">
       <h1 id="courseName">Principles of Engineering</h1>
       
-      <ul id="modalList">
+      <div id="modalList">
+      <ul id="mList">
         <!-- Trigger the modal with a button -->
         <li><a id="Modali" data-toggle="modal" data-target="#myModal3">COURSE DESCRIPTION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
         <hr id="linedText">
@@ -382,6 +421,7 @@
         <hr id="linedText">
         <li><a id="Modali" data-toggle="modal" data-target="#myModal3">TEACHER'S NOTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
       </ul>
+      </div>
 
 
       <!-- Modal -->
@@ -468,7 +508,8 @@
     <div id="Half2B" class="col-sm-6">
       <h1 id="courseName">Computer Programming for Engineers</h1>
       
-      <ul id="modalList">
+      <div id="modalList">
+      <ul id="mList">
         <!-- Trigger the modal with a button -->
         <li><a id="Modali" data-toggle="modal" data-target="#myModal4">COURSE DESCRIPTION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
         <hr id="linedText">
@@ -476,7 +517,7 @@
         <hr id="linedText">
         <li><a id="Modali" data-toggle="modal" data-target="#myModal4">TEACHER'S NOTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
       </ul>
-
+      </div>
 
       <!-- Modal -->
       <div class="modal fade" id="myModal4" role="dialog">
@@ -561,7 +602,8 @@
     <div id="Half3A" class="col-sm-6">
       <h1 id="courseName">Computer Science and Software Engineering</h1>
       
-      <ul id="modalList">
+      <div id="modalList">
+      <ul id="mList">
         <!-- Trigger the modal with a button -->
         <li><a id="Modali" data-toggle="modal" data-target="#myModal5">COURSE DESCRIPTION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
         <hr id="linedText">
@@ -569,6 +611,7 @@
         <hr id="linedText">
         <li><a id="Modali" data-toggle="modal" data-target="#myModal5">TEACHER'S NOTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
       </ul>
+      </div>
 
 
       <!-- Modal -->
@@ -655,7 +698,8 @@
     <div id="Half3B" class="col-sm-6">
       <h1 id="courseName">Civil Engineering and Architecture</h1>
       
-      <ul id="modalList">
+      <div id="modalList">
+      <ul id="mList">
         <!-- Trigger the modal with a button -->
         <li><a id="Modali" data-toggle="modal" data-target="#myModal6">COURSE DESCRIPTION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
         <hr id="linedText">
@@ -663,6 +707,7 @@
         <hr id="linedText">
         <li><a id="Modali" data-toggle="modal" data-target="#myModal6">TEACHER'S NOTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
       </ul>
+      </div>
 
 
       <!-- Modal -->
@@ -753,7 +798,8 @@
     <div id="Half4A" class="col-sm-6">
       <h1 id="courseName">Engineering Design and Development</h1>
       
-      <ul id="modalList">
+      <div id="modalList">
+      <ul id="mList">
         <!-- Trigger the modal with a button -->
         <li><a id="Modali" data-toggle="modal" data-target="#myModal7">COURSE DESCRIPTION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
         <hr id="linedText">
@@ -761,6 +807,7 @@
         <hr id="linedText">
         <li><a id="Modali" data-toggle="modal" data-target="#myModal7">TEACHER'S NOTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
       </ul>
+      </div>
 
 
       <!-- Modal -->
@@ -847,7 +894,8 @@
     <div id="Half4B" class="col-sm-6">
       <h1 id="courseName">Introduction to Research</h1>
       
-      <ul id="modalList">
+      <div id="modalList">
+      <ul id="mList">
         <!-- Trigger the modal with a button -->
         <li><a id="Modali" data-toggle="modal" data-target="#myModal8">COURSE DESCRIPTION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
         <hr id="linedText">
@@ -855,6 +903,7 @@
         <hr id="linedText">
         <li><a id="Modali" data-toggle="modal" data-target="#myModal8">TEACHER'S NOTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&raquo;</strong></a></li>
       </ul>
+      </div>
 
 
       <!-- Modal -->

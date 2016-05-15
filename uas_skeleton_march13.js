@@ -203,13 +203,26 @@ $(document).ready(function(){
 
 //$('#invisible').hide();
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 900)
+    if ($(this).scrollTop() > 950)
      {
         $('#mainSidebar').fadeIn();
      }
     else
      {
       $('#mainSidebar').fadeOut();
+     }
+ });
+
+
+//$('#invisible').hide();
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1100)
+     {
+        $('#invisible').fadeIn();
+     }
+    else
+     {
+      $('#invisible').fadeOut();
      }
  });
 
@@ -1282,71 +1295,28 @@ function switchVisible48() {
   $(function() {
     var courseyr1A = $('#Half1A');
     var backgroundsyr1A = 
-           ['url(ctePics/measure.jpg) no-repeat center center fixed', 
-            'url(ctePics/juniorPic.jpg)',
-            'url(ctePics/motherboard.jpg) no-repeat center center fixed'];
+           ['url("ctePics/juniorPic.jpg")', 
+            'url("ctePics/keyboard.jpg")'];
     var currentyr1A = 0;
     function nextBackground1A() {
-      courseyr1A.css(
-       'background',
-        backgroundsyr1A[currentyr1A = ++currentyr1A % backgroundsyr1A.length]
-      );
+      courseyr1A.css('background-image', backgroundsyr1A[currentyr1A = ++currentyr1A % backgroundsyr1A.length]);
       setTimeout(nextBackground1A, 4000);
     }
     setTimeout(nextBackground1A, 4000);
-    courseyr1A.css('background', backgroundsyr1A[0]);
+    courseyr1A.css('background-image', backgroundsyr1A[0]);
 
     var courseyr1B = $('#Half1B');
     var backgroundsyr1B = 
-           ['url(ctePics/keyboard.jpg) no-repeat center center fixed', 
-            'url(ctePics/spring.jpg)',
-            'url(ctePics/office.jpg) no-repeat center center fixed'];
-
+           ['url("ctePics/office.jpg")', 
+            'url("ctePics/springs.jpg")'];
     var currentyr1B = 0;
     function nextBackground1B() {
       courseyr1B.css(
-       'background',
+       'background-image',
         backgroundsyr1B[currentyr1B = ++currentyr1B % backgroundsyr1B.length]
       );
       setTimeout(nextBackground1B, 5000);
     }
     setTimeout(nextBackground1B, 5000);
-    courseyr1B.css('background', backgroundsyr1B[0]);
-    var courseyr1B = $('#Half1B');
-    var backgroundsyr1B = 
-           ['url(ctePics/keyboard.jpg) no-repeat center center fixed', 
-            'url(ctePics/spring.jpg)',
-            'url(ctePics/office.jpg) no-repeat center center fixed'];
-
-    // var currentyr2A = 0;
-    // function nextBackground2A() {
-    //   courseyr2A.css(
-    //    'background',
-    //     backgroundsyr2A[currentyr2A = ++currentyr2A % backgroundsyr2A.length]
-    //   );
-    //   setTimeout(nextBackground2A, 5000);
-    // }
-    // setTimeout(nextBackground2A, 5000);
-    // courseyr2A.css('background', backgroundsyr2A[0]);
-    // var courseyr2A = $('#Half2A');
-    // var backgroundsyr2A = 
-    //        ['url(ctePics/keyboard.jpg) no-repeat center center fixed', 
-    //         'url(ctePics/spring.jpg)',
-    //         'url(ctePics/office.jpg) no-repeat center center fixed'];
-
-    // var currentyr2B = 0;
-    // function nextBackground2B() {
-    //   courseyr2B.css(
-    //    'background',
-    //     backgroundsyr1B[currentyr2B = ++currentyr2B % backgroundsyr2B.length]
-    //   );
-    //   setTimeout(nextBackground2B, 5000);
-    // }
-    // setTimeout(nextBackground2B, 5000);
-    // courseyr2B.css('background', backgroundsyr2B[0]);
-    // var courseyr2B = $('#Half2B');
-    // var backgroundsyr2B = 
-    //        ['url(ctePics/keyboard.jpg) no-repeat center center fixed', 
-    //         'url(ctePics/spring.jpg)',
-    //         'url(ctePics/office.jpg) no-repeat center center fixed'];
+    courseyr1B.css('background-image', backgroundsyr1B[0]);
   });
