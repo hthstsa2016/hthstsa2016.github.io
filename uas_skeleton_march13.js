@@ -1293,10 +1293,12 @@ function switchVisible48() {
 
 /*Changing Backgrounds*/
   $(function() {
+    /*Frosh starts here*/
     var courseyr1A = $('#Half1A');
     var backgroundsyr1A = 
-           ['url("ctePics/juniorPic.jpg")', 
-            'url("ctePics/keyboard.jpg")'];
+           ['url("ctePics/stockPhotos/IedStock1.jpg")', 
+            'url("ctePics/stockPhotos/IedStock2.jpg")',
+            'url("ctePics/stockPhotos/IedStock3.jpg")'];
     var currentyr1A = 0;
     function nextBackground1A() {
       courseyr1A.css('background-image', backgroundsyr1A[currentyr1A = ++currentyr1A % backgroundsyr1A.length]);
@@ -1307,8 +1309,9 @@ function switchVisible48() {
 
     var courseyr1B = $('#Half1B');
     var backgroundsyr1B = 
-           ['url("ctePics/office.jpg")', 
-            'url("ctePics/springs.jpg")'];
+           ['url("ctePics/stockPhotos/CimStock1.jpg")', 
+            'url("ctePics/stockPhotos/CimStock2.jpg")',
+            'url("ctePics/stockPhotos/CimStock3.jpg")'];
     var currentyr1B = 0;
     function nextBackground1B() {
       courseyr1B.css(
@@ -1319,4 +1322,149 @@ function switchVisible48() {
     }
     setTimeout(nextBackground1B, 5000);
     courseyr1B.css('background-image', backgroundsyr1B[0]);
+
+    /*Frosh ends here*/
+  });
+
+
+/*Changing Backgrounds*/
+  $(function() {
+      /*Soph starts here*/
+    var courseyr2A = $('#Half2A');
+    var backgroundsyr2A = 
+           ['url("ctePics/stockPhotos/PoeStock3.jpg")', 
+            'url("ctePics/stockPhotos/PoeStock1.jpg")',
+            'url("ctePics/stockPhotos/PoeStock2.jpg")'];
+    var currentyr2A = 0;
+    function nextBackground2A() {
+      courseyr2A.css('background-image', backgroundsyr2A[currentyr2A = ++currentyr2A % backgroundsyr2A.length]);
+      setTimeout(nextBackground2A, 4000);
+    }
+    setTimeout(nextBackground2A, 4000);
+    courseyr2A.css('background-image', backgroundsyr2A[0]);
+
+    var courseyr2B = $('#Half2B');
+    var backgroundsyr2B = 
+           ['url("ctePics/stockPhotos/CopeStock1.jpg")', 
+            'url("ctePics/stockPhotos/CopeStock2.jpg")',
+            'url("ctePics/stockPhotos/CopeStock3.jpg")'];
+    var currentyr2B = 0;
+    function nextBackground2B() {
+      courseyr2B.css(
+       'background-image',
+        backgroundsyr2B[currentyr2B = ++currentyr2B % backgroundsyr2B.length]
+      );
+      setTimeout(nextBackground2B, 5000);
+    }
+    setTimeout(nextBackground2B, 5000);
+    courseyr2B.css('background-image', backgroundsyr2B[0]);
+
+    /*Soph ends here*/
+  });
+
+
+/*Changing Backgrounds*/
+  $(function() {
+      /*Soph starts here*/
+    var courseyr2A = $('#Half2A');
+    var backgroundsyr2A = 
+           ['url("ctePics/stockPhotos/PoeStock3.jpg")', 
+            'url("ctePics/stockPhotos/PoeStock1.jpg")',
+            'url("ctePics/stockPhotos/PoeStock2.jpg")'];
+    var currentyr2A = 0;
+    function nextBackground2A() {
+      courseyr2A.css('background-image', backgroundsyr2A[currentyr2A = ++currentyr2A % backgroundsyr2A.length]);
+      setTimeout(nextBackground2A, 4000);
+    }
+    setTimeout(nextBackground2A, 4000);
+    courseyr2A.css('background-image', backgroundsyr2A[0]);
+
+    var courseyr2B = $('#Half2B');
+    var backgroundsyr2B = 
+           ['url("ctePics/stockPhotos/CopeStock1.jpg")', 
+            'url("ctePics/stockPhotos/CopeStock2.jpg")',
+            'url("ctePics/stockPhotos/CopeStock3.jpg")'];
+    var currentyr2B = 0;
+    function nextBackground2B() {
+      courseyr2B.css(
+       'background-image',
+        backgroundsyr2B[currentyr2B = ++currentyr2B % backgroundsyr2B.length]
+      );
+      setTimeout(nextBackground2B, 5000);
+    }
+    setTimeout(nextBackground2B, 5000);
+    courseyr2B.css('background-image', backgroundsyr2B[0]);
+
+    /*Soph ends here*/
+  });
+
+/*Changing Backgrounds*/
+  $(function() {
+      /*Junior starts here*/
+    var courseyr3A = $('#Half3A');
+    var backgroundsyr3A = 
+           ['url("ctePics/stockPhotos/CseStock3.jpg")', 
+            'url("ctePics/stockPhotos/CseStock1.jpg")',
+            'url("ctePics/stockPhotos/CseStock2.jpg")'];
+    var currentyr3A = 0;
+    function nextBackground3A() {
+      courseyr3A.css('background-image', backgroundsyr3A[currentyr3A = ++currentyr3A % backgroundsyr3A.length]);
+      setTimeout(nextBackground3A, 4000);
+    }
+    setTimeout(nextBackground3A, 4000);
+    courseyr3A.css('background-image', backgroundsyr3A[0]);
+
+    var courseyr3B = $('#Half3B');
+    var backgroundsyr3B = 
+           ['url("ctePics/stockPhotos/CeaStock3.jpg")', 
+            'url("ctePics/stockPhotos/CeaStock1.jpg")',
+            'url("ctePics/stockPhotos/CeaStock2.jpg")'];
+    var currentyr3B = 0;
+    function nextBackground3B() {
+      courseyr3B.css(
+       'background-image',
+        backgroundsyr3B[currentyr3B = ++currentyr3B % backgroundsyr3B.length]
+      );
+      setTimeout(nextBackground3B, 5000);
+    }
+    setTimeout(nextBackground3B, 5000);
+    courseyr3B.css('background-image', backgroundsyr3B[0]);
+
+    /*Junior ends here*/
+  });
+
+
+/*Changing Backgrounds*/
+  $(function() {
+      /*Senior starts here*/
+    var courseyr4A = $('#Half4A');
+    var backgroundsyr4A = 
+           ['url("ctePics/stockPhotos/PoeStock3.jpg")', 
+            'url("ctePics/stockPhotos/PoeStock1.jpg")',
+            'url("ctePics/stockPhotos/PoeStock2.jpg")'];
+    var currentyr4A = 0;
+    function nextBackground4A() {
+      courseyr4A.css('background-image', backgroundsyr4A[currentyr4A = ++currentyr4A % backgroundsyr4A.length]);
+      setTimeout(nextBackground4A, 4000);
+    }
+    setTimeout(nextBackground4A, 4000);
+    courseyr4A.css('background-image', backgroundsyr4A[0]);
+
+    var courseyr4B = $('#Half4B');
+    var backgroundsyr4B = 
+           ['url("ctePics/stockPhotos/CopeStock1.jpg")', 
+            'url("ctePics/stockPhotos/CopeStock2.jpg")',
+            'url("ctePics/stockPhotos/CopeStock3.jpg")'];
+    var currentyr4B = 0;
+    function nextBackground4B() {
+      courseyr4B.css(
+       'background-image',
+        backgroundsyr4B[currentyr4B = ++currentyr4B % backgroundsyr4B.length]
+      );
+      setTimeout(nextBackground4B, 5000);
+    }
+    setTimeout(nextBackground4B, 5000);
+    courseyr4B.css('background-image', backgroundsyr4B[0]);
+
+    /*Senior ends here*/
   });

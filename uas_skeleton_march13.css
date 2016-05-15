@@ -537,7 +537,7 @@ hr.style14 {
 /*Course Halves for Each HS Year*/
 
 	#Half1A, #Half1B, #Half2A, #Half2B,
-	#Half3A, #Half1B, #Half4A, #Half4B  {
+	#Half3A, #Half3B, #Half4A, #Half4B  {
 	    height:1000px;
 	    box-shadow: 0px 1000px rgba(0, 0, 0, 0.6) inset;
 	    -webkit-background-size: cover;
@@ -756,22 +756,26 @@ hr.style14 {
 	font-weight: 500;
 	cursor:pointer;
 	text-decoration:none;
+	text-shadow: 1px 0px 20px #0237A9;
 }
 
 #mList {
 	list-style-type: none;
+	text-shadow: 1px 0px 20px #0237A9;
 }
 
 #Modali {
 	font-size: 25px;
 	color:white;
+	text-shadow: 1px 0px 20px #0237A9;
 	cursor:pointer;
 	text-decoration:none;
 	list-style-type: none;
 }
 
 #Modali:hover {
-	color:#0237A9;
+	color:#FF4C65;
+	font-weight: bold;
 }
 
 #linedText {
