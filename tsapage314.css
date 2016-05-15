@@ -1,0 +1,546 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,500italic,400italic,300italic,300);
+
+* { margin: 0; padding: 0; border: 0; outline: 0; font-size:100%; font:inherit; vertical-align:baseline;} /* to prevent gaps between elements / content in browser window  */
+
+body{
+	font-family:'Roboto',sans-serif;
+	font-weight:400;
+	overflow-x:hidden;
+	height:100%;
+	margin-top:-20px;
+}
+/**
+nav{
+	overflow-y:auto;
+}
+
+.navbar-header{
+	padding-left:100px;
+}
+
+
+.tooltip{
+	overflow-x:hidden;
+}
+**/
+
+.navbar .active{
+	color:#FF4C65 !important;
+}
+
+.navbar-header{
+	font-family:'Roboto' !important;
+}
+
+#tsasection1, #tsasection2, #tsasection3, #tsasection4, #tsasection5 {
+	font-family:'Roboto',sans-serif;
+	padding-top:40px;
+	padding-left: 120px;
+	min-height:100%;
+	width:100%;
+}
+
+#tsasection1{
+	height:1000px;
+	padding-top:-30px !important;
+	color: #fff; 
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.5), 
+	      rgba(0, 0, 0, 0.5)
+	    ),
+		url("tsa_pictures/tsa2015.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	text-align:center;
+}
+
+#tsasection1 h1{
+	font-size:80px;
+	font-weight:500;
+	#text-shadow: 2px 2px #FF4C65;
+	text-shadow: 0 0 50px #0237A9;
+}
+
+#tsasection1 h3{
+	font-style:italic;
+	font-weight:400;
+}
+
+#tsasection2 {
+	min-height:1000px;
+	#height:auto;
+	color: #fff; 
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.7), 
+	      rgba(0, 0, 0, 0.7)
+	    ),
+		url("tsa_pictures/keyboard.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
+
+#tsasection2 p{
+	font-size:18px;
+}
+
+#samslidey {
+ 	height:auto;
+ 	width:700px;
+ }
+
+.aboveCarousel,.belowCarousel{
+	margin-left:10%;
+	margin-right:10%;
+	min-width:30%;
+	text-align:justify;
+}
+
+.belowCarousel{
+	text-align:center;
+	margin-bottom:-10px;
+}
+
+.centerCarousel {
+	margin-top:20px;
+	padding-right:auto;
+	padding-left:auto;
+	min-width:700px;
+	overflow:hidden;
+	height:auto;
+}
+
+.carousel-caption p{
+	text-align:center !important;
+	background-color:rgba(0,0,0,.5);
+	border-radius:10px;
+}
+
+#memnum{
+	color:#FF4C65;
+	font-weight:bold;
+}
+
+.specialstats {
+	font-size:30px;
+	color:#FF4C65;
+}
+
+#tsasection2 img{
+	height:80%;
+	width:80%;
+}
+
+#tsasection2 h1, #tsasection3 h1, #tsasection4 h1, #tsasection5 h1{
+	font-size:50px;
+	text-align:center;
+}
+
+#tsasection3 {
+	color: #fff; 
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.7), 
+	      rgba(0, 0, 0, 0.7)
+	    ),
+		url("tsa_pictures/sec3back.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	text-align:center;
+	min-height:1000px;
+}
+
+#tsasection3 div img{
+	width:175px;
+	height:175px;
+	text-align:center;
+	border-radius:50%;
+
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
+}
+
+.tableOfPictures > div > a > img:hover{
+
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
+}
+
+/** http://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image **/
+
+#tsasection3 .ofName{
+	line-height:10%;
+}
+
+#tsasection3 .modalDialog h4{
+	color:#FF4C65;
+	font-weight:bold;
+}
+
+#tsasection3 h3{
+	color:#FF4C65;
+}
+
+.tableOfPictures{
+	width:100%;
+	max-width:1000px;
+	margin:auto;
+}
+
+#tsasection3 div div{
+	float:center;
+	display:inline-block;
+	min-width:250px;
+	height:260px;
+}
+
+#tsasection3 a:hover{
+	text-decoration:none;
+}
+
+/* modal box code edited from http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ */
+
+.modalDialog {
+	position: fixed;
+	font-family: 'Roboto', sans-serif;
+	bottom:0;
+	right:0;
+	left:0;
+	top:0;
+	height:auto !important;
+
+	color:black;
+
+	background-color: rgba(0,0,0,0.7);
+	z-index: 99999;
+	opacity:0;
+	/**
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	**/
+	pointer-events: none;
+	/*
+	-webkit-transition: .2s ease-in-out; 
+	-moz-transition: .2s ease-in-out; 
+	-ms-transition: .2s ease-in-out; 
+	-o-transition: .2s ease-in-out; 
+	transition: .2s ease-in-out; 
+	*/
+
+	/*
+	transition: all 1s linear;
+	*/
+}
+
+.modalPicture{
+	float:left !important;
+	display:inline-block;
+	position:fixed;
+	margin-left: -135px !important;
+}
+
+#specialDennis{
+	overflow:hidden !important;
+}
+
+.modalText{
+	float:right !important;
+	display:inline-block;
+	text-align:left;
+	width:60%;
+	overflow-y:scroll;
+}
+
+.modalArrow{
+	width:auto !important;
+	min-width:0 !important;
+	height:auto !important;
+	margin-bottom:5px !important;
+	display:block !important;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 600px !important;
+	/**height:auto !important;**/
+	position: relative;
+	margin: 5% auto;
+	padding: 13px 10px 13px 20px;
+	border-radius: 10px !important;
+	background: #fff;
+	max-height:80% !important;
+	height:auto !important;
+}
+
+.close {
+	background: #FF0000;
+	color: #EEEEEE !important;
+	line-height: 25px !important;
+	position: absolute;
+	text-align: center;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold !important;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	z-index:999999 !important;
+	left:10px;
+	
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
+}
+
+.close:hover {
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
+}
+/* end modal box code */
+
+#tsasection4 {
+	color: #fff; 
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.8), 
+	      rgba(0, 0, 0, 0.8)
+	    ),
+		url("tsa_pictures/boardback.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	min-height:1000px;
+	#height:auto;
+	text-align: justify;
+	margin-bottom:-5px;
+}
+
+#tsasection4 a, #tsasection5 a{
+	text-decoration:none;
+	color: #B7E0ED;
+}
+
+#tsasection4 a:hover, #tsasection5 a:hover{
+	color: #FF4C65;
+}
+
+#tsasection4 p{
+	font-size:16px;
+}
+
+#tsasection4 img{
+	border-radius:50%;
+}
+
+#tsasection4 h3{
+	color:#FF4C65;
+}
+
+#offpic{
+	display:inline-block;
+	height:35%;
+	width:35%;
+	#float:right;
+	margin-left:10%;
+}
+
+#banpic{
+	display:inline-block;
+	#float:left;
+	height:35%;
+	width:35%;
+	margin-left:10%;
+}
+
+#vexImage{
+	height:35%;
+	width:35%;
+	display:inline-block;
+	margin-left:10%;
+}
+
+#happyvexteam{
+	height:35%;
+	width:35%;
+	display:inline-block;
+	margin-left:10%;
+}
+
+#natconf{
+	display:block;
+}
+
+#tsasection5 {
+	color: #fff; 
+	background-color: #009688;
+	height:800px;
+	background:
+		linear-gradient(
+	      rgba(0, 0, 0, 0.7), 
+	      rgba(0, 0, 0, 0.7)
+	    ),
+		url("tsa_pictures/dallas2015.JPG") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
+
+#tsasection5 div, #tsasection4 div{
+	margin-right:10%;
+	margin-left:10%;
+}
+
+#tsasection5 #innerBullet{
+	margin-left:5%;
+}
+
+#tsasection5 div p, #tsasection5 ul{
+	font-size:16px;
+}
+
+#tsasection5 h3{
+	color:#FF4C65;
+}
+
+#backCaption{
+	font-size:12px;
+	font-style:italic;
+	text-align:center;
+	margin-top:20%;
+}
+
+#comm{
+	width:auto;
+	height:auto;
+	float:left;
+}
+
+#acsimage{
+	width:20%;
+	height:20%;
+	float:right;
+	position:relative;
+}
+
+.creed_bar{
+	font-family:'Roboto',sans-serif;
+	height:auto;
+	background-color:white;
+	color:black;
+	text-align:justify;
+	padding:20px 40px 20px 120px;
+	#margin-bottom:20px;
+}
+
+.creed_bar img {
+	#display:inline-block;
+	height:80px;
+	width:130px;
+	#position:absolute;
+	float:left;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+.creed_bar .text {
+	#display:inline-block;
+	#width:auto;
+	#position:relative;
+	#margin-left:150px;
+	#text-align:justify;
+}
+
+.creed_bar span{
+	font-weight:bold;
+}
+
+@media (max-width: 750px) {
+	#tsasection2 img {
+	height:40%;
+	width:40%;
+	}
+
+	.carousel-caption p{
+		font-size:12px;
+		background-color:rgba(0,0,0,0);
+		margin-top:-150px;
+		width:200px;
+		margin-left:140px;
+	}
+
+	.centerCarousel{
+		margin-left:-35%;
+	}
+}
+
+/** for Internet Explorer modal picture margins **/
+/**IE 9 & Newer **/
+
+/**Before IE 9**/
+
+/*
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .
+	.modalPicture { 
+		margin-left:-100px\9 !important;
+	} 
+}
+*/
+/**
+
+
+@media (min-width: 250px) {
+	/* Sidebar settings */
+
+	/*
+	.navbar-toggle {
+	  color: white;
+	  border-color: transparent;
+	  background-color: transparent;
+	}
+
+	nav.sidebar{
+	  padding-top: 52px;
+	  padding-bottom:0px;
+	}
+/*
+	.tooltip{
+		visibility:hidden;
+	}*/
+}
+
+@media (max-width:768px){
+		.creed_bar{
+			padding-left:25px !important;
+		}
+
+		#tsasection1{
+			padding-top:-20px;
+		}
+
+	}
