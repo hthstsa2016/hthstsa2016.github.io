@@ -201,25 +201,17 @@ $(document).ready(function(){
   });
 });*/
 
-function invisible() {
-  var nav1 = document.getElementById('mainSidebar')
-
-    if (nav1) {
-
-      if (nav1 == 'none') {
-
-          nav1.style.display = 'block';
-
-      }
-
-      else {
-
-          nav1.style.display = 'none';
-
-      }
-  }
-
-}
+//$('#invisible').hide();
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 900)
+     {
+        $('#mainSidebar').fadeIn();
+     }
+    else
+     {
+      $('#mainSidebar').fadeOut();
+     }
+ });
 
 function cycleBackgrounds() {
   var index = 0;

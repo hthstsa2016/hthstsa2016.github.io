@@ -237,21 +237,21 @@ body{
 
 
   #mainsection1 {
+  	overflow-x:hidden;
   	padding-top:1px;
   	height:1000px;
+ 	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)
+    ),
+	url("ctePics/iedCircle3.jpg") no-repeat center center fixed;
+
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
   }
-/*	background:
-		linear-gradient(
-		rgba(0, 0, 0, 0.6), 
-		rgba(0, 0, 0, 0.6)
-		),
-		url(ctePics/office.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		filter:gray;
-	}*/
 
 
   #mainsection2 {
@@ -264,98 +264,24 @@ body{
   	padding-top:1px;
   	height:1000px;
   	width:100%; 
-  	background:
-  		linear-gradient(
-		rgba(0, 0, 0, 0.6), 
-		rgba(0, 0, 0, 0.6)
-		),
-		url(ctePics/springs.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		filter:gray;
   }
 
    #mainsection4 {
   	padding-top:1px;
   	height:1000px;
   	width:100%; 
-  	background:
-  		linear-gradient(
-		rgba(0, 0, 0, 0.6), 
-		rgba(0, 0, 0, 0.6)
-		),
-		url(ctePics/pencil2.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		filter:gray;
   }
 
   #mainsection5 {
   	padding-top:1px;
   	height:1000px;
   	width:100%; 
-  	/**
-  	background:
-  		linear-gradient(
-		rgba(0, 0, 0, 0), 
-		rgba(0, 0, 0, 0)
-		),
-		url(ctePics/motherboard2.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		filter:gray;
-	**/
-	background:
-  		linear-gradient(
-		rgba(0, 0, 0, .6), 
-		rgba(0, 0, 0, .6)
-		),
-		url(ctePics/motherboard.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
   }
-
-/*#caroslide {
-	width:100px;
-}*/
-
-/*.item, img{
-	height: auto;
-    width:  60% !important;
-    max-height:450px;
-    float:right;
-}
-
-.carousel-inner > .item > img {
-	margin: 0 auto;
-}
-
-#leftt, #rightt {
-	width:5%;
-	height:100%;
-	z-index:3000;
-}
-
-#leftt {
-	left:62%;
-}
-
-#rightt {
-	right:2%;
-}
 
 #presentation {
 	height:100%;
 	width:100%;
-}*/
+}
 
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -608,42 +534,175 @@ hr.style14 {
 
 
 /*Course Halves for Each HS Year*/
-#Half1A, #Half1B, #Half2A, #Half2B, #Half3A, #Half3B, #Half4A, #Half4B {
-	height:1000px;
-	width:50%;
-	background:
-	  linear-gradient(
-	    rgba(0,0,0, 0.7), 
-	    rgba(0,0,0, 0.7)
-	  ),
-	    -webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    -o-background-size: cover;
-	    background-size: cover;
-	    margin-bottom: 0;
+
+	#Half1A, #Half1B, #Half2A, #Half2B,
+	#Half3A, #Half3B, #Half4A, #Half4B  {
+		height:1000px;
+		width:50%;
+			background:
+			  linear-gradient(
+			    rgba(0,0,0, 0.7), 
+			    rgba(0,0,0, 0.7)
+			  ),
+			    -webkit-background-size: cover;
+			    -moz-background-size: cover;
+			    -o-background-size: cover;
+			    background-size: cover;
+			    margin-bottom: 0;
+/*		-webkit-transition: all 3s ease-in-out;;
+		-moz-transition: all 3s ease-in-out;;
+		-ms-transition: all 3s ease-in-out;;
+		-o-transition: all 3s ease-in-out;;
+		transition: all 3s ease-in-out;;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		opacity: 0.9;*/
+		margin-bottom: 0;
+	}
+
+
+#rowOne, #rowTwo {
+    padding-left:50px;
+    padding-top:50px;
 }
 
+#rowTwo {
+	padding-left: 50px;
+	padding-right:50px;
+}
+
+#openingCTE {
+	color:white;
+	font-size:60px;
+	text-align:center;
+   	-webkit-stroke-width: 5.3px;
+   	-webkit-stroke-color: #FFFFFF;
+   	-webkit-fill-color: #FFFFFF;
+   	text-shadow: 1px 0px 20px #3AA3C1;
+   	-webkit-transition: width 0.3s; /*Safari & Chrome*/
+   	transition: width 0.3s;
+   	-moz-transition: width 0.3s; /* Firefox 4 */
+   	-o-transition: width 0.3s; /* Opera */
+}
+
+#openingpgraphCTE {
+	color:white;
+	top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:18px;
+	width:60%;
+}
+
+#cteWWD {
+	color:white;
+	font-size:40px;
+	color:#FF4C65;
+	text-align:center;
+	font-weight: bold;
+}
+
+/*Section 1 1/4 Section Styling*/
+#froshQuarter, #sophQuarter, #juniorQuarter, #seniorQuarter {
+	overflow-x:hidden;
+	text-align:justify;
+	font-size:14px;
+	color:white;
+	text-decoration: none;
+}
+
+#hthsTitle {
+	text-align:center;
+	font-weight:bolder;
+	color:#FF4C65;
+}
 
 /* Circle options for each program year */
 .circlebase {
-    width:200px;
-    height:200px;
-    -moz-border-radius:200px;
-    -webkit-border-radius:200px;
+	margin-left: auto;
+	margin-right:auto;
+    width:250px;
+    height:250px;
+    -moz-border-radius:250px;
+    -webkit-border-radius:250px;
     color:white;
-    line-height: 200px;
+    line-height: 250px;
     font-weight: bold;
     font-size: 22px;
     font-family: sans-serif;
     position:relative;
 }
 
+#backCircle1 {
+	background:
+		linear-gradient(
+      	rgba(0, 0, 0, 0.55), 
+      	rgba(0, 0, 0, 0.55)
+    	),
+		url("ctePics/ied1.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	border:3px solid #3AA3C1;
+}
+
+#backCircle2 {
+	background:
+		linear-gradient(
+      	rgba(0, 0, 0, 0.55), 
+      	rgba(0, 0, 0, 0.55)
+    	),
+		url("ctePics/sophCircle.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	border:3px solid #3AA3C1;
+}
+
+#backCircle3 {
+	background:
+		linear-gradient(
+      	rgba(0, 0, 0, 0.55), 
+      	rgba(0, 0, 0, 0.55)
+    	),
+		url("ctePics/cope_1.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	border:3px solid #3AA3C1;
+}
+
+#backCircle4 {
+	background:
+		linear-gradient(
+      	rgba(0, 0, 0, 0.55), 
+      	rgba(0, 0, 0, 0.55)
+    	),
+		url("ctePics/edd1.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	border:3px solid #3AA3C1;
+	
+}
+
 .circleinfo {
     width:90%;
     height:90%;
     margin:5%;
-    -moz-border-radius:90%;
-    -webkit-border-radius:90%;
+    color:white;
+    transition-duration: 1s;
+  	transition-timing-function: linear;
+    -moz-border-radius:235px;
+    -webkit-border-radius:235px;
+    line-height: 235px;
     position:absolute;
     text-align:center;
     transition:opacity 3s;
@@ -653,28 +712,25 @@ hr.style14 {
     display:none;
 }
 
-.circlebase {
-		background:
-	url(ctePics/type.jpg)
-	  linear-gradient(
-	    rgba(0,0,0, 0.7), 
-	    rgba(0,0,0, 0.7)
-	  ),
-	    -webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    -o-background-size: cover;
-	    background-size: cover;
-	    margin-bottom: 0;
-}
-
 .circlebase .circlearea {
     text-align:center;
-    position:relative;
+    color:white;
+    text-shadow: 1px 0px 20px #3AA3C1;
 }
-.circlebase:hover .circleinfo{
-    opacity:1;
+
+.circlebase:hover .circlearea { 
+	color:transparent;
+}
+
+.circlebase:hover .circleinfo {
+	display:block;
+	background-color:#3AA3C1;
+	opacity:0.8;
     display:block;
 }
+
+
+
 /* End circle options for each program year */
 
 
@@ -695,24 +751,31 @@ hr.style14 {
 }
 
 #modalList {
-	margin-top:30%;
+	margin-top:15%;
 	margin-left:20%;
 	list-style-type: none;
 	font-size: 20px;
-	color:white;
+	font-weight: 500;
 	cursor:pointer;
 	text-decoration:none;
 }
 
 #Modali {
-	font-size: 40px;
+	font-size: 25px;
 	color:white;
 	cursor:pointer;
 	text-decoration:none;
+	list-style-type: none;
 }
 
 #Modali:hover {
 	color:#3AA3C1;
+}
+
+#linedText {
+	width:425px;
+	margin-left:0;
+	border-color:gray;
 }
 
 #leftFinga {
@@ -730,6 +793,13 @@ hr.style14 {
 }
 
 #rightFinga:hover {
+	color:#FF4C65;
+}
+
+#courseName {
+	margin-top:200px;
+	text-align: center;
+	font-weight: bolder;
 	color:#FF4C65;
 }
 
