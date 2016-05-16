@@ -500,10 +500,10 @@ hr.style14 {
 	    -o-background-size: cover;
   	    background-size: cover;
 	    margin-bottom: 0;
-	    -webkit-transition: background 3.0s linear;
-	    -moz-transition: background 3.0s linear;
-	    -o-transition: background 3.0s linear;
-	    transition: background 3.0s linear;
+	    -webkit-transition: background 1.5s linear;
+	    -moz-transition: background 1.5s linear;
+	    -o-transition: background 1.5s linear;
+	    transition: background 1.5s linear;
 	} 
 
 

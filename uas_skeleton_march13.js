@@ -1630,11 +1630,11 @@ function showHide22() {
         backgroundsyr1B[currentyr1B = ++currentyr1B % backgroundsyr1B.length]
       );
       if (activeyear == "#mainsection2") {
-        timers.push(setTimeout(nextBackground1B, 5000));
+        timers.push(setTimeout(nextBackground1B, 4000));
       }
     }
     if (activeyear == "#mainsection2") {
-      timers.push(setTimeout(nextBackground1B, 4000));
+      timers.push(setTimeout(nextBackground1B, 3000));
     }
     courseyr1B.css('background-image', backgroundsyr1B[0]);
  
@@ -1671,11 +1671,11 @@ function showHide22() {
         backgroundsyr2B[currentyr2B = ++currentyr2B % backgroundsyr2B.length]
       );
       if (activeyear == "#mainsection3") {
-        timers.push(setTimeout(nextBackground2B, 5000));
+        timers.push(setTimeout(nextBackground2B, 4000));
       }
     }
     if (activeyear == "#mainsection3") {
-      timers.push(setTimeout(nextBackground2B, 5000));
+      timers.push(setTimeout(nextBackground2B, 3000));
     }
     courseyr2B.css('background-image', backgroundsyr2B[0]);
  
@@ -1712,11 +1712,11 @@ function showHide22() {
         backgroundsyr3B[currentyr3B = ++currentyr3B % backgroundsyr3B.length]
       );
       if (activeyear == "#mainsection4") {
-        timers.push(setTimeout(nextBackground3B, 5000));
+        timers.push(setTimeout(nextBackground3B, 4000));
       }
     }
     if (activeyear == "#mainsection4") {
-      timers.push(setTimeout(nextBackground3B, 4000));
+      timers.push(setTimeout(nextBackground3B, 3000));
     }
     courseyr3B.css('background-image', backgroundsyr3B[0]);
  
@@ -1754,11 +1754,11 @@ function showHide22() {
         backgroundsyr4B[currentyr4B = ++currentyr4B % backgroundsyr4B.length]
       );
       if (activeyear == "#mainsection5") {
-        timers.push(setTimeout(nextBackground4B, 5000));
+        timers.push(setTimeout(nextBackground4B, 4000));
       }
     }
     if (activeyear == "#mainsection5") {
-      timers.push(setTimeout(nextBackground4B, 4000));
+      timers.push(setTimeout(nextBackground4B, 3000));
     }
     courseyr4B.css('background-image', backgroundsyr4B[0]);
  
