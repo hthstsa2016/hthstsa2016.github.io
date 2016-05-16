@@ -1603,9 +1603,9 @@ function showHide22() {
     /*Frosh starts here*/
     var courseyr1A = $('#Half1A');
     var backgroundsyr1A =
-           ['url("ctePics/stockPhotos/IedStock1.jpg")',
+           ['url("ctePics/stockPhotos/IedStock3.jpg")',
             'url("ctePics/stockPhotos/IedStock2.jpg")',
-            'url("ctePics/stockPhotos/IedStock3.jpg")'];
+            'url("ctePics/stockPhotos/IedStock1.jpg")'];
     var currentyr1A = 0;
     function nextBackground1A() {
       courseyr1A.css('background-image', backgroundsyr1A[currentyr1A = ++currentyr1A % backgroundsyr1A.length]);
@@ -1621,8 +1621,8 @@ function showHide22() {
     var courseyr1B = $('#Half1B');
     var backgroundsyr1B =
            ['url("ctePics/stockPhotos/CimStock1.jpg")',
-            'url("ctePics/stockPhotos/CimStock2.jpg")',
-            'url("ctePics/stockPhotos/CimStock3.jpg")'];
+            'url("ctePics/stockPhotos/CimStock3.jpg")',
+            'url("ctePics/stockPhotos/CimStock2.jpg")'];
     var currentyr1B = 0;
     function nextBackground1B() {
       courseyr1B.css(
@@ -1685,9 +1685,9 @@ function showHide22() {
       /*Junior starts here*/
     var courseyr3A = $('#Half3A');
     var backgroundsyr3A =
-           ['url("ctePics/stockPhotos/CseStock3.jpg")',
-            'url("ctePics/stockPhotos/CseStock1.jpg")',
-            'url("ctePics/stockPhotos/CseStock2.jpg")'];
+           ['url("ctePics/stockPhotos/CseStock1.jpg")',
+            'url("ctePics/stockPhotos/CseStock2.jpg")',
+            'url("ctePics/stockPhotos/CseStock3.jpg")'];
     var currentyr3A = 0;
     function nextBackground3A() {
       courseyr3A.css('background-image', backgroundsyr3A[currentyr3A = ++currentyr3A % backgroundsyr3A.length]);
@@ -1702,9 +1702,9 @@ function showHide22() {
  
     var courseyr3B = $('#Half3B');
     var backgroundsyr3B =
-           ['url("ctePics/stockPhotos/CeaStock3.jpg")',
-            'url("ctePics/stockPhotos/CeaStock1.jpg")',
-            'url("ctePics/stockPhotos/CeaStock2.jpg")'];
+           ['url("ctePics/stockPhotos/CeaStock1.jpg")',
+            'url("ctePics/stockPhotos/CeaStock2.jpg")',
+            'url("ctePics/stockPhotos/CeaStock3.jpg")'];
     var currentyr3B = 0;
     function nextBackground3B() {
       courseyr3B.css(
@@ -1727,8 +1727,8 @@ function showHide22() {
       /*Senior starts here*/
     var courseyr4A = $('#Half4A');
     var backgroundsyr4A =
-           ['url("ctePics/stockPhotos/EddStock1.jpg")',
-            'url("ctePics/stockPhotos/EddStock2.jpg")',
+           ['url("ctePics/stockPhotos/EddStock2.jpg")',
+            'url("ctePics/stockPhotos/EddStock1.jpg")',
             'url("ctePics/stockPhotos/EddStock3.jpg")'];
     var currentyr4A = 0;
     function nextBackground4A() {
@@ -1744,9 +1744,9 @@ function showHide22() {
  
     var courseyr4B = $('#Half4B');
     var backgroundsyr4B =
-           ['url("ctePics/stockPhotos/ResearchStock1.jpg")',
-            'url("ctePics/stockPhotos/ResearchStock2.jpg")',
-            'url("ctePics/stockPhotos/ResearchStock3.jpg")'];
+           ['url("ctePics/stockPhotos/ResearchStock2.jpg")',
+            'url("ctePics/stockPhotos/ResearchStock3.jpg")',
+            'url("ctePics/stockPhotos/ResearchStock1.jpg")'];
     var currentyr4B = 0;
     function nextBackground4B() {
       courseyr4B.css(
