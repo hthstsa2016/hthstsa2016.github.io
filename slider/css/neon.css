@@ -116,30 +116,19 @@
 	height:189px;
 	position:relative;
 	margin:0 auto;
-	background:transparent url(../images/animal1.png) no-repeat center center;
+	background:transparent url(../images/PrivacyStock.jpg) no-repeat center center;
 }
 
 .ca-item-2 .ca-icon{
-	background-image:url(../images/animal2.png);
+	background-image:url(../images/SafetyStock2.jpg);
 }
 .ca-item-3 .ca-icon{
-	background-image:url(../images/animal3.png);
+	background-image:url(../images/HackerStock.jpg);
 }
 .ca-item-4 .ca-icon{
-	background-image:url(../images/animal4.png);
+	background-image:url(../images/weatherStock2.jpg);
 }
-.ca-item-5 .ca-icon{
-	background-image:url(../images/animal5.png);
-}
-.ca-item-6 .ca-icon{
-	background-image:url(../images/animal6.png);
-}
-.ca-item-7 .ca-icon{
-	background-image:url(../images/animal7.png);
-}
-.ca-item-8 .ca-icon{
-	background-image:url(../images/animal8.png);
-}
+
 .ca-item h3{
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	text-transform:uppercase;
