@@ -153,19 +153,6 @@ $(document).ready(function(){
 
 //$('#invisible').hide();
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 950)
-     {
-        $('#mainSidebar').fadeIn();
-     }
-    else
-     {
-      $('#mainSidebar').fadeOut();
-     }
- });
-
-
-//$('#invisible').hide();
-$(window).scroll(function() {
     if ($(this).scrollTop() > 1000)
      {
         $('#invisible').fadeIn();
