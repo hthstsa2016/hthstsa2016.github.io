@@ -1,7 +1,9 @@
-(function($) {
+
+
+(function(jq) {
 	var	aux		= {
 			// navigates left / right
-			navigate	: function( dir, $el, $wrapper, opts, cache ) {
+			navigate	: function( dir, jqel, jqwrapper, opts, cache ) {
 				
 				var scroll		= opts.scroll,
 					factor		= 1,
@@ -15,29 +17,29 @@
 				
 				// clone the elements on the right / left and append / prepend them according to dir and scroll
 				if( dir === 1 ) {
-					$wrapper.find('div.ca-item:lt(' + scroll + ')').each(function(i) {
-						$(this).clone(true).css( 'left', ( cache.totalItems - idxClicked + i ) * cache.itemW * factor + 'px' ).appendTo( $wrapper );
+					jqwrapper.find('div.ca-item:lt(' + scroll + ')').each(function(i) {
+						jq(this).clone(true).css( 'left', ( cache.totalItems - idxClicked + i ) * cache.itemW * factor + 'px' ).appendTo( jqwrapper );
 					});
 				}
 				else {
-					var $first	= $wrapper.children().eq(0);
+					var jqfirst	= jqwrapper.children().eq(0);
 					
-					$wrapper.find('div.ca-item:gt(' + ( cache.totalItems  - 1 - scroll ) + ')').each(function(i) {
-						// insert before $first so they stay in the right order
-						$(this).clone(true).css( 'left', - ( scroll - i + idxClicked ) * cache.itemW * factor + 'px' ).insertBefore( $first );
+					jqwrapper.find('div.ca-item:gt(' + ( cache.totalItems  - 1 - scroll ) + ')').each(function(i) {
+						// insert before jqfirst so they stay in the right order
+						jq(this).clone(true).css( 'left', - ( scroll - i + idxClicked ) * cache.itemW * factor + 'px' ).insertBefore( jqfirst );
 					});
 				}
 				
 				// animate the left of each item
 				// the calculations are dependent on dir and on the cache.expanded value
-				$wrapper.find('div.ca-item').each(function(i) {
-					var $item	= $(this);
-					$item.stop().animate({
+				jqwrapper.find('div.ca-item').each(function(i) {
+					var jqitem	= jq(this);
+					jqitem.stop().animate({
 						left	:  ( dir === 1 ) ? '-=' + ( cache.itemW * factor * scroll ) + 'px' : '+=' + ( cache.itemW * factor * scroll ) + 'px'
 					}, opts.sliderSpeed, opts.sliderEasing, function() {
-						if( ( dir === 1 && $item.position().left < - idxClicked * cache.itemW * factor ) || ( dir === -1 && $item.position().left > ( ( cache.totalItems - 1 - idxClicked ) * cache.itemW * factor ) ) ) {
+						if( ( dir === 1 && jqitem.position().left < - idxClicked * cache.itemW * factor ) || ( dir === -1 && jqitem.position().left > ( ( cache.totalItems - 1 - idxClicked ) * cache.itemW * factor ) ) ) {
 							// remove the item that was cloned
-							$item.remove();
+							jqitem.remove();
 						}						
 						cache.isAnimating	= false;
 					});
@@ -45,12 +47,12 @@
 				
 			},
 			// opens an item (animation) -> opens all the others
-			openItem	: function( $wrapper, $item, opts, cache ) {
-				cache.idxClicked	= $item.index();
+			openItem	: function( jqwrapper, jqitem, opts, cache ) {
+				cache.idxClicked	= jqitem.index();
 				// the item's position (1, 2, or 3) on the viewport (the visible items) 
-				cache.winpos		= aux.getWinPos( $item.position().left, cache );
-				$wrapper.find('div.ca-item').not( $item ).hide();
-				$item.find('div.ca-content-wrapper').css( 'left', cache.itemW + 'px' ).stop().animate({
+				cache.winpos		= aux.getWinPos( jqitem.position().left, cache );
+				jqwrapper.find('div.ca-item').not( jqitem ).hide();
+				jqitem.find('div.ca-content-wrapper').css( 'left', cache.itemW + 'px' ).stop().animate({
 					width	: cache.itemW * 2 + 'px',
 					left	: cache.itemW + 'px'
 				}, opts.itemSpeed, opts.itemEasing)
@@ -62,39 +64,39 @@
 					cache.isAnimating	= false;
 					cache.expanded		= true;
 					
-					aux.openItems( $wrapper, $item, opts, cache );
+					aux.openItems( jqwrapper, jqitem, opts, cache );
 				});
 						
 			},
 			// opens all the items
-			openItems	: function( $wrapper, $openedItem, opts, cache ) {
-				var openedIdx	= $openedItem.index();
+			openItems	: function( jqwrapper, jqopenedItem, opts, cache ) {
+				var openedIdx	= jqopenedItem.index();
 				
-				$wrapper.find('div.ca-item').each(function(i) {
-					var $item	= $(this),
-						idx		= $item.index();
+				jqwrapper.find('div.ca-item').each(function(i) {
+					var jqitem	= jq(this),
+						idx		= jqitem.index();
 					
 					if( idx !== openedIdx ) {
-						$item.css( 'left', - ( openedIdx - idx ) * ( cache.itemW * 3 ) + 'px' ).show().find('div.ca-content-wrapper').css({
+						jqitem.css( 'left', - ( openedIdx - idx ) * ( cache.itemW * 3 ) + 'px' ).show().find('div.ca-content-wrapper').css({
 							left	: cache.itemW + 'px',
 							width	: cache.itemW * 2 + 'px'
 						});
 						
 						// hide more link
-						aux.toggleMore( $item, false );
+						aux.toggleMore( jqitem, false );
 					}
 				});
 			},
 			// show / hide the item's more button
-			toggleMore	: function( $item, show ) {
-				( show ) ? $item.find('a.ca-more').show() : $item.find('a.ca-more').hide();	
+			toggleMore	: function( jqitem, show ) {
+				( show ) ? jqitem.find('a.ca-more').show() : jqitem.find('a.ca-more').hide();	
 			},
 			// close all the items
 			// the current one is animated
-			closeItems	: function( $wrapper, $openedItem, opts, cache ) {
-				var openedIdx	= $openedItem.index();
+			closeItems	: function( jqwrapper, jqopenedItem, opts, cache ) {
+				var openedIdx	= jqopenedItem.index();
 				
-				$openedItem.find('div.ca-content-wrapper').stop().animate({
+				jqopenedItem.find('div.ca-content-wrapper').stop().animate({
 					width	: '0px'
 				}, opts.itemSpeed, opts.itemEasing)
 				.end()
@@ -107,14 +109,14 @@
 				});
 				
 				// show more link
-				aux.toggleMore( $openedItem, true );
+				aux.toggleMore( jqopenedItem, true );
 				
-				$wrapper.find('div.ca-item').each(function(i) {
-					var $item	= $(this),
-						idx		= $item.index();
+				jqwrapper.find('div.ca-item').each(function(i) {
+					var jqitem	= jq(this),
+						idx		= jqitem.index();
 					
 					if( idx !== openedIdx ) {
-						$item.find('div.ca-content-wrapper').css({
+						jqitem.find('div.ca-content-wrapper').css({
 							width	: '0px'
 						})
 						.end()
@@ -122,7 +124,7 @@
 						.show();
 						
 						// show more link
-						aux.toggleMore( $item, true );
+						aux.toggleMore( jqitem, true );
 					}
 				});
 			},
@@ -153,22 +155,22 @@
 						
 						// if options exist, lets merge them with our default settings
 						if ( options ) {
-							$.extend( settings, options );
+							jq.extend( settings, options );
 						}
 						
-						var $el 			= $(this),
-							$wrapper		= $el.find('div.ca-wrapper'),
-							$items			= $wrapper.children('div.ca-item'),
+						var jqel 			= jq(this),
+							jqwrapper		= jqel.find('div.ca-wrapper'),
+							jqitems			= jqwrapper.children('div.ca-item'),
 							cache			= {};
 						
 						// save the with of one item	
-						cache.itemW			= $items.width();
+						cache.itemW			= jqitems.width();
 						// save the number of total items
-						cache.totalItems	= $items.length;
+						cache.totalItems	= jqitems.length;
 						
 						// add navigation buttons
 						if( cache.totalItems > 3 )	
-							$el.prepend('<div class="ca-nav"><span class="ca-nav-prev">Previous</span><span class="ca-nav-next">Next</span></div>')	
+							jqel.prepend('<div class="ca-nav"><span class="ca-nav-prev">Previous</span><span class="ca-nav-next">Next</span></div>')	
 						
 						// control the scroll value
 						if( settings.scroll < 1 )
@@ -176,65 +178,65 @@
 						else if( settings.scroll > 3 )
 							settings.scroll = 3;	
 						
-						var $navPrev		= $el.find('span.ca-nav-prev'),
-							$navNext		= $el.find('span.ca-nav-next');
+						var jqnavPrev		= jqel.find('span.ca-nav-prev'),
+							jqnavNext		= jqel.find('span.ca-nav-next');
 						
 						// hide the items except the first 3
-						$wrapper.css( 'overflow', 'hidden' );
+						jqwrapper.css( 'overflow', 'hidden' );
 						
 						// the items will have position absolute 
 						// calculate the left of each item
-						$items.each(function(i) {
-							$(this).css({
+						jqitems.each(function(i) {
+							jq(this).css({
 								position	: 'absolute',
 								left		: i * cache.itemW + 'px'
 							});
 						});
 						
 						// click to open the item(s)
-						$el.find('a.ca-more').live('click.contentcarousel', function( event ) {
+						jqel.find('a.ca-more').live('click.contentcarousel', function( event ) {
 							if( cache.isAnimating ) return false;
 							cache.isAnimating	= true;
-							$(this).hide();
-							var $item	= $(this).closest('div.ca-item');
-							aux.openItem( $wrapper, $item, settings, cache );
+							jq(this).hide();
+							var jqitem	= jq(this).closest('div.ca-item');
+							aux.openItem( jqwrapper, jqitem, settings, cache );
 							return false;
 						});
 						
 						// click to close the item(s)
-						$el.find('a.ca-close').live('click.contentcarousel', function( event ) {
+						jqel.find('a.ca-close').live('click.contentcarousel', function( event ) {
 							if( cache.isAnimating ) return false;
 							cache.isAnimating	= true;
-							var $item	= $(this).closest('div.ca-item');
-							aux.closeItems( $wrapper, $item, settings, cache );
+							var jqitem	= jq(this).closest('div.ca-item');
+							aux.closeItems( jqwrapper, jqitem, settings, cache );
 							return false;
 						});
 						
 						// navigate left
-						$navPrev.bind('click.contentcarousel', function( event ) {
+						jqnavPrev.bind('click.contentcarousel', function( event ) {
 							if( cache.isAnimating ) return false;
 							cache.isAnimating	= true;
-							aux.navigate( -1, $el, $wrapper, settings, cache );
+							aux.navigate( -1, jqel, jqwrapper, settings, cache );
 						});
 						
 						// navigate right
-						$navNext.bind('click.contentcarousel', function( event ) {
+						jqnavNext.bind('click.contentcarousel', function( event ) {
 							if( cache.isAnimating ) return false;
 							cache.isAnimating	= true;
-							aux.navigate( 1, $el, $wrapper, settings, cache );
+							aux.navigate( 1, jqel, jqwrapper, settings, cache );
 						});
 						
 						// adds events to the mouse
-						$el.bind('mousewheel.contentcarousel', function(e, delta) {
+						jqel.bind('mousewheel.contentcarousel', function(e, delta) {
 							if(delta > 0) {
 								if( cache.isAnimating ) return false;
 								cache.isAnimating	= true;
-								aux.navigate( -1, $el, $wrapper, settings, cache );
+								aux.navigate( -1, jqel, jqwrapper, settings, cache );
 							}	
 							else {
 								if( cache.isAnimating ) return false;
 								cache.isAnimating	= true;
-								aux.navigate( 1, $el, $wrapper, settings, cache );
+								aux.navigate( 1, jqel, jqwrapper, settings, cache );
 							}	
 							return false;
 						});
@@ -244,13 +246,13 @@
 			}
 		};
 	
-	$.fn.contentcarousel = function(method) {
+	jq.fn.contentcarousel = function(method) {
 		if ( methods[method] ) {
 			return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
 		} else if ( typeof method === 'object' || ! method ) {
 			return methods.init.apply( this, arguments );
 		} else {
-			$.error( 'Method ' +  method + ' does not exist on jQuery.contentcarousel' );
+			jq.error( 'Method ' +  method + ' does not exist on jQuery.contentcarousel' );
 		}
 	};
 	
