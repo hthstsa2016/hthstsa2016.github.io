@@ -1,20 +1,9 @@
-/*! Copyright (c) 2010 Brandon Aaron (http://brandonaaron.net)
- * Licensed under the MIT License (LICENSE.txt).
- *
- * Thanks to: http://adomas.org/javascript-mouse-wheel/ for some pointers.
- * Thanks to: Mathias Bank(http://www.mathias-bank.de) for a scope bug fix.
- * Thanks to: Seamus Leahy for adding deltaX and deltaY
- *
- * Version: 3.0.4
- * 
- * Requires: 1.2.2+
- */
 
-(function($) {
+(function(jq) {
 
 var types = ['DOMMouseScroll', 'mousewheel'];
 
-$.event.special.mousewheel = {
+jq.event.special.mousewheel = {
     setup: function() {
         if ( this.addEventListener ) {
             for ( var i=types.length; i; ) {
@@ -36,7 +25,7 @@ $.event.special.mousewheel = {
     }
 };
 
-$.fn.extend({
+jq.fn.extend({
     mousewheel: function(fn) {
         return fn ? this.bind("mousewheel", fn) : this.trigger("mousewheel");
     },
@@ -49,7 +38,7 @@ $.fn.extend({
 
 function handler(event) {
     var orgEvent = event || window.event, args = [].slice.call( arguments, 1 ), delta = 0, returnValue = true, deltaX = 0, deltaY = 0;
-    event = $.event.fix(orgEvent);
+    event = jq.event.fix(orgEvent);
     event.type = "mousewheel";
     
     // Old school scrollwheel delta
@@ -72,7 +61,7 @@ function handler(event) {
     // Add event and delta to the front of the arguments
     args.unshift(event, delta, deltaX, deltaY);
     
-    return $.event.handle.apply(this, args);
+    return jq.event.handle.apply(this, args);
 }
 
 })(jQuery);
