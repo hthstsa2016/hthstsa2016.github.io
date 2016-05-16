@@ -193,7 +193,7 @@
 	font-family: "Roboto";
 }
 
-#infoDrone, #typdrone, #futdrone, #safpriv {
+#infoDrone, #typdrone, #futdrone {
 	margin-left:auto;
 	margin-right:auto;
 	display:block;
@@ -210,22 +210,21 @@
 	font-size:21px;
 }
 
-#typdrone, #futdrone, #safpriv {
+ #safpriv {
 	margin-left:auto;
 	margin-right:auto;
 	display:block;
 	z-index:1;
-	margin-top:10%;
+	margin-top: 500px;
 	margin-bottom:auto;
 	left:2%;
-	width:80%;
-	height:30%;
 	text-align: justify;
 	font-family: "Roboto";
 	/**color:black;**/
 	color:white;
 	font-size:21px;
 }
+
 
 #curdrone{
 	margin-left:auto;
