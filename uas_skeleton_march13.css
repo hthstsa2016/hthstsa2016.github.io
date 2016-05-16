@@ -450,51 +450,6 @@ hr.style14 {
 	margin-right:6%;
 }
 
-/*#techText2{
-	display:block;
-}*/
-
-
-.GPic{
-	width:275px;
-	height:275px;
-	border-radius:50%;
-}
-
-.GPic img:hover{
-	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
-  	-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
-  	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
-}
-
-.instructInfo{
-	font-family: 'Roboto';
-	font-size: 21px;
-	font-weight:400;
-	background-color:rgba(0,0,0,0.45);
-    border-radius: 25px;
-    color:white;
-    text-align: justify;
-    z-index:100000;
-}
-
-#teachTitle {
-	word-wrap: break-word;
-	font-weight:600;
-}
-
-#teacherNames {
-	word-wrap: break-word;
-	font-size: 16px;
-	font-weight: 400;
-}
-
-#teacherQuote {
-	font-weight: 400;
-	word-wrap: break-word;
-	text-align:justify;
-}
-
 ::-webkit-scrollbar{
 	width:4px;
 }
@@ -537,7 +492,7 @@ hr.style14 {
 /*Course Halves for Each HS Year*/
 
 	#Half1A, #Half1B, #Half2A, #Half2B,
-	#Half3A, #Half1B, #Half4A, #Half4B  {
+	#Half3A, #Half3B, #Half4A, #Half4B  {
 	    height:1000px;
 	    box-shadow: 0px 1000px rgba(0, 0, 0, 0.6) inset;
 	    -webkit-background-size: cover;
@@ -545,10 +500,10 @@ hr.style14 {
 	    -o-background-size: cover;
   	    background-size: cover;
 	    margin-bottom: 0;
-	    -webkit-transition: background 3.0s linear;
-	    -moz-transition: background 3.0s linear;
-	    -o-transition: background 3.0s linear;
-	    transition: background 3.0s linear;
+	    -webkit-transition: background 1.5s linear;
+	    -moz-transition: background 1.5s linear;
+	    -o-transition: background 1.5s linear;
+	    transition: background 1.5s linear;
 	} 
 
 
@@ -721,12 +676,6 @@ hr.style14 {
 
 /* End circle options for each program year */
 
-#myModal {
-	width:700px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .modal-dialog{
 	width:800px;
     overflow-y: scroll !important
@@ -748,30 +697,111 @@ hr.style14 {
 	font-family: 'Roboto';
 }
 
+#picLeft {
+	float:left;
+	width:30%;
+	height:100%;
+}
+
+#picRight {
+	display:inline-block;
+	float:right;
+	width:67%;
+	height:100%;
+	margin-right: 10px;
+}
+
+.GPic{
+	width:250px;
+	height:250px;
+	border-radius:50%;
+	margin-top:35%;
+	margin-bottom:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.GPic img:hover{
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6); 
+}
+
+.instructInfo{
+	font-family: 'Roboto';
+	font-size: 21px;
+	font-weight:400;
+	background-color:rgba(0,0,0,0.45);
+    border-radius: 25px;
+    color:white;
+    text-align: justify;
+    z-index:100000;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#teachTitle {
+	color:#FF4C65;
+	font-weight:600;
+	margin-top:10%;
+	margin-bottom:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#teacherNames {
+	font-size: 16px;
+	font-weight: 400;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#teacherQuote {
+	font-weight: 400;
+	text-align:justify;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 
 #modalList {
+	width:60%;
 	margin-top:15%;
 	margin-left:20%;
 	font-size: 20px;
 	font-weight: 500;
 	cursor:pointer;
 	text-decoration:none;
+	text-shadow: 1px 0px 20px #0237A9;
+}
+
+#arrow {
+	float: right;
 }
 
 #mList {
 	list-style-type: none;
+	text-shadow: 1px 0px 20px #0237A9;
 }
 
 #Modali {
 	font-size: 25px;
 	color:white;
+	text-shadow: 1px 0px 20px #0237A9;
 	cursor:pointer;
 	text-decoration:none;
 	list-style-type: none;
 }
 
 #Modali:hover {
-	color:#0237A9;
+	color:#FF4C65;
+	font-weight: bold;
 }
 
 #linedText {
@@ -802,7 +832,8 @@ hr.style14 {
 	margin-top:200px;
 	text-align: center;
 	font-weight: bolder;
-	color:#FF4C65;
+	color:white;
+	text-shadow: 1px 0px 25px #0237A9;
 }
 
 #courseDescriptionPageIED {
