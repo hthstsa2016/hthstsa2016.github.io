@@ -781,6 +781,10 @@ hr.style14 {
 	text-shadow: 1px 0px 20px #0237A9;
 }
 
+#arrow {
+	float: right;
+}
+
 #mList {
 	list-style-type: none;
 	text-shadow: 1px 0px 20px #0237A9;
