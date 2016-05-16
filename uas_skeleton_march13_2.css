@@ -167,7 +167,7 @@
   #uassection5 {
   	padding-top:1px;
   	padding-bottom:20px;
-  	min-height:1000px;
+  	height:auto;
   	width:100%; 
 	background:
   		linear-gradient(
@@ -215,9 +215,10 @@
 	margin-right:auto;
 	display:block;
 	z-index:1;
-	margin-top: 500px;
-	margin-bottom:auto;
+	margin-top: 15%;
+	margin-bottom:15%;
 	left:2%;
+	width:80%;
 	text-align: justify;
 	font-family: "Roboto";
 	/**color:black;**/
@@ -289,4 +290,29 @@ hr.style14 {
 
 #sources a:link{
 	text-decoration: none;
+}
+
+#woopbutton{
+	font-size:50px;
+	text-decoration:none;
+	padding:10px;
+	border:2px solid #FFFFFF;
+	margin-left:90px;
+	margin-right:90px;
+	-webkit-transition: .2s ease-in-out; /* Safari */
+	-moz-transition: .2s ease-in-out; /* Mozilla Firefox */
+	-ms-transition: .2s ease-in-out; /* Microsoft specific */
+	-o-transition: .2s ease-in-out; /* Opera */
+	transition: .2s ease-in-out; /* general & Google Chrome */
+}
+
+#safpriv a:link{
+	text-decoration:none;
+}
+
+#woopbutton:hover{
+	text-decoration:none !important;
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+  	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.8), 0 4px 15px 0 rgba(0, 0, 0, 0.6);
 }
